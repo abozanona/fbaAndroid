@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/logs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@id/buttonUpgrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="6sp"
+        android:maxLines="2"
+        android:minLines="1"
+        android:text="@string/button_pro_thanks"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TabHost
+        android:id="@id/logsTabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonUpgrade"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="0sp"
+        android:padding="0sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@+id/_0x1020013"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="0.0" />
+
+            <FrameLayout
+                android:id="@+id/_0x1020011"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1.0">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@id/logsSlidePager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp">
+
+                    <RelativeLayout
+                        android:id="@id/logsSlideApps"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="0dp">
+
+                        <com.androidplot.xy.XYPlot
+                            android:id="@id/logsGraphApps"
+                            androidPlot.domainLabelWidget.labelPaint.textSize="@dimen/domain_label_font_size"
+                            androidPlot.graphWidget.domainLabelPaint.textSize="@dimen/domain_tick_label_font_size"
+                            androidPlot.graphWidget.domainOriginLabelPaint.textSize="@dimen/domain_tick_label_font_size"
+                            androidPlot.graphWidget.marginBottom="4sp"
+                            androidPlot.graphWidget.marginLeft="0sp"
+                            androidPlot.graphWidget.marginRight="10sp"
+                            androidPlot.graphWidget.marginTop="12sp"
+                            androidPlot.graphWidget.rangeLabelPaint.textSize="@dimen/range_tick_label_font_size"
+                            androidPlot.graphWidget.rangeOriginLabelPaint.textSize="@dimen/range_tick_label_font_size"
+                            androidPlot.rangeLabelWidget.labelPaint.textSize="@dimen/range_label_font_size"
+                            androidPlot.titleWidget.labelPaint.textSize="@dimen/title_font_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="30sp"
+                            android:layout_marginTop="0dp" />
+
+                        <ListView
+                            android:id="@id/logsListApps"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/logsGraphApps" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@id/logsSlideCnts"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="0dp">
+
+                        <com.androidplot.xy.XYPlot
+                            android:id="@id/logsGraphCnts"
+                            androidPlot.domainLabelWidget.labelPaint.textSize="@dimen/domain_label_font_size"
+                            androidPlot.graphWidget.domainLabelPaint.textSize="@dimen/domain_tick_label_font_size"
+                            androidPlot.graphWidget.domainOriginLabelPaint.textSize="@dimen/domain_tick_label_font_size"
+                            androidPlot.graphWidget.marginBottom="4sp"
+                            androidPlot.graphWidget.marginLeft="0sp"
+                            androidPlot.graphWidget.marginRight="10sp"
+                            androidPlot.graphWidget.marginTop="12sp"
+                            androidPlot.graphWidget.rangeLabelPaint.textSize="@dimen/range_tick_label_font_size"
+                            androidPlot.graphWidget.rangeOriginLabelPaint.textSize="@dimen/range_tick_label_font_size"
+                            androidPlot.rangeLabelWidget.labelPaint.textSize="@dimen/range_label_font_size"
+                            androidPlot.titleWidget.labelPaint.textSize="@dimen/title_font_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="30sp"
+                            android:layout_marginTop="0dp"
+                            android:padding="0dp" />
+
+                        <ListView
+                            android:id="@id/logsListCnts"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/logsGraphCnts" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@id/logsSlideMalware"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.androidplot.xy.XYPlot
+                            android:id="@id/logsGraphMalware"
+                            androidPlot.domainLabelWidget.labelPaint.textSize="@dimen/domain_label_font_size"
+                            androidPlot.graphWidget.domainLabelPaint.textSize="@dimen/domain_tick_label_font_size"
+                            androidPlot.graphWidget.domainOriginLabelPaint.textSize="@dimen/domain_tick_label_font_size"
+                            androidPlot.graphWidget.marginBottom="4sp"
+                            androidPlot.graphWidget.marginLeft="0sp"
+                            androidPlot.graphWidget.marginRight="10sp"
+                            androidPlot.graphWidget.marginTop="12sp"
+                            androidPlot.graphWidget.rangeLabelPaint.textSize="@dimen/range_tick_label_font_size"
+                            androidPlot.graphWidget.rangeOriginLabelPaint.textSize="@dimen/range_tick_label_font_size"
+                            androidPlot.rangeLabelWidget.labelPaint.textSize="@dimen/range_label_font_size"
+                            androidPlot.titleWidget.labelPaint.textSize="@dimen/title_font_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="30sp"
+                            android:layout_marginTop="0dp"
+                            android:padding="0dp" />
+
+                        <ListView
+                            android:id="@id/logsListMalware"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/logsGraphMalware" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@id/logsSlideAds"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.androidplot.xy.XYPlot
+                            android:id="@id/logsGraphAds"
+                            androidPlot.domainLabelWidget.labelPaint.textSize="@dimen/domain_label_font_size"
+                            androidPlot.graphWidget.domainLabelPaint.textSize="@dimen/domain_tick_label_font_size"
+                            androidPlot.graphWidget.domainOriginLabelPaint.textSize="@dimen/domain_tick_label_font_size"
+                            androidPlot.graphWidget.marginBottom="4sp"
+                            androidPlot.graphWidget.marginLeft="0sp"
+                            androidPlot.graphWidget.marginRight="10sp"
+                            androidPlot.graphWidget.marginTop="12sp"
+                            androidPlot.graphWidget.rangeLabelPaint.textSize="@dimen/range_tick_label_font_size"
+                            androidPlot.graphWidget.rangeOriginLabelPaint.textSize="@dimen/range_tick_label_font_size"
+                            androidPlot.rangeLabelWidget.labelPaint.textSize="@dimen/range_label_font_size"
+                            androidPlot.titleWidget.labelPaint.textSize="@dimen/title_font_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="30sp"
+                            android:layout_marginTop="0dp"
+                            android:padding="0dp" />
+
+                        <ListView
+                            android:id="@id/logsListAds"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/logsGraphAds" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@id/logsSlideCached"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.androidplot.xy.XYPlot
+                            android:id="@id/logsGraphCached"
+                            androidPlot.domainLabelWidget.labelPaint.textSize="@dimen/domain_label_font_size"
+                            androidPlot.graphWidget.domainLabelPaint.textSize="@dimen/domain_tick_label_font_size"
+                            androidPlot.graphWidget.domainOriginLabelPaint.textSize="@dimen/domain_tick_label_font_size"
+                            androidPlot.graphWidget.marginBottom="4sp"
+                            androidPlot.graphWidget.marginLeft="0sp"
+                            androidPlot.graphWidget.marginRight="10sp"
+                            androidPlot.graphWidget.marginTop="12sp"
+                            androidPlot.graphWidget.rangeLabelPaint.textSize="@dimen/range_tick_label_font_size"
+                            androidPlot.graphWidget.rangeOriginLabelPaint.textSize="@dimen/range_tick_label_font_size"
+                            androidPlot.rangeLabelWidget.labelPaint.textSize="@dimen/range_label_font_size"
+                            androidPlot.titleWidget.labelPaint.textSize="@dimen/title_font_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="30sp"
+                            android:layout_marginTop="0dp"
+                            android:padding="0dp" />
+
+                        <ListView
+                            android:id="@id/logsListCached"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/logsGraphCached" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@id/logsSlideEmptyPro"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                        android:text="@string/banner_pro_view" />
+                </android.support.v4.view.ViewPager>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+    <RelativeLayout
+        android:id="@id/logsListEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@id/listEmptyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="40sp"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:text="@string/logs_empty_text" />
+
+        <Button
+            android:id="@id/listEmptyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/listEmptyText"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:text="@string/logs_empty_button"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

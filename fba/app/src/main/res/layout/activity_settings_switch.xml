@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@id/switchTopBlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12sp"
+        android:layout_marginRight="12sp"
+        android:layout_marginTop="12sp"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@id/switchSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="0sp"
+            android:enabled="false"
+            android:text=""
+            android:textOff="@string/switch_off"
+            android:textOn="@string/switch_on"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@id/switchText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="0sp"
+            android:enabled="false"
+            android:text="@string/switch_notifications"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/switchComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/switchTopBlock"
+        android:layout_marginLeft="12sp"
+        android:layout_marginRight="12sp"
+        android:enabled="false"
+        android:paddingBottom="12sp"
+        android:text="@string/switch_notifications_summary"
+        android:textSize="12sp" />
+</RelativeLayout>

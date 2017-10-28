@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@id/listHeaderPane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/list_headers">
+
+        <Spinner
+            android:id="@id/listSpinnerApps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="6sp"
+            android:layout_marginLeft="0sp"
+            android:layout_marginRight="0sp"
+            android:layout_marginTop="6sp"
+            android:entries="@array/spinner_apps"
+            android:paddingBottom="6sp"
+            android:paddingLeft="0sp"
+            android:paddingRight="0sp"
+            android:paddingTop="6sp"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@id/listSpinnerPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="6sp"
+            android:layout_marginLeft="0sp"
+            android:layout_marginRight="0sp"
+            android:layout_marginTop="6sp"
+            android:layout_toRightOf="@id/listSpinnerApps"
+            android:entries="@array/spinner_period"
+            android:paddingBottom="6sp"
+            android:paddingLeft="0sp"
+            android:paddingRight="0sp"
+            android:paddingTop="6sp"
+            android:spinnerMode="dropdown"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@id/listHeaderBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:lines="2"
+            android:text="@string/radio_block_all"
+            android:textAllCaps="false"
+            android:textColor="#ff5050"
+            android:textSize="@dimen/header_text_font_size" />
+
+        <TextView
+            android:id="@id/listHeaderWifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/listHeaderBlock"
+            android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:lines="2"
+            android:text="@string/radio_wifi_only"
+            android:textAllCaps="false"
+            android:textColor="#d0d000"
+            android:textSize="@dimen/header_text_font_size" />
+
+        <TextView
+            android:id="@id/listHeaderAllow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/listHeaderWifi"
+            android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:lines="2"
+            android:text="@string/radio_allow_all"
+            android:textAllCaps="false"
+            android:textColor="#50ff50"
+            android:textSize="@dimen/header_text_font_size" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@id/listItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/listHeaderPane"
+        android:padding="0sp" />
+
+    <TextView
+        android:id="@id/listPro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/listHeaderPane"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:padding="0sp"
+        android:text="@string/banner_pro_view"
+        android:visibility="gone" />
+</RelativeLayout>

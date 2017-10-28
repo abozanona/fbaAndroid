@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class=" js flexbox canvas canvastext postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache" style="width:100%;height:100%; margin: 0px; padding: 0px;">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./jquery-jvectormap-1.2.2.css" type="text/css"/>
+		<link rel="stylesheet" href="./jquery-jvectormap-1.2.2.css" type="text/css" media="screen"/>
+		<script src="./jquery-1.8.2.min.js"></script>
+		<script src="./jquery-jvectormap-1.2.2.min.js"></script>
+        	<script src="./jquery-jvectormap-world-mill-en.js"></script>
+	</head>
+	<body lang="en" style="width: 100%; height: 100%; margin: 0px; padding: 0px;">
+<!--
+<div id="header">
+<table border=0>
+<tr>
+<td colspan=3>
+<select id="type" name="type">
+<option value="1">Regions</option>
+<option value="2">Countries</option>
+</select>
+</td>
+</tr><tr>
+<td colspan=3>
+<select id="code" name=code>
+<script>
+//if (typeof Android != 'undefined') {
+	//var ret = Android.getCountries();
+	//eval(ret);
+	//for (var name in countries) {
+		//document.write("<option value=\""+countries[name]+"\">"+name+"</option>");
+	//}
+//}
+</script>
+</select>
+</td>
+</tr><tr>
+<td>
+		<input type=button onclick="Android.block(document.getElementById('code').value)" value=BLOCK />
+</td><td>
+		<input type=button onclick="Android.unblock(document.getElementById('code').value)" value=UNBLOCK />
+</td><td>
+&nbsp;
+</td>
+</tr>
+</table>
+</div>
+-->
+		<!--<div class="demo-map"></div>-->
+		<!--<div class="demo-map" style="display: none;position:relative;width: inherit;height: inherit;"></div> -->
+		<!--<div class="demo-map" style="width: 100%;height: 100%;"></div>-->
+		<div class="demo-map" style="display:none;width: 100%;height: 100%; margin: 0px; padding: 0px;"></div>
+        	<script>
+
+if (typeof Android != 'undefined') {
+	var ret = Android.getMap();
+	eval(ret);
+}
+else {
+	var gdpData = {
+	  "CN": 1,
+	  "RU": 0,
+	  "VU": 1,
+	  "VE": 1,
+	  "VN": 1,
+	  "YE": 1,
+	  "ZM": 1,
+	  "ZW": 1
+	};
+}
+
+//legend: 'none', tooltip: {trigger: 'none'},
+//datalessRegionColor: '#00FF00',
+//colorAxis: {minValue: 0,  colors: ['#00FF00', '#FF0000']},
+
+          $(function(){
+            $('.demo-map').vectorMap({
+              map: 'world_mill_en',
+              backgroundColor: '#d0e0ff',
+
+              //zoomOnScroll: false,
+              //zoomMax: 0,
+              //zoomMin: 0,
+              //zoomStep: 0,
+
+              series: {
+                regions: [{
+                  values: gdpData,
+                  //scale: ['#C8EEFF', '#0071A4'],
+                  scale: ['#00a000', '#FF0000'],
+                  normalizeFunction: 'polynomial'
+                }]
+              },
+  onRegionOut: function(e, code){
+  },
+  onRegionOver: function(e, code){
+  },
+  onRegionLabelShow: function(e, el, code){
+    /*el.html(el.html()+' (GDP - '+gdpData[code]+')');*/
+    el.html('');
+  },
+              hoverOpacity: 0.7,
+              hoverColor: false
+            });
+            var zoomin = document.getElementsByClassName('jvectormap-zoomin');
+            zoomin[0].style.display = 'none';
+            var zoomout = document.getElementsByClassName('jvectormap-zoomout');
+            zoomout[0].style.display = 'none';
+            //var svg = document.getElementsByTagName('svg');
+            //svg[0].height = '120';
+            var demo = document.getElementsByClassName('demo-map');
+            demo[0].style.display = 'block';
+	    $('.demo-map').resize();
+          });
+        </script>
+	</body>
+</html>

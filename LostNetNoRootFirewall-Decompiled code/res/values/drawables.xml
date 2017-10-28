@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="cancel">res/drawable-hdpi/cancel.png</drawable>
+    <drawable name="country">res/drawable-xhdpi/country.png</drawable>
+    <drawable name="country_blocked">res/drawable-xhdpi/country_blocked.png</drawable>
+    <drawable name="down">res/drawable-hdpi/down.png</drawable>
+    <drawable name="list_headers">res/drawable/list_headers.xml</drawable>
+    <drawable name="lnf2">res/drawable-xhdpi/lnf2.png</drawable>
+    <drawable name="more">res/drawable-hdpi/more.png</drawable>
+    <drawable name="more_shape">res/drawable/more_shape.xml</drawable>
+    <drawable name="suggestion_item">res/drawable/suggestion_item.xml</drawable>
+    <drawable name="up">res/drawable-hdpi/up.png</drawable>
+    <drawable name="vpn_connected">res/drawable/vpn_connected.png</drawable>
+    <drawable name="widget_off">res/drawable/widget_off.png</drawable>
+    <drawable name="widget_on">res/drawable/widget_on.png</drawable>
+    <drawable name="widget_onoff_shape">res/drawable/widget_onoff_shape.xml</drawable>
+    <drawable name="widget_onoff_switch_left_shape">res/drawable/widget_onoff_switch_left_shape.xml</drawable>
+    <drawable name="widget_onoff_switch_right_shape">res/drawable/widget_onoff_switch_right_shape.xml</drawable>
+</resources>

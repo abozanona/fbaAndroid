@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppBaseTheme">
+    </style>
+    <style name="AppBaseTheme">
+    </style>
+    <style name="AppBaseTheme">
+    </style>
+    <style name="AppTheme">
+    </style>
+    <style name="ButtonBarButton">
+    </style>
+    <style name="ButtonBar">
+        <item>?unknown_ref: 108009a</item>
+        <item>2dp</item>
+        <item>5dp</item>
+        <item>2dp</item>
+        <item>0dp</item>
+    </style>
+    <style name="FullscreenTheme">
+        <item>?unknown_ref: 0</item>
+        <item>?unknown_ref: 0</item>
+        <item>@style/ButtonBar</item>
+        <item>@style/ButtonBarButton</item>
+    </style>
+    <style name="FullscreenTheme">
+        <item>?unknown_ref: 0</item>
+        <item>@style/FullscreenActionBarStyle</item>
+        <item>true</item>
+        <item>?unknown_attr_ref: 101032e</item>
+        <item>?unknown_attr_ref: 101032f</item>
+    </style>
+    <style name="FullscreenActionBarStyle">
+        <item>@color/black_overlay</item>
+    </style>
+</resources>

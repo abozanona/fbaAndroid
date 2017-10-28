@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/list_view_item_suggestion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8sp"
+    android:layout_marginTop="8sp"
+    android:background="@drawable/suggestion_item"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/cancel" />
+
+    <ImageView
+        android:id="@id/suggestionIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10sp"
+        android:maxWidth="64sp"
+        android:minWidth="64sp"
+        android:src="@drawable/country" />
+
+    <TextView
+        android:id="@id/suggestionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginBottom="0sp"
+        android:layout_marginRight="124sp"
+        android:layout_marginTop="16sp"
+        android:layout_toRightOf="@id/suggestionIcon"
+        android:singleLine="true"
+        android:text="Sample text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@id/suggestionComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/suggestionIcon"
+        android:layout_marginRight="124sp"
+        android:paddingBottom="8sp"
+        android:paddingLeft="8sp"
+        android:singleLine="false"
+        android:text="This is a comment"
+        android:textSize="14sp" />
+</RelativeLayout>

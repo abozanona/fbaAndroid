@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/list_view_item_geo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@id/itemIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:maxWidth="64sp"
+        android:minWidth="64sp"
+        android:paddingLeft="0sp"
+        android:src="@drawable/country" />
+
+    <TextView
+        android:id="@id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="0sp"
+        android:layout_toRightOf="@id/itemIcon"
+        android:paddingLeft="4sp"
+        android:paddingTop="2sp"
+        android:singleLine="true"
+        android:text="Sample text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@id/itemUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemName"
+        android:layout_toRightOf="@id/itemIcon"
+        android:drawableLeft="@drawable/up"
+        android:minWidth="64sp"
+        android:paddingLeft="4sp"
+        android:paddingRight="4sp"
+        android:text="100K"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@id/itemDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemName"
+        android:layout_toRightOf="@id/itemUpload"
+        android:drawableLeft="@drawable/down"
+        android:paddingLeft="4sp"
+        android:paddingRight="4sp"
+        android:text="200K"
+        android:textSize="12sp" />
+</RelativeLayout>

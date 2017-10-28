@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@id/profileSelectIntro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6sp"
+                android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:text="@string/profile_select_intro1" />
+
+            <Button
+                android:id="@id/profileSelectAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:layout_margin="6sp"
+                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:text="@string/profile_select_create" />
+
+            <View
+                android:id="@id/profileSelectSeparator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:layout_marginTop="10sp" />
+
+            <TextView
+                android:id="@id/profileSelectIntro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6sp"
+                android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:text="@string/profile_select_intro2" />
+
+            <RadioGroup
+                android:id="@id/profileSelectRadios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6sp"
+                android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3sp">
+
+                <Button
+                    android:id="@id/profileSelectDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/profile_select_delete" />
+
+                <Button
+                    android:id="@id/profileSelectCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1.0"
+                    android:text="0x1040000" />
+
+                <Button
+                    android:id="@id/profileSelectOK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1.0"
+                    android:text="0x104000a" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

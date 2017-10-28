@@ -1,0 +1,1093 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA1-Digest-Manifest: bSPe7UFGEupJIrdkWKrP2S11LgU=
+
+Name: res/layout/activity_settings.xml
+SHA1-Digest: qvTgl4tOWjf6omW1kshNgfQh38M=
+
+Name: assets/flags_iso/64/tf.png
+SHA1-Digest: f6z6Q6z9kbLi1F4OBCzgTgGodEw=
+
+Name: assets/flags_iso/64/ee.png
+SHA1-Digest: 9SyomIbw1rS04bFESezmiwo3L+c=
+
+Name: res/xml/widget_graph_blocked.xml
+SHA1-Digest: CqIPkxG0kVrmr/TeygfkOGSlteE=
+
+Name: assets/flags_iso/64/_IHO.png
+SHA1-Digest: rSLjc6FSZ613cAnWVSdVGe10gyg=
+
+Name: assets/flags_iso/64/gg.png
+SHA1-Digest: Kre4vLbKX92U4AllXFttgwTOSCk=
+
+Name: assets/flags_iso/64/ke.png
+SHA1-Digest: QnQrselKEivyttvZib0AWEazw10=
+
+Name: assets/flags_iso/64/zw.png
+SHA1-Digest: dEB2ijjDlzsdXWDHqUuWe7eSwb4=
+
+Name: assets/flags_iso/64/ps.png
+SHA1-Digest: nFxS1dtohCrRHyfVkuUDvadCXrE=
+
+Name: lib/armeabi-v7a/libdnscache.so
+SHA1-Digest: Ar5hirKHMeSiL5ln/dcpNnbnXjQ=
+
+Name: lib/armeabi/libmaxminddb.so
+SHA1-Digest: Jr1pD3zhss98+fl7+WWgc98lRos=
+
+Name: res/layout/dialog_profile_add.xml
+SHA1-Digest: op6zyd9fH2CqqgJze2ouh3KXTT4=
+
+Name: assets/flags_iso/64/mp.png
+SHA1-Digest: 8sz87AlrQcj1Oe1sqmHgNQz8uQ8=
+
+Name: assets/flags_iso/64/_Commonwealth.png
+SHA1-Digest: wqfEGfB629w3PujtHk+uTG/xFl0=
+
+Name: assets/flags_iso/64/bo.png
+SHA1-Digest: Hekd/CqAf8mfgqbE4+RIjrtMfuw=
+
+Name: assets/flags_iso/64/ml.png
+SHA1-Digest: wME2V4Pe7X2HOapLT7pQbCd26OM=
+
+Name: res/layout/activity_details_app.xml
+SHA1-Digest: dJGQkEBH4TXlhULzaYYzCuRSTVE=
+
+Name: res/drawable/widget_onoff_switch_left_shape.xml
+SHA1-Digest: GunkgSe9/5J3jitOHlooLgq3a3k=
+
+Name: assets/flags_iso/64/mk.png
+SHA1-Digest: prulDMXWalUSrlbGsqn6KxRT9hw=
+
+Name: assets/flags_iso/64/lv.png
+SHA1-Digest: 6wRLxGff+eXgHww/LH4OxbqDshA=
+
+Name: assets/flags_iso/64/si.png
+SHA1-Digest: TqdbXZ8kpXbYcyMwXEN/O3iaJNE=
+
+Name: res/layout/dialog_warn_dont.xml
+SHA1-Digest: viliR8skOdygwnZfaDo1rVnWr7o=
+
+Name: assets/flags_iso/64/dj.png
+SHA1-Digest: c0JNKvNOmmvfM5lhlF8GvvIU578=
+
+Name: res/layout/list_view_item_spinner.xml
+SHA1-Digest: niYMT6a8mpv5rSBfTS14T4AVbuI=
+
+Name: res/layout/list_view_item_log.xml
+SHA1-Digest: w5HWveIf3boF1IhhhQXnT0NUHFU=
+
+Name: assets/flags_iso/64/vc.png
+SHA1-Digest: JXFqsUdWKcTLvQxnul2mrORzAWY=
+
+Name: res/layout/list_view_item_suggestion.xml
+SHA1-Digest: vyom9NDG8y7eGyg/c/utcp/r0+o=
+
+Name: assets/flags_iso/64/re.png
+SHA1-Digest: gzL1Aor/VflMwZ2JI1se2rkrAq8=
+
+Name: assets/flags_iso/64/_Basque Country.png
+SHA1-Digest: z4s0fIEKbE6rnFVOtFA6TXEqW8Q=
+
+Name: assets/flags_iso/64/mn.png
+SHA1-Digest: uuCYKu0VPOf7f8A0hk9JpHiDgmY=
+
+Name: assets/flags_iso/64/_Somaliland.png
+SHA1-Digest: 4Yf0G6DY6o1+5CfxEjWjd3fCW1k=
+
+Name: res/layout/splash_screen.xml
+SHA1-Digest: KeOcVgSq6MLfUGtY6xl/gQZogQo=
+
+Name: assets/flags_iso/64/_NATO.png
+SHA1-Digest: OQCTHDFnBZYFS1vTOYnJkjHpdk8=
+
+Name: assets/flags_iso/64/th.png
+SHA1-Digest: RMo/QHdU3QgvKkvOFj+Txes2TNo=
+
+Name: assets/flags_iso/64/ls.png
+SHA1-Digest: dXsAN/k5Zc/kumpLZ3/vj/9JDNY=
+
+Name: assets/flags_iso/64/vi.png
+SHA1-Digest: lo4Jo72Fs+s3Ec4GXV4m2tM4IHI=
+
+Name: assets/flags_iso/64/ph.png
+SHA1-Digest: LQpSw2r3BDp0dzvLtDX7pJguSjs=
+
+Name: assets/flags_iso/64/de.png
+SHA1-Digest: 0aEfU2BpA0v/2Glfz+6OSKgHwm4=
+
+Name: assets/flags_iso/64/to.png
+SHA1-Digest: bcPtbT9mmJx+PeAmqw0OlLn3q94=
+
+Name: assets/flags_iso/64/et.png
+SHA1-Digest: h9Ejg88pYtIyir+pvawwNMR3Umk=
+
+Name: assets/flags_iso/64/bm.png
+SHA1-Digest: s9bU1pPjL0cmWO6ReEnBMDcquBY=
+
+Name: assets/flags_iso/64/pm.png
+SHA1-Digest: 6VyrPBP9CL6HiAKIi0ABisna6u0=
+
+Name: res/layout/widget_graph_blocked_layout.xml
+SHA1-Digest: +C+tomq80plqd2Rc0/CXw18V1mA=
+
+Name: res/layout/activity_settings_text.xml
+SHA1-Digest: NLasn7oRxv4fkb107M5IA6uzZbc=
+
+Name: assets/flags_iso/64/_Alderney.png
+SHA1-Digest: asRd0ZaOyB2/mY6EPXkWFd6+s8s=
+
+Name: assets/flags_iso/64/ht.png
+SHA1-Digest: fKUWGaVb29GgRJRdVejolkNhDqk=
+
+Name: assets/flags_iso/64/au.png
+SHA1-Digest: 6mR0TzkJXoxA0AMS46WjFHMXnms=
+
+Name: assets/flags_iso/64/at.png
+SHA1-Digest: xxcwZKr46g5dPkNgrZrxboA4dSE=
+
+Name: assets/flags_iso/64/dz.png
+SHA1-Digest: cNvFuFlFCEinfKQUEqUHsKkQgIM=
+
+Name: assets/flags_iso/64/gl.png
+SHA1-Digest: RALUS/49dfRLSVgTcnFSO1sb6oE=
+
+Name: res/layout/fragment_dashboard.xml
+SHA1-Digest: yL8Ivx2chbOzSYJc9ifCaForqwU=
+
+Name: assets/flags_iso/64/dm.png
+SHA1-Digest: lIXHPP0NZ/EubNuKDzSvlcv74cM=
+
+Name: assets/flags_iso/64/kg.png
+SHA1-Digest: z3GWAMnmZXfrftOBi+QP5VxY4SA=
+
+Name: assets/flags_iso/64/cm.png
+SHA1-Digest: oDsBomJ2lIpSC7f3HJQDZJZFWng=
+
+Name: assets/flags_iso/64/qa.png
+SHA1-Digest: RL3GH5n6rG3+t+sVTp26cDbw0lY=
+
+Name: assets/flags_iso/64/vu.png
+SHA1-Digest: 1QtnkZAIdGTpYAARWUYvYU0y1L8=
+
+Name: assets/flags_iso/64/hu.png
+SHA1-Digest: QF+XTZXNXrWIIPCLYp/blpMBVxc=
+
+Name: assets/flags_iso/64/fj.png
+SHA1-Digest: JYGKNCc6Mi5Hw7/1JAgZ8LgsiTM=
+
+Name: assets/flags_iso/64/mr.png
+SHA1-Digest: Aq2dVJdw4TRtxC59Dnvoxii74bI=
+
+Name: res/layout/activity_details_geo.xml
+SHA1-Digest: hNeMkNf63e9ERQp7242vjMaOngQ=
+
+Name: assets/flags_iso/64/st.png
+SHA1-Digest: yGIN2KOmRfzFBlXggAzB6FCYhM0=
+
+Name: assets/flags_iso/64/cy.png
+SHA1-Digest: RUHQkVOiJxPg8WKeT48aZPdLXvw=
+
+Name: assets/flags_iso/64/it.png
+SHA1-Digest: Vt3ljIvpdCTGQ8DPfyGhP/WPQFA=
+
+Name: assets/flags_iso/64/wf.png
+SHA1-Digest: WhnCxOe0Jrr/GZG2JfXfuYr5bv8=
+
+Name: assets/flags_iso/64/_ASEAN.png
+SHA1-Digest: QbLrSaoPTXeU4PfAqUFJpN2S+v0=
+
+Name: assets/flags_iso/64/tv.png
+SHA1-Digest: Dy4W51vUJelKrijHyWBSwiEU0DA=
+
+Name: assets/flags_iso/64/ly.png
+SHA1-Digest: GWt4BZ9N3wdXkVDdq4lwSMaUzxI=
+
+Name: assets/flags_iso/64/ga.png
+SHA1-Digest: FzJs/ThTpz7dfzcGG9RRqmCjuzM=
+
+Name: assets/flags_iso/64/ni.png
+SHA1-Digest: uvmrLOisy9x30wT01JV+BWxhNI8=
+
+Name: assets/flags_iso/64/_African-Union.png
+SHA1-Digest: J76F2PE0kZMaTFk9ifRjK9a51Og=
+
+Name: lib/x86/libaccount3.so
+SHA1-Digest: 1K1wzkhjNzuY1yMMOhWS88g+v0Q=
+
+Name: assets/flags_iso/64/ec.png
+SHA1-Digest: 5W3YgEOokWYSfqHQqmhkV3XMcT8=
+
+Name: assets/flags_iso/64/pk.png
+SHA1-Digest: 46zF+Zb6WYheJMCYMKbZ2IBs5wo=
+
+Name: assets/polipo/www/ad.html
+SHA1-Digest: kmUaNPGGIRAgTqos70T5nlxrLcI=
+
+Name: assets/polipo/cache2
+SHA1-Digest: IcrFQW0Vas7FZPHx9QcXDR8G0Zo=
+
+Name: assets/flags_iso/64/ie.png
+SHA1-Digest: cGtDx6NWhCgaVGQbFVMzMSYEhgc=
+
+Name: assets/flags_iso/64/ar.png
+SHA1-Digest: bWPFcOVtKcoBt6FBMU9IGvI/hco=
+
+Name: assets/flags_iso/64/tt.png
+SHA1-Digest: fjQjuy8+n8eDuKs6KKBYKSnzlDw=
+
+Name: res/layout/widget_onoff_layout.xml
+SHA1-Digest: d6MF8yCCS12MuFrJssozwFoZHVA=
+
+Name: lib/armeabi-v7a/libmaxminddb.so
+SHA1-Digest: iQzLMP9nmANnhs8a0qVrEegiohw=
+
+Name: assets/flags_iso/64/gd.png
+SHA1-Digest: De7xs91ZgjY9Xhi6DVhoVenpzsE=
+
+Name: assets/flags_iso/64/cf.png
+SHA1-Digest: pAvooOcx39QKgqGGHa0aqZsdoH8=
+
+Name: assets/flags_iso/64/an.png
+SHA1-Digest: /fvRQX3wF6/ccMd6SMI1I9HM2jU=
+
+Name: assets/flags_iso/64/_WHO.png
+SHA1-Digest: d5I4dF4ZijOwCiarThKVG2SfneE=
+
+Name: res/layout/list_view_item_suggestion_app.xml
+SHA1-Digest: nWKjKatg8o/Beca/wM5d2SCp91M=
+
+Name: assets/flags_iso/64/_Tristan da Cunha.png
+SHA1-Digest: u581DePW3Gvg006DC2L83sT7Dw8=
+
+Name: assets/flags_iso/64/cu.png
+SHA1-Digest: dsNc5ZfFxStfMj9ZsKE7Mo+kdak=
+
+Name: assets/flags_iso/64/cx.png
+SHA1-Digest: AwDjkM0FjzPumLhE9KgOLWRtuRA=
+
+Name: assets/flags_iso/64/mx.png
+SHA1-Digest: firFyvwi1HoPQJXESlk/few1fWw=
+
+Name: assets/flags_iso/64/nc.png
+SHA1-Digest: WwHZaUWMcqkyqNXj2s/CilITbSY=
+
+Name: assets/worldmap/jquery-jvectormap-world-mill-en.js
+SHA1-Digest: ALQSq+W6TSvl+acxqSd6awanfXI=
+
+Name: assets/flags_iso/64/np.png
+SHA1-Digest: iTLS/wNcETy7Oq0atm9euRNDi6I=
+
+Name: assets/flags_iso/64/il.png
+SHA1-Digest: ahaTZAdelhpW++mlgyCbs2eRLAg=
+
+Name: assets/flags_iso/64/tk.png
+SHA1-Digest: DLGQxZWloLUP8bmRM81nWARuvTk=
+
+Name: res/layout/activity_list_app.xml
+SHA1-Digest: zUYokD/R+6Xv4/wKl5I+AKerxOg=
+
+Name: res/xml/widget_onoff.xml
+SHA1-Digest: JXpJJqZehjNSJ9+kYLTPLPx/eD4=
+
+Name: assets/flags_iso/64/bh.png
+SHA1-Digest: Gi8ePud1T2CdqW5z3NW2+zD037Y=
+
+Name: res/drawable-hdpi/up.png
+SHA1-Digest: DcVcfGUZVzEVCNaX66+p0aOxHcg=
+
+Name: assets/flags_iso/64/bs.png
+SHA1-Digest: UReI0iNwXpKm01FThLYMPuOw2Po=
+
+Name: assets/flags_iso/64/va.png
+SHA1-Digest: IuwgzVbtoYk8VM/mKmpxB48z1n0=
+
+Name: assets/flags_iso/64/ma.png
+SHA1-Digest: nGMCeNJF2t5ko9u8QNRzHl21mwk=
+
+Name: assets/flags_iso/64/bi.png
+SHA1-Digest: QZXr9NSKnAgrMMJN3Wcp9HMRECs=
+
+Name: assets/flags_iso/64/me.png
+SHA1-Digest: ukbVbg38QghFV8zGTv3usPkbXE0=
+
+Name: assets/flags_iso/64/aq.png
+SHA1-Digest: vHqT+mWoAUdWPUCpUs1F977YHlw=
+
+Name: assets/flags_iso/64/fi.png
+SHA1-Digest: bSDKLbSlSR+7Lv48GVbKfFMNhgk=
+
+Name: assets/flags_iso/64/mh.png
+SHA1-Digest: opLeR5hZOcafS/NMirTpF88GEEw=
+
+Name: assets/flags_iso/64/kz.png
+SHA1-Digest: 9iSxGtTP9SsTkn34BVylHNMvB7o=
+
+Name: assets/flags_iso/64/mf.png
+SHA1-Digest: OMtpCDjlV3HihJRlPapYZ/sH7CY=
+
+Name: assets/flags_iso/64/dk.png
+SHA1-Digest: PX0lVW3oyqZBjL8q69dRj6Rp/U4=
+
+Name: assets/flags_iso/64/tl.png
+SHA1-Digest: obKtM+gZ17T0zDUjKAvG4XTi2xg=
+
+Name: assets/flags_iso/64/sy.png
+SHA1-Digest: PUA62boOU/+n9xUi0fe5jjjYlkM=
+
+Name: assets/flags_iso/64/vg.png
+SHA1-Digest: QbY7SXFVFkN+Q9m+bIed+uEzDgU=
+
+Name: assets/flags_iso/64/li.png
+SHA1-Digest: fv38hlS935X6Y76vU5GbCJXII9Q=
+
+Name: assets/flags_iso/64/bd.png
+SHA1-Digest: BoUfd+oAsXcamlMID8R6oHuDOzs=
+
+Name: assets/flags_iso/64/pw.png
+SHA1-Digest: dq5PfwGOtAyfY/GM/wNmTiNru8M=
+
+Name: assets/flags_iso/64/in.png
+SHA1-Digest: 6ToBOmrDyHQeRzCZ1izbw9MFbQY=
+
+Name: res/layout/activity_settings_switch.xml
+SHA1-Digest: 6kcmcoPSbjRkAavKJXcwmNV651I=
+
+Name: assets/flags_iso/64/ug.png
+SHA1-Digest: SXBPu/bY1ZZJ25MFwWA3O0lomyE=
+
+Name: assets/flags_iso/64/mt.png
+SHA1-Digest: Vg7QpQ4MyGwoItawStufQYttog0=
+
+Name: assets/flags_iso/64/mg.png
+SHA1-Digest: ZZtyZHhbHbtMfzBEwT6tJv1kDfU=
+
+Name: assets/flags_iso/64/gq.png
+SHA1-Digest: UClCMJAg3qP/37V2Yrt3BLNc5Iw=
+
+Name: assets/flags_iso/64/gi.png
+SHA1-Digest: b/NcLo9of6dZ8hXMxR0aMDyu6KE=
+
+Name: assets/flags_iso/64/sx.png
+SHA1-Digest: jMQY+5jLctgaov4G0MzKzJ2ojcE=
+
+Name: assets/flags_iso/64/my.png
+SHA1-Digest: SDedIuq2LCDFIlnOqTJI9JvxVow=
+
+Name: assets/flags_iso/64/eg.png
+SHA1-Digest: Q8+xtmyjxpfcjmLxfgYgL4w4jiw=
+
+Name: assets/flags_iso/64/_OECD.png
+SHA1-Digest: btjqyKZ/hti/c1nrDFgZBp+QIjc=
+
+Name: assets/flags_iso/64/_CARICOM.png
+SHA1-Digest: zdDUvXqra+P5jn6RMr/NEV3l4qI=
+
+Name: res/drawable-hdpi/cancel.png
+SHA1-Digest: lGFjf5aVhTvED20t3PyvnOcF8ZU=
+
+Name: res/drawable-xhdpi/country.png
+SHA1-Digest: iGfl6u55K3oxqsKIaSyEIqUcFkw=
+
+Name: res/layout/list_view_item_suggestion_geo.xml
+SHA1-Digest: ZMG9AY1QLdyajPbME5WWxkuQZcc=
+
+Name: assets/worldmap/index.html
+SHA1-Digest: 0Fov76oZkofSF3jeg10AV0vchhM=
+
+Name: assets/flags_iso/64/nf.png
+SHA1-Digest: hchnwV9Xzed192r2KvwZGqOXLMk=
+
+Name: assets/flags_iso/64/gb.png
+SHA1-Digest: b7i/rVRA1QvPXrqNNseF7yoXRtU=
+
+Name: assets/flags_iso/64/nz.png
+SHA1-Digest: clzrNvvK39bBYPXD3fwJ9pcNUwo=
+
+Name: assets/flags_iso/64/im.png
+SHA1-Digest: DEHP96LB0bztxySVwCFC/JgS53w=
+
+Name: assets/flags_iso/64/gu.png
+SHA1-Digest: eprzaUNDrhNn+iT4YPuLJfRbqJs=
+
+Name: assets/flags_iso/64/ag.png
+SHA1-Digest: tWsqocB6UAudGInZbq+p1PdaG1M=
+
+Name: assets/flags_iso/64/lb.png
+SHA1-Digest: MX5ObaB2zaDm7cmb4WTORxozkcM=
+
+Name: res/drawable/widget_onoff_shape.xml
+SHA1-Digest: o3zPLkgH0xrj+3Mp2tqONhgUZCo=
+
+Name: assets/polipo/cache
+SHA1-Digest: gfbsgvQp3cUelDmsrgCDcJ8r49g=
+
+Name: assets/flags_iso/64/cv.png
+SHA1-Digest: JoVhCm7zW9lpAJsPNeI8V1QNqRU=
+
+Name: assets/polipo/www/ad2.html
+SHA1-Digest: sNVZWtPYbpYpUxXeq6KMS/Ug/AQ=
+
+Name: assets/flags_iso/64/ua.png
+SHA1-Digest: Dt14eF5BCNLCWiyHytgRU/q98nE=
+
+Name: assets/flags_iso/64/sj.png
+SHA1-Digest: vwvMzsn4gG3tZUAZamtgKUYO03c=
+
+Name: res/layout/list_view_item_app.xml
+SHA1-Digest: 6bT3Idpn5l8J3+2lcTWvbksNhb4=
+
+Name: assets/flags_iso/64/gp.png
+SHA1-Digest: N549/6GmY40ai4MMnxzRgq4Gl8A=
+
+Name: res/drawable/widget_off.png
+SHA1-Digest: Jhqt5zcg50UXzVUnO8nTYaPT16A=
+
+Name: assets/polipo/www/lnf2.png
+SHA1-Digest: yQaANQ7HqpfolzEx+bgH2s3xYrI=
+
+Name: assets/flags_iso/64/ck.png
+SHA1-Digest: wgszigLo89pIu3s7P+6W/ApQhjQ=
+
+Name: assets/flags_iso/64/do.png
+SHA1-Digest: 3O/47JhXYiVNBtEmfxBdD/9AhJ8=
+
+Name: assets/flags_iso/64/uy.png
+SHA1-Digest: pMXNJYmVNnbdzMpM1n8PT+c3oR4=
+
+Name: assets/flags_iso/64/ws.png
+SHA1-Digest: Jrb3tc1n5hc+c/KHbZbGiDZbHsA=
+
+Name: assets/flags_iso/64/aw.png
+SHA1-Digest: tkzRjDN4sRmDjVceq8zC07a89E0=
+
+Name: assets/flags_iso/64/gn.png
+SHA1-Digest: WR5F7LkfAoM6R+2U6nAR9TeDNOA=
+
+Name: assets/flags_iso/64/ru.png
+SHA1-Digest: Z0E2fPrANS/YRamhs3EsnKlS16g=
+
+Name: assets/flags_iso/64/be.png
+SHA1-Digest: PzKSx+5I+3ZUn0j1w4zvehFoTLg=
+
+Name: res/drawable/vpn_connected.png
+SHA1-Digest: 1JbYRimdFNjT2Olxwo3o+zJJJbg=
+
+Name: assets/flags_iso/64/ao.png
+SHA1-Digest: klo5k5BRVXZG05A9jmQOHouqe6A=
+
+Name: res/layout/activity_list_geo.xml
+SHA1-Digest: RSx/TURrm0LbfOeEqeNwH75cLuw=
+
+Name: assets/flags_iso/64/om.png
+SHA1-Digest: Zb1dQvKkI1/UhGVDLhFfkcTvuzw=
+
+Name: assets/flags_iso/64/id.png
+SHA1-Digest: CyIigS6x1sX11vxNThnGO2D6rmo=
+
+Name: assets/flags_iso/64/sz.png
+SHA1-Digest: sPir+0dRP0BGX0yUl+Gcn1m99EA=
+
+Name: assets/flags_iso/64/na.png
+SHA1-Digest: p9wZ0G7CJpfUZVfmmDkmQR0MIEQ=
+
+Name: assets/flags_iso/64/gf.png
+SHA1-Digest: rq+tAW1RcMLRY1cm3pBP6RRuNvM=
+
+Name: assets/flags_iso/64/ir.png
+SHA1-Digest: f+A4fs/b3jRK/GiXIy1YzB2lHp4=
+
+Name: assets/flags_iso/64/bq.png
+SHA1-Digest: XIvkpt7NpYhs+DbvJRUP9L16sDQ=
+
+Name: lib/x86/libdnscache.so
+SHA1-Digest: eIgrRYtPqCNQKN+nsR2ogi+GP0o=
+
+Name: assets/flags_iso/64/by.png
+SHA1-Digest: 6BtrjOOf4ATMlavsMSmpYWxdOPI=
+
+Name: assets/flags_iso/64/mq.png
+SHA1-Digest: ppLMvNo09EZd6Pv5FkQsjBEFaDY=
+
+Name: lib/armeabi/libaccount3.so
+SHA1-Digest: ZZamzs1B/2x3mcYgC8W16H03pKE=
+
+Name: assets/flags_iso/64/mc.png
+SHA1-Digest: 2Gj1dLzlPS+Fy86y8HBMSPyeGn8=
+
+Name: assets/flags_iso/64/co.png
+SHA1-Digest: vu5DeCe0EQYnqPhv1EOBaPNTSRQ=
+
+Name: assets/flags_iso/64/mm.png
+SHA1-Digest: 4JdXsgHmLJgsb1QtrzBW/1TiEWE=
+
+Name: assets/flags_iso/64/td.png
+SHA1-Digest: DTAFvxkBD3RbHPU1aULnOPDUz4M=
+
+Name: assets/flags_iso/64/_Galicia.png
+SHA1-Digest: 5hNTz+uxakBTHYf6J6+6N8y4RFA=
+
+Name: assets/flags_iso/64/_Red Cross.png
+SHA1-Digest: 5R1bIvruP3tv7beJ5C64qd/0aF8=
+
+Name: assets/flags_iso/64/hk.png
+SHA1-Digest: vR2sisYq+EGCXGLKZPS6Uqkt5jA=
+
+Name: assets/worldmap/jquery-1.8.2.min.js
+SHA1-Digest: YgJrISx5ea4YOI6zCzuoNrsrzds=
+
+Name: assets/flags_iso/64/gs.png
+SHA1-Digest: ytgprXMVIbu6zFik7UAJ35PHYDI=
+
+Name: res/drawable/list_headers.xml
+SHA1-Digest: IOx9YSD8j4NMwQktNWyeopV33f4=
+
+Name: assets/flags_iso/64/sl.png
+SHA1-Digest: ApOQeL9wZiNmh82JArzSOOpXIDI=
+
+Name: assets/flags_iso/64/_Northern Cyprus.png
+SHA1-Digest: 3BWp3e9/mRwsVKJHjiNO4F9YS2A=
+
+Name: assets/flags_iso/64/sc.png
+SHA1-Digest: WpIaX75+aCIPct1afgWvkl5PtlU=
+
+Name: res/layout/list_view_item_geo.xml
+SHA1-Digest: pjHr/QComysrsPbDHweJbD/o/gY=
+
+Name: assets/polipo/www/forbidden.html
+SHA1-Digest: iBuGupgZ0GJ5g5Kr4PBVC4g+E1k=
+
+Name: assets/flags_iso/64/ne.png
+SHA1-Digest: cLd1YNkLFGEMTKiKA1WKtreiDTY=
+
+Name: assets/flags_iso/64/kw.png
+SHA1-Digest: 4rQTsM7M7P84v4pOATchWSW9iwE=
+
+Name: res/layout/list_view_item_short.xml
+SHA1-Digest: 2aussktEhm/WnTrohc+0mHv/KrE=
+
+Name: assets/flags_iso/64/_UNICEF.png
+SHA1-Digest: Vv7DtZBAGcaddXsuOAJ7wL6Q3fA=
+
+Name: assets/flags_iso/64/gt.png
+SHA1-Digest: npeFv3l82y4O+Xx3ZwLumuF6YAc=
+
+Name: assets/flags_iso/64/tn.png
+SHA1-Digest: qpFoX3l0QRdHA3LCsoMsOryNt1s=
+
+Name: assets/flags_iso/64/nu.png
+SHA1-Digest: Hx0Ez9K7WydG5pOYPtwL8cwPuKo=
+
+Name: lib/armeabi-v7a/libaccount3.so
+SHA1-Digest: BtQYfY1sgo252thOixnOpnEY2Uw=
+
+Name: assets/flags_iso/64/tj.png
+SHA1-Digest: Sosgat904DVaacDzJ2YDiTdreKI=
+
+Name: assets/flags_iso/64/_UNESCO.png
+SHA1-Digest: 3UNIUeRP56NX5cqbjvXWnrj1dQ4=
+
+Name: assets/flags_iso/64/mo.png
+SHA1-Digest: LSE+vnHyGbBD67z4Re/KnW5yLCI=
+
+Name: assets/flags_iso/64/sa.png
+SHA1-Digest: yCMtkf9ykh9QFZdLuEef74yrz5k=
+
+Name: assets/flags_iso/64/lr.png
+SHA1-Digest: m/UrSoszoqg0E6QONRm7JnTdKMA=
+
+Name: assets/flags_iso/64/_Arab League.png
+SHA1-Digest: fYryOE0sGcQEcVK5OjkaVBogYu0=
+
+Name: assets/flags_iso/64/ci.png
+SHA1-Digest: w7CMptGv1zQg8ENeiK/T8VBQ8Co=
+
+Name: assets/flags_iso/64/ge.png
+SHA1-Digest: ysvpEVGchciyrs0VeyhNZ71CWDw=
+
+Name: assets/flags_iso/64/_Islamic Conference.png
+SHA1-Digest: Ew/56NwqdUcJc6jisqodF+fY5fc=
+
+Name: assets/flags_iso/64/za.png
+SHA1-Digest: 8dikJisRRueU/oPhLR1B/n/fiBA=
+
+Name: assets/flags_iso/64/kn.png
+SHA1-Digest: xCOAEn6HqlQ9kF2tfO5UmDUuapE=
+
+Name: assets/flags_iso/64/bz.png
+SHA1-Digest: MIZiRCiqjLElJ4pdOeW9r3aMPlM=
+
+Name: res/drawable/widget_onoff_switch_right_shape.xml
+SHA1-Digest: Gz+POW5vpqkHdd1Pk7VZd4+5SRM=
+
+Name: assets/flags_iso/64/no.png
+SHA1-Digest: 7PAe8w1qL06l/PSC6v+sIs3uJ4U=
+
+Name: assets/worldmap/jquery-jvectormap-1.2.2.css
+SHA1-Digest: 72ICiFrtnISDbyh85CbILCk0Ei4=
+
+Name: assets/flags_iso/64/bb.png
+SHA1-Digest: PbJ7iPha/DNaH8v3sz6aTXTMY10=
+
+Name: assets/flags_iso/64/je.png
+SHA1-Digest: yvPz1vPC8MgXnlbiKEAvtDM1xRk=
+
+Name: assets/flags_iso/64/lk.png
+SHA1-Digest: lZEi1f5Zu1DEeMDmSWJ70n1DNGo=
+
+Name: assets/flags_iso/64/jo.png
+SHA1-Digest: ufSbzi77jsNjE8CTyVyy2C6wwP8=
+
+Name: assets/flags_iso/64/_Kosovo.png
+SHA1-Digest: 7MnF1VGzSQlYAgj5/0hEFsiJcrA=
+
+Name: assets/flags_iso/64/ki.png
+SHA1-Digest: oc8ffxe3U93ZvM9e3YP3Fm3h7P4=
+
+Name: assets/flags_iso/64/sb.png
+SHA1-Digest: HeXPcO8NTjGMzYxE6wQIfh93sV0=
+
+Name: res/drawable-hdpi/more.png
+SHA1-Digest: YgAaLiLVSABKpAPcAXR5s7az/VY=
+
+Name: assets/flags_iso/64/pg.png
+SHA1-Digest: gz2yig988aBCSa+YN3wDCZHTk/c=
+
+Name: assets/flags_iso/64/jm.png
+SHA1-Digest: nCd4MxffxC+cJFc5KXGqOcr7Ie0=
+
+Name: assets/flags_iso/64/mz.png
+SHA1-Digest: kezVvUAgU9YJEysOGdzXwO9ocws=
+
+Name: assets/flags_iso/64/jp.png
+SHA1-Digest: cxdlsB3oOHDbmJP9kDhByUjkxUU=
+
+Name: assets/flags_iso/64/cd.png
+SHA1-Digest: zcsSe0thtlBZuW8KFj4stSpvuYo=
+
+Name: assets/flags_iso/64/bn.png
+SHA1-Digest: q3PaE17M+3Uae+0MhW/ETQn/O1M=
+
+Name: assets/flags_iso/64/se.png
+SHA1-Digest: Cq3jyIcNQ66cOC1Rn74yGh8DQ3U=
+
+Name: assets/flags_iso/64/pa.png
+SHA1-Digest: N2dSiFouuTxqDDrHuYnO8nz3hy0=
+
+Name: assets/flags_iso/64/mw.png
+SHA1-Digest: SE7eRt9wTk56Oy7TNr+B98nthw4=
+
+Name: assets/flags_iso/64/ch.png
+SHA1-Digest: vTeRkX6W15UWepPyZKgAGU0a//s=
+
+Name: assets/flags_iso/64/mv.png
+SHA1-Digest: fiJqDrLpXhgBzb1aOzkN5omXzVg=
+
+Name: assets/flags_iso/64/gm.png
+SHA1-Digest: x9mJLweZJlSMZXVSyIAIBu4e90M=
+
+Name: assets/flags_iso/64/kr.png
+SHA1-Digest: OeIJDJuHDUcBMDRqGnowdv/edm0=
+
+Name: assets/flags_iso/64/kh.png
+SHA1-Digest: 3G0sQN8JBd4w3OXoOIqzVLC/Vu4=
+
+Name: assets/flags_iso/64/pl.png
+SHA1-Digest: +GHQz7jt1ecjTA1gwl2dS/L8/7o=
+
+Name: assets/flags_iso/64/tg.png
+SHA1-Digest: BpFBne8L9Rpcr3uY9M2M9okTOqc=
+
+Name: assets/flags_iso/64/tr.png
+SHA1-Digest: 0SLQGiBLNcRgM3EOXF+wAxl6vW8=
+
+Name: lib/armeabi/libdnscache.so
+SHA1-Digest: nF1u6f3NkyoiZ2IEg1OOQIa9800=
+
+Name: assets/flags_iso/64/pe.png
+SHA1-Digest: VMJIXk/vjkamV0jhKwXIILkJCs4=
+
+Name: assets/flags_iso/64/cr.png
+SHA1-Digest: uXSoqf0WICuhgpSpprSeD+XZX14=
+
+Name: assets/flags_iso/64/_England.png
+SHA1-Digest: FB7EVnaSDESzQiuXXY1Z1gKTh1U=
+
+Name: assets/polipo/www/notfound.html
+SHA1-Digest: fxfP1TW19LMqJ7JXQipVRkpw0tE=
+
+Name: res/drawable/suggestion_item.xml
+SHA1-Digest: 7S29QM4bC3kHaTILStxyHbacnH4=
+
+Name: assets/flags_iso/64/fo.png
+SHA1-Digest: 5z9Rgf1yhugt6uosO4Y73e4vbkI=
+
+Name: assets/flags_iso/64/bl.png
+SHA1-Digest: j0jV9ynj+4bNzJWD+gLQELXBt+Q=
+
+Name: lib/x86/libpolipo.so
+SHA1-Digest: jbPWP4z0VEylO+OXzuwfFfyHnbk=
+
+Name: assets/flags_iso/64/ba.png
+SHA1-Digest: IGUDvT8+L+eSSSs6YCbxCrqUMjA=
+
+Name: assets/flags_iso/64/sh.png
+SHA1-Digest: 1Dwnw/wW5ZDkUD8C/ikkxl6P+D4=
+
+Name: assets/flags_iso/64/pt.png
+SHA1-Digest: 7juu/4I26+lLdpaUhf5J1C+fCX4=
+
+Name: assets/flags_iso/64/hm.png
+SHA1-Digest: M/i255KjxKGnQ6DTdE/u4noCihE=
+
+Name: assets/flags_iso/64/bt.png
+SHA1-Digest: 21FbGsA+pm2YTaSwGqEjCoAs460=
+
+Name: manifest
+SHA1-Digest: eQsFnhaj9q1bTPlSAvlsa+lJS9M=
+
+Name: assets/flags_iso/64/zm.png
+SHA1-Digest: KMshOtMALyMXiikXPiOQB5M6Un8=
+
+Name: assets/flags_iso/64/lu.png
+SHA1-Digest: V2gsDtk2j2tH/b1X2bdWor598xU=
+
+Name: lib/armeabi/libpolipo.so
+SHA1-Digest: oWcJs839wEAhqMBojMaLckhbzOE=
+
+Name: assets/flags_iso/64/am.png
+SHA1-Digest: BM4S2h8nGci+FxYivyrSJETJBUg=
+
+Name: resources.arsc
+SHA1-Digest: E6Z5NhSvPLpyP3iGjHwKF41FBWk=
+
+Name: assets/flags_iso/64/yt.png
+SHA1-Digest: N9t8IzjZ4+nKaHv0/V7nVhGZIgw=
+
+Name: assets/flags_iso/64/as.png
+SHA1-Digest: KUQXs7l0AbqmeMZq20BH9gvWGxI=
+
+Name: AndroidManifest.xml
+SHA1-Digest: 6GFmE4xqMcees2bH+faw72YCW2Y=
+
+Name: assets/flags_iso/64/bv.png
+SHA1-Digest: NO5xYIZl30XzuD5X1A3kmgmMUtQ=
+
+Name: assets/flags_iso/64/sk.png
+SHA1-Digest: uxcG36tC9F+F2JF8B119eGe7xGg=
+
+Name: assets/flags_iso/64/fk.png
+SHA1-Digest: Qc9TYW2zLwpv8lhlR0SrxSDECmI=
+
+Name: assets/flags_iso/64/af.png
+SHA1-Digest: Bx1w/M8MeQEVRPzT078EkwkFxDs=
+
+Name: assets/flags_iso/64/rs.png
+SHA1-Digest: B1aHVQPaAhHd/ZBGCG/7q7VQPYQ=
+
+Name: assets/flags_iso/64/ad.png
+SHA1-Digest: nyQxZERqMyLHanl+hhhE7rs5HCU=
+
+Name: assets/flags_iso/64/pf.png
+SHA1-Digest: A1GPvVUSxAEttFKuzU73nR17nYM=
+
+Name: assets/flags_iso/64/ss.png
+SHA1-Digest: AktjlCanqq3LGEFD79FFwpwXty8=
+
+Name: assets/flags_iso/64/ye.png
+SHA1-Digest: CSV6XacP8LBLsa3qSHLj2rW7PP8=
+
+Name: assets/flags_iso/64/cc.png
+SHA1-Digest: F3SxdjujA8XYEvu6VNr2f1cKXKQ=
+
+Name: assets/flags_iso/64/gr.png
+SHA1-Digest: k2dhFUI0BEoeonjCdv8A22u8oaI=
+
+Name: assets/flags_iso/64/bw.png
+SHA1-Digest: pgnK3rVunGn30NHm/xGkPjEvt28=
+
+Name: res/layout/dialog_cloudshark.xml
+SHA1-Digest: 4jtAJ3xg68HnBpFITkgIbTMGb8c=
+
+Name: res/drawable-xhdpi/country_blocked.png
+SHA1-Digest: m7s9Vk+sw+yYBjQmB0YAK0ApQCg=
+
+Name: assets/flags_iso/64/la.png
+SHA1-Digest: blqareuodfHCj2YsTr+044BESvI=
+
+Name: assets/flags_iso/64/um.png
+SHA1-Digest: cRjpVl/jdiYvaOcPii+DPzdaAVE=
+
+Name: classes.dex
+SHA1-Digest: PndujkqzlyfWVPo5bL5oU/2IpBI=
+
+Name: lib/x86/libmaxminddb.so
+SHA1-Digest: fckR9jmb6zanLZ+M6VpS8dzhp6Y=
+
+Name: assets/flags_iso/64/io.png
+SHA1-Digest: VRrvhCusLSMcVjERqB4UJAD99LA=
+
+Name: assets/flags_iso/64/py.png
+SHA1-Digest: ESuaEL2msjRyo0lC/9uWPs8xFU4=
+
+Name: assets/flags_iso/64/fr.png
+SHA1-Digest: W//rV8E9ojrwyZtWCt5TixouOUY=
+
+Name: assets/flags_iso/64/sg.png
+SHA1-Digest: bUOKLww3gRHbPYytFAtV5oj8JhI=
+
+Name: assets/flags_iso/64/_WTO.png
+SHA1-Digest: EjhFQ7XhSD2CiQkNGjzSwCDF/y8=
+
+Name: assets/flags_iso/64/tc.png
+SHA1-Digest: VjiPVFeLeV1jGVAhrQgQT07fI5E=
+
+Name: assets/flags_iso/64/iq.png
+SHA1-Digest: qkcL3UurHYXB7lbZQ9ExHIBlknc=
+
+Name: assets/flags_iso/64/gh.png
+SHA1-Digest: a322UemBriXH3iiIv6NQj+UK2vA=
+
+Name: assets/worldmap/jquery-jvectormap-1.2.2.min.js
+SHA1-Digest: aHDoO84Ti5NZYVQhBtfgdzjZhYE=
+
+Name: assets/flags_iso/64/ro.png
+SHA1-Digest: J+4t7K4k8PF34whe18Nm1ZOCq1k=
+
+Name: assets/flags_iso/64/tz.png
+SHA1-Digest: ccRQDdNlnyTRwK1h88bdqqYKKow=
+
+Name: assets/flags_iso/64/az.png
+SHA1-Digest: Xy89hzB6soChO3F1YuOWs/UpkdY=
+
+Name: assets/flags_iso/64/tw.png
+SHA1-Digest: 3ZPrEWco094WJvNVJ6a94rGxsgE=
+
+Name: assets/flags_iso/64/_FAO.png
+SHA1-Digest: +10WW+eysf9LgiRAoOuEXWrtm0M=
+
+Name: res/drawable/widget_on.png
+SHA1-Digest: C2Vi6IYjDp/IkrGIXwL/pJHtdLg=
+
+Name: assets/flags_iso/64/hn.png
+SHA1-Digest: A1kszpl4VJ/SwAbxgVVSBIq54fk=
+
+Name: assets/flags_iso/64/_IAEA.png
+SHA1-Digest: KCeOt36K2osrj0Q1nV5X+YVhlHA=
+
+Name: assets/polipo/COPYING
+SHA1-Digest: cHbBHIJrJKGHChv1VXwX9s5FyBM=
+
+Name: assets/flags_iso/64/gw.png
+SHA1-Digest: bnt69CzjfRdFoBYZFi846wWXcZY=
+
+Name: assets/flags_iso/64/_European Union.png
+SHA1-Digest: v+htMbq1sdz2xIIaaFR0T0GOBVk=
+
+Name: assets/flags_iso/64/_Olimpic Movement.png
+SHA1-Digest: CE9waJdHYcsKcVttloNAJv11UG8=
+
+Name: res/layout/dialog_office_wifi.xml
+SHA1-Digest: b15ZV8/Nd7efOOTg5gyxDPNzsxU=
+
+Name: res/layout/multiline_spinner_dropdown_item.xml
+SHA1-Digest: 645NHoGAnPxHT9P+5hrwVVQHSwE=
+
+Name: assets/flags_iso/64/bg.png
+SHA1-Digest: ZbRszEnRB3lCssKnR7KC17Ug+b4=
+
+Name: res/layout/dialog_profile_select.xml
+SHA1-Digest: /WkgoocwLjsBTCMruehbCVMyCxY=
+
+Name: assets/flags_iso/64/pr.png
+SHA1-Digest: biBalIguEV3u1Kqj8oijNTid0VM=
+
+Name: assets/flags_iso/64/bj.png
+SHA1-Digest: KmIGQM8xx/giTMf2tudArvss5Go=
+
+Name: res/drawable-hdpi/down.png
+SHA1-Digest: ZUDu24/2ohMinxxUSeg+220NNhE=
+
+Name: assets/flags_iso/64/_Catalonia.png
+SHA1-Digest: HKYu02W2d0Sg4bJU/UdPD8f95dE=
+
+Name: assets/flags_iso/64/sr.png
+SHA1-Digest: eey10zk15e2Q73o3Zkh0LRJztk8=
+
+Name: assets/flags_iso/64/_OPEC.png
+SHA1-Digest: Ii53mR6e2CMOu1HuJtWNWQ/Tj1w=
+
+Name: assets/flags_iso/64/nr.png
+SHA1-Digest: rVevcssT+Geklhx24gqc/Cqt6DI=
+
+Name: assets/flags_iso/64/ae.png
+SHA1-Digest: peDT2gcHV0bK6UzHVkTmd85d2ak=
+
+Name: assets/flags_iso/64/_United-Nations.png
+SHA1-Digest: 8odNhAN0QtkjrudKFBt+ppMBjWY=
+
+Name: assets/flags_iso/64/so.png
+SHA1-Digest: 75PJkzAyRCECxgGG019Cv+K6tGw=
+
+Name: res/drawable/more_shape.xml
+SHA1-Digest: Z4LF8GF1F1Ha1Xrdz7FB4ispZfo=
+
+Name: assets/flags_iso/64/ms.png
+SHA1-Digest: OH2o/pYMQLHNbaU/O/3d0pWj0c4=
+
+Name: assets/flags_iso/64/md.png
+SHA1-Digest: p/e6h/ReM+l+a+8nF/Y8ANJNB94=
+
+Name: assets/flags_iso/64/_OAS.png
+SHA1-Digest: e90aq6LShIkGIJj3hLrZtlsUoEo=
+
+Name: assets/flags_iso/64/nl.png
+SHA1-Digest: b7W6/GBRmYMcVm8l0fJLOGdGnzY=
+
+Name: assets/flags_iso/64/_Quebec.png
+SHA1-Digest: 8v0wDWkRz7wjllerHuMVp/vziQs=
+
+Name: assets/flags_iso/64/sn.png
+SHA1-Digest: r6yQbErELko7HDwtuX8OBGdEwoU=
+
+Name: res/drawable-xhdpi/lnf2.png
+SHA1-Digest: bZhipv0GtVfD+b+yWJEKROoDjWM=
+
+Name: assets/flags_iso/64/sd.png
+SHA1-Digest: 1WNZnEIf8Qvd9Kx7g3wBWd1ajl0=
+
+Name: assets/flags_iso/64/al.png
+SHA1-Digest: hHRTgurzZo5DSqznmYWcMo0VZ6g=
+
+Name: assets/flags_iso/64/ca.png
+SHA1-Digest: NqMzWv4IZXiLEMNQGNz5JAEQSO8=
+
+Name: res/layout/logs.xml
+SHA1-Digest: ZXY/dm9d2Nl2tcJl+Wgtm/8DqlQ=
+
+Name: assets/flags_iso/64/cw.png
+SHA1-Digest: AR5RKrUEoka+edAVuZIC3VZJm1o=
+
+Name: assets/flags_iso/64/cl.png
+SHA1-Digest: euZo8b8BLvJBw+MoCbj+f8VTBlI=
+
+Name: assets/flags_iso/64/er.png
+SHA1-Digest: tnfdh94i+ha2IVhcvYDd8dgdcFQ=
+
+Name: assets/flags_iso/64/_CIS.png
+SHA1-Digest: W0IzNTib4RrB98HSSuT2zmA8up0=
+
+Name: assets/polipo/www/index.html
+SHA1-Digest: GGYmB9DCNyhZNHytaAH+rEEuxag=
+
+Name: assets/flags_iso/64/es.png
+SHA1-Digest: 6gwBd3NaY8PltPBqQEy45PygeRE=
+
+Name: assets/flags_iso/64/gy.png
+SHA1-Digest: y3eWNRezN5FpCdNKUnkbrcQR1vQ=
+
+Name: assets/flags_iso/64/sv.png
+SHA1-Digest: eKo3dnJIHhaDSsrAknkM2SCiVOw=
+
+Name: assets/flags_iso/64/lt.png
+SHA1-Digest: FCcwc3gLzBgtzDas/b1bd3BLSPw=
+
+Name: assets/flags_iso/64/_Northern Ireland.png
+SHA1-Digest: fOjLrb0ziGj0oTBQBQKmH0AJgIU=
+
+Name: assets/flags_iso/64/eh.png
+SHA1-Digest: WRYgMEzanlGMW46JM6+we2wa9xE=
+
+Name: assets/flags_iso/64/_Wales.png
+SHA1-Digest: O17Uz1RInAcRXi4hbLE40nTd2q8=
+
+Name: assets/flags_iso/64/ve.png
+SHA1-Digest: Wd4hRcK3pL7Cz8L7CBiQG5D8r8g=
+
+Name: assets/flags_iso/64/vn.png
+SHA1-Digest: f1gRxOohoY0EdoBjBOItoN5Iqho=
+
+Name: assets/GeoLite2-Country.mmdb
+SHA1-Digest: O1aE+NXDn1lYZBiJSrosGSJpEvU=
+
+Name: res/layout/list_view_item_geo_nocounters.xml
+SHA1-Digest: dpHtXA+XIGqhofJq9Z8AKYSDfY4=
+
+Name: assets/flags_iso/64/cz.png
+SHA1-Digest: xxEGcWopTkTtyvxNk9tfrVyND+A=
+
+Name: assets/flags_iso/64/pn.png
+SHA1-Digest: yWfVXgJySNEs9SGWz6ODC9LkmjM=
+
+Name: assets/flags_iso/64/br.png
+SHA1-Digest: 9wHhFO2K7U0ovhni7cP0pVKyrRM=
+
+Name: assets/flags_iso/64/ax.png
+SHA1-Digest: Tno4guHFjllg4f/YszBH01o9F/w=
+
+Name: assets/flags_iso/64/kp.png
+SHA1-Digest: GO499Roz1k4BgmLNhz4YbQj3dUE=
+
+Name: res/layout/activity_dashboard.xml
+SHA1-Digest: 0Vv6qCcGT6uCgnjPDqXBAV+DTrw=
+
+Name: assets/flags_iso/64/is.png
+SHA1-Digest: d8iRMXMkorqY5H6tzWLYWUBOFYc=
+
+Name: assets/flags_iso/64/_Scotland.png
+SHA1-Digest: fnA9HvqwNR8CvtfKs+MBxBGEt3U=
+
+Name: lib/armeabi-v7a/libpolipo.so
+SHA1-Digest: 6czqxzFWOznYAEl15tkPu3XXUrI=
+
+Name: assets/flags_iso/64/km.png
+SHA1-Digest: P4TosYGO+oq3hC8veeuvPARUs5o=
+
+Name: assets/flags_iso/64/ng.png
+SHA1-Digest: v/cDmxwjZLkaVOcdQA7SQqp52yg=
+
+Name: assets/flags_iso/64/lc.png
+SHA1-Digest: KQ1JLZeHABZWozMAh39YVE8YnCo=
+
+Name: assets/flags_iso/64/cn.png
+SHA1-Digest: VhXERcV9VRy8UH+YHKh8YxQkRQA=
+
+Name: res/layout/activity_tool_sniffer.xml
+SHA1-Digest: kAWe4etV56oSrEKChyGUd9bueoQ=
+
+Name: assets/flags_iso/64/mu.png
+SHA1-Digest: NkAhn5+LcPz673ACzqjiQRwgG5k=
+
+Name: assets/flags_iso/64/bf.png
+SHA1-Digest: 4EqYM3xTqshU8F5tp1zCLyGfco4=
+
+Name: assets/flags_iso/64/uz.png
+SHA1-Digest: wx7pZ65ludzkT76CixkhTDz1LNU=
+
+Name: assets/flags_iso/64/ky.png
+SHA1-Digest: riJFIsqoINt9VPg/aedJ/mPwUTs=
+
+Name: assets/flags_iso/64/sm.png
+SHA1-Digest: LqjpAlpoOS1Ojg3EQ/BUrvv6qts=
+
+Name: assets/flags_iso/64/rw.png
+SHA1-Digest: TW+X/aLWge/7pYAEIYp1VUcRQ5Y=
+
+Name: assets/flags_iso/64/tm.png
+SHA1-Digest: 4H3ScTzxSyLHsVHRQurBap5Ls6c=
+
+Name: assets/flags_iso/64/cg.png
+SHA1-Digest: lY7A36T2EWE7OYDOxTH0P+X5xRg=
+
+Name: assets/flags_iso/64/us.png
+SHA1-Digest: t4w1nz/yxnLjbkPhh1mVf6G8jOo=
+
+Name: assets/flags_iso/64/hr.png
+SHA1-Digest: /vEgRHiX6iNsxFWljbvGlKpBW3k=
+
+Name: assets/flags_iso/64/fm.png
+SHA1-Digest: Wwl+gdZg6fFaSReeGxfUWFOyWNQ=
+
+Name: assets/flags_iso/64/ai.png
+SHA1-Digest: fdmMVgBxfiiOQjeUG/Aruz9+Bfw=
+

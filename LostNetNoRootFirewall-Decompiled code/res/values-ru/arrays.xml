@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="spinner_period">
+        <item>за\n1 день</item>
+        <item>за\n7 дней</item>
+        <item>за\n30(ПРО)</item>
+    </array>
+    <array name="spinner_period_pro">
+        <item>за\n1 день</item>
+        <item>за\n7 дней</item>
+        <item>за\n30 дней</item>
+    </array>
+    <array name="spinner_apps">
+        <item>Все\nприложения</item>
+        <item>Активные\nприложения</item>
+        <item>Скачанные\nприложения</item>
+        <item>Системые\nприложения</item>
+        <item>Разрешен.\nприл.</item>
+        <item>Только WiFi\nприл.</item>
+        <item>Блокиров.\nприл.</item>
+    </array>
+    <array name="spinner_cnts">
+        <item>Все\nРегионы</item>
+        <item>Все\nСтраны</item>
+        <item>Активные\nРегионы</item>
+        <item>Активные\nСтраны</item>
+        <item>Разрешенные\nРегионы</item>
+        <item>Разрешенные\nСтраны</item>
+        <item>Блокированные\nРегионы</item>
+        <item>Блокированные\nСтраны</item>
+    </array>
+    <array name="block_type">
+        <item>Регионы</item>
+        <item>Страны</item>
+    </array>
+</resources>

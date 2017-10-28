@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@id/cloudsharkIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_margin="10sp"
+        android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:text="@string/cloudshark_intro" />
+
+    <EditText
+        android:id="@id/cloudsharkInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_margin="24sp"
+        android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone|time"
+        android:text="" />
+
+    <TextView
+        android:id="@id/cloudsharkKeyIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_margin="10sp"
+        android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:text="@string/cloudshark_key_intro" />
+
+    <EditText
+        android:id="@id/cloudsharkKeyInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_margin="24sp"
+        android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone"
+        android:text="" />
+
+    <CheckBox
+        android:id="@id/cloudsharkHttpsInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_margin="24sp"
+        android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:text="@string/cloudshark_https" />
+</LinearLayout>

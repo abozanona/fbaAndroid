@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/list_view_item_log"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@id/itemWhen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:lineSpacingMultiplier="0.8"
+        android:lines="3"
+        android:paddingLeft="4sp"
+        android:paddingRight="4sp"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@id/itemIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/itemWhen"
+        android:maxWidth="64sp"
+        android:minWidth="64sp"
+        android:paddingLeft="4sp"
+        android:src="@drawable/country" />
+
+    <TextView
+        android:id="@id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="0sp"
+        android:layout_toRightOf="@id/itemIcon"
+        android:paddingLeft="4sp"
+        android:paddingTop="2sp"
+        android:singleLine="true"
+        android:text="Sample App Name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@id/itemComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemName"
+        android:layout_toRightOf="@id/itemIcon"
+        android:minWidth="56sp"
+        android:paddingLeft="4sp"
+        android:paddingRight="4sp"
+        android:text="Blocked 5 requests to 5 countries."
+        android:textSize="12sp" />
+</RelativeLayout>

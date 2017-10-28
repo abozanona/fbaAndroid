@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <xml name="widget_graph_blocked">res/xml/widget_graph_blocked.xml</xml>
+    <xml name="widget_onoff">res/xml/widget_onoff.xml</xml>
+</resources>

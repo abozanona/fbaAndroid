@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@id/snifferIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6sp"
+            android:text="@string/cloudshark_intro" />
+
+        <RadioGroup
+            android:id="@id/snifferRadios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6sp"
+            android:layout_marginRight="6sp"
+            android:layout_marginTop="6sp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@id/snifferRadioAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/cloudshark_all" />
+
+            <RadioButton
+                android:id="@id/snifferRadioApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cloudshark_app" />
+        </RadioGroup>
+
+        <Spinner
+            android:id="@id/snifferSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6sp"
+            android:layout_marginLeft="6sp"
+            android:layout_marginRight="6sp"
+            android:enabled="false" />
+
+        <Button
+            android:id="@id/snifferStartStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6sp"
+            android:text="@string/cloudshark_capture_start" />
+
+        <LinearLayout
+            android:id="@id/snifferResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@id/snifferSeparator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:layout_marginTop="10sp" />
+
+            <TextView
+                android:id="@id/snifferSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6sp"
+                android:layout_marginRight="6sp"
+                android:layout_marginTop="6sp"
+                android:text="@string/cloudshark_captured" />
+
+            <TableLayout
+                android:id="@id/snifferTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6sp">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6sp"
+                        android:text="@string/cloudshark_packets" />
+
+                    <TextView
+                        android:id="@id/snifferCounterPackets"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6sp"
+                        android:text="0" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6sp"
+                        android:text="@string/cloudshark_bytes" />
+
+                    <TextView
+                        android:id="@id/snifferCounterBytes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6sp"
+                        android:text="0" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@id/snifferView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6sp"
+                android:enabled="false"
+                android:text="@string/cloudshark_upload" />
+
+            <Button
+                android:id="@id/snifferConfigure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6sp"
+                android:text="@string/cloudshark_configure" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

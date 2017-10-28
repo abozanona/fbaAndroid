@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@id/dashboardUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="6sp"
+        android:text="@string/button_check_updates"
+        android:textColor="#ff0000"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@id/dashboardButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dashboardUpdate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@id/dashboardTools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6sp"
+            android:layout_weight="1.0"
+            android:enabled="true"
+            android:text="@string/button_tools" />
+
+        <Button
+            android:id="@id/dashboardSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6sp"
+            android:layout_weight="1.0"
+            android:enabled="true"
+            android:text="@string/button_settings" />
+    </LinearLayout>
+
+    <View
+        android:id="@id/dashboardSeparator2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dashboardButtonBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="10sp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@id/dashboardScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/dashboardSeparator2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@id/dashboardSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/switch_protection"
+                android:textOff="@string/switch_off"
+                android:textOn="@string/switch_on"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@id/dashboardSwitchComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/dashboardSwitch"
+                android:layout_marginBottom="10sp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:text="@string/switch_protection_summary"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@id/dashboardAppNGeoFrame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dashboardSwitchComment">
+
+                <ImageView
+                    android:id="@id/dashboardAppNGeoMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginRight="12sp"
+                    android:background="@drawable/more_shape"
+                    android:src="@drawable/more"
+                    android:visibility="gone" />
+
+                <com.androidplot.xy.XYPlot
+                    android:id="@id/dashboardAppNGeoGraph"
+                    androidPlot.domainLabelWidget.labelPaint.textSize="@dimen/domain_label_font_size"
+                    androidPlot.graphWidget.domainLabelPaint.textSize="@dimen/domain_tick_label_font_size"
+                    androidPlot.graphWidget.domainOriginLabelPaint.textSize="@dimen/domain_tick_label_font_size"
+                    androidPlot.graphWidget.marginBottom="4sp"
+                    androidPlot.graphWidget.marginLeft="0sp"
+                    androidPlot.graphWidget.marginRight="12sp"
+                    androidPlot.graphWidget.marginTop="12sp"
+                    androidPlot.graphWidget.rangeLabelPaint.textSize="@dimen/range_tick_label_font_size"
+                    androidPlot.graphWidget.rangeOriginLabelPaint.textSize="@dimen/range_tick_label_font_size"
+                    androidPlot.rangeLabelWidget.labelPaint.textSize="@dimen/range_label_font_size"
+                    androidPlot.titleWidget.labelPaint.textSize="@dimen/title_font_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/dashboardAppNGeoMore"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/dashboardEmptyView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/dashboardAppNGeoFrame"
+                android:visibility="gone">
+
+                <TableLayout
+                    android:id="@id/dashboardTable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/summary_countries" />
+
+                        <TextView
+                            android:id="@id/dashboardCounterCountries"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="4sp"
+                            android:text="0" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/summary_apps" />
+
+                        <TextView
+                            android:id="@id/dashboardCounterApps"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="4sp"
+                            android:text="0" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/summary_apps_wifi" />
+
+                        <TextView
+                            android:id="@id/dashboardCounterAppsWifi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="4sp"
+                            android:text="0" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/summary_apps_background" />
+
+                        <TextView
+                            android:id="@id/dashboardCounterAppsBackground"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="4sp"
+                            android:text="0" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/summary_apps_night" />
+
+                        <TextView
+                            android:id="@id/dashboardCounterAppsNight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="4sp"
+                            android:text="0" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/summary_apps_office" />
+
+                        <TextView
+                            android:id="@id/dashboardCounterAppsOffice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="4sp"
+                            android:text="0" />
+                    </TableRow>
+                </TableLayout>
+
+                <RelativeLayout
+                    android:id="@id/dashboardSharePlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dashboardTable"
+                    android:layout_margin="0sp"
+                    android:padding="0sp">
+
+                    <Button
+                        android:id="@id/dashboardShare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="6sp"
+                        android:text="@string/button_share"
+                        android:visibility="gone" />
+
+                    <View
+                        android:id="@id/dashboardSeparator1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/dashboardShare"
+                        android:layout_marginBottom="10sp"
+                        android:layout_marginTop="10sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@id/dashboardWhy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dashboardSharePlace"
+                    android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:text="@string/banner_suggestions" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@id/dashboardSuggestionsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/dashboardAppNGeoFrame"
+                android:scrollbars="horizontal|vertical" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

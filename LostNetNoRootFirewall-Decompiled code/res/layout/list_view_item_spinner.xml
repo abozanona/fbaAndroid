@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@c0328k/list_view_item_geo" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@c0328k/itemIcon" android:paddingLeft="0sp" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x3002" android:src="@c0327j/country" android:maxWidth="96sp" android:maxHeight="48sp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="20sp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@c0328k/itemName" android:paddingLeft="4sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sample text" android:singleLine="true" android:layout_toRightOf="@c0328k/itemIcon" android:layout_alignTop="@c0328k/itemIcon" android:layout_alignBottom="@c0328k/itemIcon" android:layout_alignParentRight="true" />
+</RelativeLayout>

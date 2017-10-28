@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_period">
+        <item>Usage in\n1 day</item>
+        <item>Usage in\n7 days</item>
+        <item>Usage in\n30(PRO)</item>
+    </string-array>
+    <string-array name="spinner_period_pro">
+        <item>Usage in\n1 day</item>
+        <item>Usage in\n7 days</item>
+        <item>Usage in\n30 days</item>
+    </string-array>
+    <string-array name="spinner_apps">
+        <item>All\nApps</item>
+        <item>Active\nApps</item>
+        <item>Downloaded\nApps</item>
+        <item>System\nApps</item>
+        <item>Allowed\nApps</item>
+        <item>WiFi Only\nApps</item>
+        <item>Blocked\nApps</item>
+    </string-array>
+    <string-array name="spinner_cnts">
+        <item>All\nRegions</item>
+        <item>All\nCountries</item>
+        <item>Active\nRegions</item>
+        <item>Active\nCountries</item>
+        <item>Allowed\nRegions</item>
+        <item>Allowed\nCountries</item>
+        <item>Blocked\nRegions</item>
+        <item>Blocked\nCountries</item>
+    </string-array>
+    <string-array name="block_type">
+        <item>Regions</item>
+        <item>Countries</item>
+    </string-array>
+</resources>

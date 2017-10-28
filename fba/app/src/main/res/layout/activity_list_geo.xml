@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TabHost
+        android:id="@id/geoTabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="0sp"
+        android:padding="0sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/_0x1020011"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@id/geoPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@id/geoList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@id/listHeaderPane"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/list_headers">
+
+                            <Spinner
+                                android:id="@id/listSpinnerCnts"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginBottom="6sp"
+                                android:layout_marginLeft="0sp"
+                                android:layout_marginRight="0sp"
+                                android:layout_marginTop="6sp"
+                                android:entries="@array/spinner_cnts"
+                                android:paddingBottom="6sp"
+                                android:paddingLeft="0sp"
+                                android:paddingRight="0sp"
+                                android:paddingTop="6sp"
+                                android:spinnerMode="dropdown" />
+
+                            <Spinner
+                                android:id="@id/listSpinnerPeriod"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginBottom="6sp"
+                                android:layout_marginLeft="0sp"
+                                android:layout_marginRight="0sp"
+                                android:layout_marginTop="6sp"
+                                android:layout_toRightOf="@id/listSpinnerCnts"
+                                android:entries="@array/spinner_period"
+                                android:paddingBottom="6sp"
+                                android:paddingLeft="0sp"
+                                android:paddingRight="0sp"
+                                android:paddingTop="6sp"
+                                android:spinnerMode="dropdown" />
+
+                            <TextView
+                                android:id="@id/listHeaderBlock"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                                android:lines="2"
+                                android:text="@string/radio_block"
+                                android:textAllCaps="false"
+                                android:textColor="#ff5050"
+                                android:textSize="@dimen/header_text_font_size" />
+
+                            <TextView
+                                android:id="@id/listHeaderAllow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_toLeftOf="@id/listHeaderBlock"
+                                android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                                android:lines="2"
+                                android:text="@string/radio_allow"
+                                android:textAllCaps="false"
+                                android:textColor="#50ff50"
+                                android:textSize="@dimen/header_text_font_size" />
+                        </RelativeLayout>
+
+                        <ListView
+                            android:id="@id/listItems"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/listHeaderPane"
+                            android:padding="0sp" />
+
+                        <TextView
+                            android:id="@id/listPro"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/listHeaderPane"
+                            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                            android:padding="0sp"
+                            android:text="@string/banner_pro_view"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@id/geoMap"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@id/mapHeaderPane"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/list_headers">
+
+                            <Spinner
+                                android:id="@id/mapType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginBottom="0sp"
+                                android:layout_marginLeft="0sp"
+                                android:layout_marginRight="0sp"
+                                android:layout_marginTop="0sp"
+                                android:entries="@array/block_type"
+                                android:paddingBottom="6sp"
+                                android:paddingLeft="0sp"
+                                android:paddingRight="0sp"
+                                android:paddingTop="0sp"
+                                android:spinnerMode="dropdown" />
+
+                            <TextView
+                                android:id="@id/mapHeaderBlock"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="12sp"
+                                android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                                android:lines="2"
+                                android:text="@string/radio_block"
+                                android:textAllCaps="false"
+                                android:textColor="#ff5050"
+                                android:textSize="@dimen/header_text_font_size" />
+
+                            <TextView
+                                android:id="@id/mapHeaderAllow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_toLeftOf="@id/mapHeaderBlock"
+                                android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                                android:lines="2"
+                                android:text="@string/radio_allow"
+                                android:textAllCaps="false"
+                                android:textColor="#50ff50"
+                                android:textSize="@dimen/header_text_font_size" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@id/mapEntriesHolder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/mapHeaderPane" />
+
+                        <Button
+                            android:id="@id/buttonShare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                            android:text="@string/button_share_map"
+                            android:visibility="gone" />
+
+                        <WebView
+                            android:id="@id/webViewCountries"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@id/buttonShare"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/mapEntriesHolder"
+                            android:layout_margin="4sp" />
+                    </RelativeLayout>
+                </android.support.v4.view.ViewPager>
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@+id/_0x1020013"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="0.0" />
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@*android:style/Theme.Holo" android:versionCode="10" android:versionName="1.7.2" android:installLocation="auto" package="com.lostnet.fw.free">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <application android:theme="@*android:style/Theme.Holo" android:label="@c0330m/app_name" android:icon="@c0327j/lnf2" android:name="com.lostnet.fw.FirewallApplication" android:testOnly="false" android:allowBackup="true">
+        <receiver android:label="@c0330m/widget_onoff" android:icon="@c0327j/lnf2" android:name="com.lostnet.fw.widget.WidgetOnOffProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.lostnet.fw.widget.WidgetOnOffProvider.REFRESH" />
+                <action android:name="com.lostnet.fw.widget.WidgetOnOffProvider.ACTION_ON" />
+                <action android:name="com.lostnet.fw.widget.WidgetOnOffProvider.ACTION_OFF" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_onoff" />
+        </receiver>
+        <receiver android:name="com.lostnet.fw.ui.StatusChangeReceiver">
+            <intent-filter>
+                <action android:name="com.lostnet.fw.ui.StatusChangeReceiver.CHANGE" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.analytics.tracking.android.CampaignTrackingService" />
+        <receiver android:name="com.google.analytics.tracking.android.CampaignTrackingReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.lostnet.fw.FirewallVpnService" android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+        <service android:name="com.lostnet.fw.FirewallManagerService" android:enabled="true" />
+        <activity android:theme="@*android:style/Theme.NoDisplay" android:name="com.lostnet.fw.FirewallVPNStart" android:visible="false" />
+        <receiver android:name="com.lostnet.fw.AutostartReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.lostnet.fw.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@*android:style/Theme.Black.NoTitleBar" android:label="@c0330m/app_name" android:name="com.lostnet.fw.ui.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@c0330m/title_activity_dashboard" android:name="com.lostnet.fw.ui.DashboardActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo" android:label="@c0330m/title_activity_details_app" android:name="com.lostnet.fw.ui.DetailsAppActivity" android:parentActivityName="com.lostnet.fw.ui.DashboardActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lostnet.fw.ui.DashboardActivity" />
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo" android:label="@c0330m/title_activity_details_geo" android:name="com.lostnet.fw.ui.DetailsGeoActivity" android:parentActivityName="com.lostnet.fw.ui.DashboardActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lostnet.fw.ui.DashboardActivity" />
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo" android:label="@c0330m/title_activity_tools" android:name="com.lostnet.fw.ui.ToolsActivity" android:parentActivityName="com.lostnet.fw.ui.DashboardActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lostnet.fw.ui.DashboardActivity" />
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo" android:label="@c0330m/tool_sniffer_title" android:name="com.lostnet.fw.ui.ToolSnifferActivity" android:parentActivityName="com.lostnet.fw.ui.ToolsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lostnet.fw.ui.ToolsActivity" />
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo" android:label="@c0330m/title_activity_settings" android:name="com.lostnet.fw.ui.SettingsActivity" android:parentActivityName="com.lostnet.fw.ui.DashboardActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lostnet.fw.ui.DashboardActivity" />
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo" android:label="@c0330m/profile_select_title" android:name="com.lostnet.fw.ui.ProfileSelectActivity" android:parentActivityName="com.lostnet.fw.ui.SettingsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lostnet.fw.ui.SettingsActivity" />
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo" android:label="@c0330m/title_activity_logs" android:name="com.lostnet.fw.ui.LogsActivity" android:parentActivityName="com.lostnet.fw.ui.DashboardActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lostnet.fw.ui.DashboardActivity" />
+        </activity>
+        <activity android:theme="@*android:style/Theme.Black.NoTitleBar" android:label="@c0330m/title_activity_settings" android:name="com.lostnet.fw.ui.ImportActivity" />
+        <activity android:theme="@*android:style/Theme.Black.NoTitleBar" android:label="@c0330m/title_activity_settings" android:name="com.lostnet.fw.ui.UninstallActivity" />
+        <activity android:theme="@*android:style/Theme.Black.NoTitleBar" android:label="@c0330m/title_activity_settings" android:name="com.lostnet.fw.ui.RestartActivity" />
+        <activity android:theme="@*android:style/Theme.NoDisplay" android:name="com.lostnet.fw.FirewallVPNStop" android:visible="false" />
+    </application>
+</manifest>

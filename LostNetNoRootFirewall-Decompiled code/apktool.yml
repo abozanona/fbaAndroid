@@ -1,0 +1,24 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: LostNetNoRootFirewall_v1.7.2_apkpure.com.apk
+compressionType: false
+doNotCompress:
+- arsc
+- html
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '14'
+  targetSdkVersion: '17'
+sharedLibrary: false
+unknownFiles:
+  manifest: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.2.3
+versionInfo:
+  versionCode: '10'
+  versionName: 1.7.2
