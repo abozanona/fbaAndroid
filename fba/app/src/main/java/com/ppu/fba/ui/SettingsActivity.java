@@ -18,7 +18,7 @@ import android.widget.TextView;
 import com.ppu.fba.free.R;
 import com.ppu.fba.FirewallApplication;
 import com.ppu.fba.p009d.C0316m;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 
 public class SettingsActivity extends Activity {
     RelativeLayout f1514a;
@@ -156,11 +156,9 @@ public class SettingsActivity extends Activity {
 
     public void onStart() {
         super.onStart();
-        C0318o.m2030a((Activity) this);
     }
 
     public void onStop() {
         super.onStop();
-        C0318o.m2032b(this);
     }
 }

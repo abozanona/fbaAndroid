@@ -9,7 +9,7 @@ import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.C0288a;
 import com.ppu.fba.FirewallApplication;
 import com.ppu.fba.FirewallManagerService;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 
 class er implements OnCheckedChangeListener {
     final /* synthetic */ SettingsActivity f1833a;
@@ -33,6 +33,6 @@ class er implements OnCheckedChangeListener {
                 a.m1863a(new C0288a(1, new es(this)));
             }
         }
-        C0318o.m2031a(MapBuilder.createEvent("settings", "switch", "data_caching", null).build());
+        Log1.LogAction(("settings", "switch", "data_caching", null));
     }
 }

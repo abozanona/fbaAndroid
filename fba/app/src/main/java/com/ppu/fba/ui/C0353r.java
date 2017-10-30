@@ -8,7 +8,7 @@ import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.p007b.C0292d;
 import com.ppu.fba.p007b.C0294f;
 import com.ppu.fba.p009d.C0309f;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 import java.util.Iterator;
 
 class C0353r implements OnClickListener {
@@ -40,6 +40,6 @@ class C0353r implements OnClickListener {
             }
             a.m1863a(new C0288a(5));
         }
-        C0318o.m2031a(MapBuilder.createEvent("detGeo", "buttonBlock", this.f1894b, null).build());
+        Log1.LogAction(("detGeo", "buttonBlock", this.f1894b, null));
     }
 }

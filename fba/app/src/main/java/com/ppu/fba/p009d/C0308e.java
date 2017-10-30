@@ -10,7 +10,6 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build.VERSION;
-import com.google.analytics.tracking.android.HitTypes;
 import com.ppu.fba.FirewallApplication;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -349,7 +348,7 @@ public class C0308e {
         PackageManager packageManager = a.getPackageManager();
         try {
             try {
-                drawable = a.createPackageContext(str, 2).getResources().getDrawable(packageManager.getPackageInfo(str, 0).applicationInfo.icon);
+                drawable = a.createPackageContext(str, Context.CONTEXT_IGNORE_SECURITY).getResources().getDrawable(packageManager.getPackageInfo(str, 0).applicationInfo.icon);
                 if (drawable != null) {
                     return drawable;
                 }
@@ -359,7 +358,7 @@ public class C0308e {
         }
         drawable = null;
         try {
-            drawable = packageManager.getApplicationInfo(str, 128).loadIcon(packageManager);
+            drawable = packageManager.getApplicationInfo(str, PackageManager.GET_META_DATA).loadIcon(packageManager);
         } catch (NameNotFoundException e3) {
         }
         return drawable == null ? packageManager.getDefaultActivityIcon() : drawable;
@@ -389,7 +388,7 @@ public class C0308e {
             f1400g.add(Integer.valueOf(i));
             return str;
         } catch (Exception e) {
-            return HitTypes.EXCEPTION;
+            return "exception";
         }
     }
 
@@ -473,7 +472,7 @@ public class C0308e {
         r8 = 0;
         r0 = com.google.analytics.tracking.android.MapBuilder.createEvent(r1, r2, r0, r8);
         r0 = r0.build();
-        com.ppu.fba.p009d.C0318o.m2031a(r0);
+        com.ppu.fba.p009d.Log1.LogAction(r0);
         goto L_0x0057;
     L_0x009d:
         r0 = move-exception;
@@ -677,7 +676,7 @@ public class C0308e {
         r3 = 0;
         r0 = com.google.analytics.tracking.android.MapBuilder.createTiming(r2, r0, r1, r3);
         r0 = r0.build();
-        com.ppu.fba.p009d.C0318o.m2031a(r0);
+        com.ppu.fba.p009d.Log1.LogAction(r0);
         goto L_0x001f;
     L_0x0233:
         r2 = move-exception;

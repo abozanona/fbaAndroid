@@ -10,7 +10,7 @@ import com.ppu.fba.p004a.C0284b;
 import com.ppu.fba.p004a.C0285c;
 import com.ppu.fba.p004a.C0286d;
 import com.ppu.fba.p007b.C0292d;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 
 class az implements OnClickListener {
     final /* synthetic */ aw f1634a;
@@ -35,7 +35,7 @@ class az implements OnClickListener {
             a.m1863a(new C0288a(5));
         }
         C0285c.m1913a(new C0285c(C0284b.COUNTRY, this.f1637d, C0286d.BLOCK));
-        C0318o.m2031a(MapBuilder.createEvent("suggCnts", "buttonBlock", this.f1638e, null).build());
+        Log1.LogAction(("suggCnts", "buttonBlock", this.f1638e, null));
         this.f1634a.f1623a.m2057c(this.f1636c);
     }
 }

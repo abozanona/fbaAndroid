@@ -6,7 +6,7 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.FirewallApplication;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 
 class et implements OnCheckedChangeListener {
     final /* synthetic */ SettingsActivity f1835a;
@@ -19,6 +19,6 @@ class et implements OnCheckedChangeListener {
         Editor edit = PreferenceManager.getDefaultSharedPreferences(FirewallApplication.m1851a()).edit();
         edit.putBoolean("notifications_on", z);
         edit.apply();
-        C0318o.m2031a(MapBuilder.createEvent("settings", "switch", "notifications", null).build());
+        Log1.LogAction(("settings", "switch", "notifications", null));
     }
 }

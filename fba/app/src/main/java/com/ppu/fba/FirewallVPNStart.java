@@ -4,8 +4,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.VpnService;
 import com.google.analytics.tracking.android.MapBuilder;
-import com.ppu.fba.p009d.C0315l;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
+import com.ppu.fba.p009d.Log1;
 
 public class FirewallVPNStart extends Activity {
     public static FirewallVPNStart f1314a = null;
@@ -16,14 +16,14 @@ public class FirewallVPNStart extends Activity {
     }
 
     protected void onActivityResult(int i, int i2, Intent intent) {
-        C0315l.m2018a("FWVPNStart", "onActivityResult");
+        Log1.LogF1("FWVPNStart", "onActivityResult");
         f1314a = null;
         if (i2 != 0) {
-            C0315l.m2018a("FWVPNStart", "onActivityResult: OK");
+            Log1.LogF1("FWVPNStart", "onActivityResult: OK");
             startService(new Intent(FirewallApplication.m1851a(), FirewallVpnService.class));
         } else {
-            C0315l.m2018a("FWVPNStart", "onActivityResult: NOT OK: " + i2);
-            C0318o.m2031a(MapBuilder.createEvent("state", "vpnFail", "notOk", null).build());
+            Log1.LogF1("FWVPNStart", "onActivityResult: NOT OK: " + i2);
+            Log1.LogAction("state", "vpnFail", "notOk", null);
             FirewallManagerService a = FirewallManagerService.m1852a(null);
             if (a != null) {
                 a.m1863a(new C0288a(2));
@@ -32,7 +32,7 @@ public class FirewallVPNStart extends Activity {
             intent2.setFlags(268435456);
             startActivity(intent2);
         }
-        C0315l.m2018a("FWVPNStart", "onActivityResult: end");
+        Log1.LogF1("FWVPNStart", "onActivityResult: end");
         if (this.f1315b != null) {
             synchronized (this.f1315b) {
                 this.f1315b.notifyAll();
@@ -44,23 +44,23 @@ public class FirewallVPNStart extends Activity {
 
     public void onStart() {
         super.onStart();
-        C0315l.m2018a("FWVPNStart", "onStart");
+        Log1.LogF1("FWVPNStart", "onStart");
         f1314a = this;
         this.f1315b = getIntent().getStringExtra("waiter");
         if (this.f1315b != null) {
             synchronized (this.f1315b) {
                 Intent prepare = VpnService.prepare(this);
                 if (prepare != null) {
-                    C0315l.m2018a("FWVPNStart", "about to launch VPN");
+                    Log1.LogF1("FWVPNStart", "about to launch VPN");
                     startActivityForResult(prepare, 0);
                 } else {
-                    C0315l.m2018a("FWVPNStart", "calling onActivityResult manually");
+                    Log1.LogF1("FWVPNStart", "calling onActivityResult manually");
                     onActivityResult(0, -1, null);
                 }
             }
         } else {
             finish();
         }
-        C0315l.m2018a("FWVPNStart", "onStart: end");
+        Log1.LogF1("FWVPNStart", "onStart: end");
     }
 }

@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.preference.PreferenceManager;
-import com.ppu.fba.p009d.C0315l;
+import com.ppu.fba.p009d.Log1;
 
 public class NetworkChangeReceiver extends BroadcastReceiver {
     private static boolean f1325a = false;
@@ -20,7 +20,7 @@ public class NetworkChangeReceiver extends BroadcastReceiver {
         } catch (Exception e) {
             i = 0;
         }
-        C0315l.m2018a("ConnReceiver", "onReceive");
+        Log1.LogF1("ConnReceiver", "onReceive");
         if (!f1325a) {
             SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(FirewallApplication.m1851a());
             boolean z2 = defaultSharedPreferences.getBoolean("status_on", false);

@@ -13,7 +13,7 @@ import android.widget.RadioGroup;
 import com.ppu.fba.free.R;
 import com.ppu.fba.p009d.C0316m;
 import com.ppu.fba.p009d.C0317n;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 
 public class ProfileSelectActivity extends Activity {
     SharedPreferences f1492a;
@@ -100,12 +100,10 @@ public class ProfileSelectActivity extends Activity {
         if (C0317n.m2024a() == null) {
             finish();
         } else {
-            C0318o.m2030a((Activity) this);
         }
     }
 
     public void onStop() {
         super.onStop();
-        C0318o.m2032b(this);
     }
 }

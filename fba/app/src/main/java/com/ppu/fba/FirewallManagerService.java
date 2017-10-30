@@ -30,7 +30,7 @@ import com.ppu.fba.p009d.C0309f;
 import com.ppu.fba.p009d.C0310g;
 import com.ppu.fba.p009d.C0311h;
 import com.ppu.fba.p009d.C0313j;
-import com.ppu.fba.p009d.C0315l;
+import com.ppu.fba.p009d.Log1;
 import com.ppu.fba.p009d.C0316m;
 import com.ppu.fba.p009d.C0317n;
 import com.ppu.fba.ui.LogsActivity;
@@ -65,9 +65,9 @@ public class FirewallManagerService extends Service implements Runnable {
     public Date f1313x = new Date();
 
     public FirewallManagerService() {
-        C0315l.m2018a("FWManagerService", "DCManagerService");
+        Log1.LogF1("FWManagerService", "DCManagerService");
         if (f1291j != null) {
-            C0315l.m2018a("FWManagerService", "DOUBLE INITIALIZATION");
+            Log1.LogF1("FWManagerService", "DOUBLE INITIALIZATION");
         }
         f1291j = this;
         this.f1294c = new C0291c();
@@ -78,7 +78,7 @@ public class FirewallManagerService extends Service implements Runnable {
         FirewallManagerService firewallManagerService;
         synchronized (FirewallManagerService.class) {
             if (f1291j == null && context != null) {
-                C0315l.m2018a("FWManagerService", "getInstance: new");
+                Log1.LogF1("FWManagerService", "getInstance: new");
                 context.startService(new Intent(FirewallApplication.m1851a(), FirewallManagerService.class));
             }
             firewallManagerService = f1291j;
@@ -87,7 +87,7 @@ public class FirewallManagerService extends Service implements Runnable {
     }
 
     private void m1853a() {
-        C0315l.m2018a("FWManagerService", "cmdVpnUp");
+        Log1.LogF1("FWManagerService", "cmdVpnUp");
         this.f1298g = true;
         this.f1299h = new Date();
         String str = "do not wait";
@@ -109,7 +109,7 @@ public class FirewallManagerService extends Service implements Runnable {
     }
 
     private void m1854a(String str) {
-        C0315l.m2018a("FWManagerService", "cmdAlert: " + str);
+        Log1.LogF1("FWManagerService", "cmdAlert: " + str);
         if ("com.ppu.fba.free".equals(getResources().getString(R.string.package_name)) || !C0313j.m2004a((Context) this) || PreferenceManager.getDefaultSharedPreferences(FirewallApplication.m1851a()).getBoolean("notifications_on", true)) {
             C0310g.m1989b(this);
             Context applicationContext = getApplicationContext();
@@ -125,7 +125,7 @@ public class FirewallManagerService extends Service implements Runnable {
     }
 
     private void m1856b() {
-        C0315l.m2018a("FWManagerService", "cmdVpnDown");
+        Log1.LogF1("FWManagerService", "cmdVpnDown");
         this.f1298g = false;
         FirewallVpnService a = FirewallVpnService.m1864a();
         if (a != null) {
@@ -137,7 +137,7 @@ public class FirewallManagerService extends Service implements Runnable {
     }
 
     private void m1857c() {
-        C0315l.m2018a("FWManagerService", "cmdNetworkChange");
+        Log1.LogF1("FWManagerService", "cmdNetworkChange");
         boolean z = this.f1302m;
         boolean z2 = this.f1303n;
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -168,17 +168,17 @@ public class FirewallManagerService extends Service implements Runnable {
         if (!(z == this.f1302m && z2 == this.f1303n)) {
             m1859e();
         }
-        C0315l.m2018a("FWManagerService", "cmdNetworkChange: end");
+        Log1.LogF1("FWManagerService", "cmdNetworkChange: end");
     }
 
     private void m1858d() {
-        C0315l.m2018a("FWManagerService", "cmdUpdateApps");
+        Log1.LogF1("FWManagerService", "cmdUpdateApps");
         this.f1294c.m1925a(this);
-        C0315l.m2018a("FWManagerService", "cmdUpdateApps: end");
+        Log1.LogF1("FWManagerService", "cmdUpdateApps: end");
     }
 
     private void m1859e() {
-        C0315l.m2018a("FWManagerService", "cmdPolicySet");
+        Log1.LogF1("FWManagerService", "cmdPolicySet");
         int c = ((int) (C0296a.m1930c() / 60000)) % 86400;
         int i = this.f1308s + (this.f1307r * 60);
         int i2 = this.f1310u + (this.f1309t * 60);
@@ -238,13 +238,13 @@ public class FirewallManagerService extends Service implements Runnable {
         if (string != null) {
             C0317n.m2025b(string);
         }
-        C0315l.m2018a("FWManagerService", "cmdPolicySet: end");
+        Log1.LogF1("FWManagerService", "cmdPolicySet: end");
     }
 
     private void m1860f() {
-        C0315l.m2018a("FWManagerService", "cmdPolicyFeedback");
+        Log1.LogF1("FWManagerService", "cmdPolicyFeedback");
         NativeWrapper.jni_dickp();
-        C0315l.m2018a("FWManagerService", "cmdPolicyFeedback: end");
+        Log1.LogF1("FWManagerService", "cmdPolicyFeedback: end");
     }
 
     private void m1861g() {
@@ -255,9 +255,9 @@ public class FirewallManagerService extends Service implements Runnable {
                 if (a != null && (a instanceof C0290b)) {
                     this.f1294c.f1366a = (C0290b) a;
                 } else if (a != null) {
-                    C0315l.m2018a("FWManagerService", "WRONG TYPE OF APPCOLLECTION: " + a.getClass().getCanonicalName());
+                    Log1.LogF1("FWManagerService", "WRONG TYPE OF APPCOLLECTION: " + a.getClass().getCanonicalName());
                 } else {
-                    C0315l.m2018a("FWManagerService", "NO APPCOLLECTION");
+                    Log1.LogF1("FWManagerService", "NO APPCOLLECTION");
                 }
                 this.f1294c.m1925a(this);
             }
@@ -269,9 +269,9 @@ public class FirewallManagerService extends Service implements Runnable {
                 if (a != null && (a instanceof C0293e)) {
                     this.f1295d.f1370a = (C0293e) a;
                 } else if (a != null) {
-                    C0315l.m2018a("FWManagerService", "WRONG TYPE OF CNTCOLLECTION: " + a.getClass().getCanonicalName());
+                    Log1.LogF1("FWManagerService", "WRONG TYPE OF CNTCOLLECTION: " + a.getClass().getCanonicalName());
                 } else {
-                    C0315l.m2018a("FWManagerService", "NO CNTCOLLECTION");
+                    Log1.LogF1("FWManagerService", "NO CNTCOLLECTION");
                 }
                 this.f1295d.m1927a(this);
             }
@@ -280,7 +280,7 @@ public class FirewallManagerService extends Service implements Runnable {
     }
 
     private void m1862h() {
-        C0315l.m2018a("FWManagerService", "cmdPolicyLoad");
+        Log1.LogF1("FWManagerService", "cmdPolicyLoad");
         synchronized (this.f1294c) {
             synchronized (this.f1295d) {
                 String string = C0316m.m2021b().getString("currentProfile", null);
@@ -296,7 +296,7 @@ public class FirewallManagerService extends Service implements Runnable {
     }
 
     public void m1863a(C0288a c0288a) {
-        C0315l.m2018a("FWManagerService", "queue");
+        Log1.LogF1("FWManagerService", "queue");
         if (this.f1301l != null) {
             synchronized (this.f1301l) {
                 synchronized (this.f1293b) {
@@ -305,15 +305,15 @@ public class FirewallManagerService extends Service implements Runnable {
                 this.f1301l.notifyAll();
             }
         } else {
-            C0315l.m2018a("FWManagerService", "queue: the thread is not there");
+            Log1.LogF1("FWManagerService", "queue: the thread is not there");
         }
-        C0315l.m2018a("FWManagerService", "queue: end");
+        Log1.LogF1("FWManagerService", "queue: end");
     }
 
     public void enlargeyourtinypenis(int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8, int i9, int i10) {
-        C0315l.m2018a("FWManagerService", "policyReportCnt: " + i);
+        Log1.LogF1("FWManagerService", "policyReportCnt: " + i);
         if (this.f1292a) {
-            C0315l.m2018a("FWManagerService", "policyReport " + i2 + ":" + i3 + " " + i4 + ":" + i5 + " " + i6);
+            Log1.LogF1("FWManagerService", "policyReport " + i2 + ":" + i3 + " " + i4 + ":" + i5 + " " + i6);
             BigInteger add = BigInteger.valueOf((long) i3).shiftLeft(31).add(BigInteger.valueOf((long) i2));
             BigInteger add2 = BigInteger.valueOf((long) i5).shiftLeft(31).add(BigInteger.valueOf((long) i4));
             synchronized (this.f1295d.f1370a) {
@@ -359,9 +359,9 @@ public class FirewallManagerService extends Service implements Runnable {
     }
 
     public void lickmyass(int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8, int i9, int i10, int i11) {
-        C0315l.m2018a("FWManagerService", "policyReportAppCnt: " + i + " " + i2);
+        Log1.LogF1("FWManagerService", "policyReportAppCnt: " + i + " " + i2);
         if (this.f1292a) {
-            C0315l.m2018a("FWManagerService", "policyReport " + i3 + ":" + i4 + " " + i5 + ":" + i6 + " " + i7 + "/" + i8 + " " + i9 + "+" + i10 + " " + i11);
+            Log1.LogF1("FWManagerService", "policyReport " + i3 + ":" + i4 + " " + i5 + ":" + i6 + " " + i7 + "/" + i8 + " " + i9 + "+" + i10 + " " + i11);
             BigInteger add = BigInteger.valueOf((long) i4).shiftLeft(31).add(BigInteger.valueOf((long) i3));
             BigInteger add2 = BigInteger.valueOf((long) i6).shiftLeft(31).add(BigInteger.valueOf((long) i5));
             Long valueOf = Long.valueOf(C0296a.m1929b());
@@ -376,7 +376,7 @@ public class FirewallManagerService extends Service implements Runnable {
     }
 
     public IBinder onBind(Intent intent) {
-        C0315l.m2018a("FWManagerService", "onBind");
+        Log1.LogF1("FWManagerService", "onBind");
         return null;
     }
 
@@ -388,7 +388,7 @@ public class FirewallManagerService extends Service implements Runnable {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        C0315l.m2019b("FWManagerService", "onDestroy");
+        Log1.LogF1("FWManagerService", "onDestroy");
         this.f1292a = false;
     }
 
@@ -401,7 +401,7 @@ public class FirewallManagerService extends Service implements Runnable {
         r1 = 0;
         r0 = "FWManagerService";
         r3 = "onStartCommand";
-        com.ppu.fba.p009d.C0315l.m2018a(r0, r3);
+        com.ppu.fba.p009d.Log1.LogF1(r0, r3);
         r3 = f1290i;
         monitor-enter(r3);
         r0 = r7.f1292a;	 Catch:{ all -> 0x00eb }
@@ -409,7 +409,7 @@ public class FirewallManagerService extends Service implements Runnable {
     L_0x0010:
         r0 = "FWManagerService";
         r2 = "onStartCommand: DOUBLE START!!!";
-        com.ppu.fba.p009d.C0315l.m2018a(r0, r2);	 Catch:{ all -> 0x00eb }
+        com.ppu.fba.p009d.Log1.LogF1(r0, r2);	 Catch:{ all -> 0x00eb }
         monitor-exit(r3);	 Catch:{ all -> 0x00eb }
         r0 = r1;
     L_0x0019:
@@ -504,7 +504,7 @@ public class FirewallManagerService extends Service implements Runnable {
         r7.m1863a(r0);
         r0 = "FWManagerService";
         r1 = "onStartCommand: end";
-        com.ppu.fba.p009d.C0315l.m2018a(r0, r1);
+        com.ppu.fba.p009d.Log1.LogF1(r0, r1);
         r0 = r2;
         goto L_0x0019;
     L_0x00eb:
@@ -528,7 +528,7 @@ public class FirewallManagerService extends Service implements Runnable {
         r2 = 0;
         r0 = "FWManagerService";
         r1 = "run";
-        com.ppu.fba.p009d.C0315l.m2018a(r0, r1);
+        com.ppu.fba.p009d.Log1.LogF1(r0, r1);
         r0 = new com.ppu.fba.c;
         r1 = new com.ppu.fba.b;
         r1.<init>(r10);
@@ -595,7 +595,7 @@ public class FirewallManagerService extends Service implements Runnable {
         r6 = java.lang.Long.valueOf(r6);	 Catch:{ all -> 0x00dd }
         r0 = com.google.analytics.tracking.android.MapBuilder.createEvent(r0, r1, r5, r6);	 Catch:{ all -> 0x00dd }
         r0 = r0.build();	 Catch:{ all -> 0x00dd }
-        com.ppu.fba.p009d.C0318o.m2031a(r0);	 Catch:{ all -> 0x00dd }
+        com.ppu.fba.p009d.Log1.LogAction(r0);	 Catch:{ all -> 0x00dd }
     L_0x0090:
         r0 = r10.f1293b;	 Catch:{ all -> 0x00dd }
         r1 = new com.ppu.fba.a;	 Catch:{ all -> 0x00dd }
@@ -612,7 +612,7 @@ public class FirewallManagerService extends Service implements Runnable {
         r5 = r5.append(r6);	 Catch:{ all -> 0x00dd }
         r4 = r5.append(r4);	 Catch:{ all -> 0x00dd }
         r4 = r4.toString();	 Catch:{ all -> 0x00dd }
-        com.ppu.fba.p009d.C0315l.m2018a(r0, r4);	 Catch:{ all -> 0x00dd }
+        com.ppu.fba.p009d.Log1.LogF1(r0, r4);	 Catch:{ all -> 0x00dd }
     L_0x00b9:
         r0 = r10.f1300k;	 Catch:{ all -> 0x00dd }
         if (r0 == 0) goto L_0x0118;
@@ -631,7 +631,7 @@ public class FirewallManagerService extends Service implements Runnable {
     L_0x00cf:
         r0 = "FWManagerService";
         r1 = "run: end";
-        com.ppu.fba.p009d.C0315l.m2018a(r0, r1);
+        com.ppu.fba.p009d.Log1.LogF1(r0, r1);
         com.ppu.fba.NativeWrapper.jni_dickc();
         return;
     L_0x00da:
@@ -668,7 +668,7 @@ public class FirewallManagerService extends Service implements Runnable {
         r1.<init>(r0);	 Catch:{ all -> 0x00dd }
         r0 = "ServiceThread";
         r4 = "triggering ON";
-        com.ppu.fba.p009d.C0315l.m2018a(r0, r4);	 Catch:{ all -> 0x00dd }
+        com.ppu.fba.p009d.Log1.LogF1(r0, r4);	 Catch:{ all -> 0x00dd }
         goto L_0x00b9;
     L_0x0115:
         r1 = r0;
@@ -677,7 +677,7 @@ public class FirewallManagerService extends Service implements Runnable {
         monitor-exit(r3);	 Catch:{ all -> 0x00dd }
         r0 = "FWManagerService";
         r3 = "run: item";
-        com.ppu.fba.p009d.C0315l.m2018a(r0, r3);	 Catch:{ InterruptedException -> 0x00e0 }
+        com.ppu.fba.p009d.Log1.LogF1(r0, r3);	 Catch:{ InterruptedException -> 0x00e0 }
         r0 = r1.m1916a();	 Catch:{ InterruptedException -> 0x00e0 }
         switch(r0) {
             case 1: goto L_0x0137;
@@ -711,7 +711,7 @@ public class FirewallManagerService extends Service implements Runnable {
     L_0x0147:
         r0 = "FWManagerService";
         r3 = "run: skipping ON: there is already an OFF";
-        com.ppu.fba.p009d.C0315l.m2018a(r0, r3);	 Catch:{ InterruptedException -> 0x00e0 }
+        com.ppu.fba.p009d.Log1.LogF1(r0, r3);	 Catch:{ InterruptedException -> 0x00e0 }
         r0 = r10.f1293b;	 Catch:{ InterruptedException -> 0x00e0 }
         r0.poll();	 Catch:{ InterruptedException -> 0x00e0 }
         r0 = r1;
@@ -805,9 +805,9 @@ public class FirewallManagerService extends Service implements Runnable {
     }
 
     public void suckmydick(int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8, int i9, int i10) {
-        C0315l.m2018a("FWManagerService", "policyReportApp: " + i);
+        Log1.LogF1("FWManagerService", "policyReportApp: " + i);
         if (this.f1292a) {
-            C0315l.m2018a("FWManagerService", "policyReport " + i2 + ":" + i3 + " " + i4 + ":" + i5 + " " + i6 + "/" + i7 + " " + i8 + "+" + i9 + " " + i10);
+            Log1.LogF1("FWManagerService", "policyReport " + i2 + ":" + i3 + " " + i4 + ":" + i5 + " " + i6 + "/" + i7 + " " + i8 + "+" + i9 + " " + i10);
             BigInteger add = BigInteger.valueOf((long) i3).shiftLeft(31).add(BigInteger.valueOf((long) i2));
             BigInteger add2 = BigInteger.valueOf((long) i5).shiftLeft(31).add(BigInteger.valueOf((long) i4));
             synchronized (this.f1294c) {
@@ -829,7 +829,7 @@ public class FirewallManagerService extends Service implements Runnable {
     }
 
     public void whodidnotfuckyourwife() {
-        C0315l.m2018a("FWManagerService", "policyTrigger");
+        Log1.LogF1("FWManagerService", "policyTrigger");
         if (this.f1292a) {
             m1863a(new C0288a(8));
         }

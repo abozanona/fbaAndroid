@@ -4,7 +4,7 @@ import android.os.AsyncTask;
 import android.preference.PreferenceManager;
 import android.widget.Switch;
 import com.ppu.fba.FirewallApplication;
-import com.ppu.fba.p009d.C0315l;
+import com.ppu.fba.p009d.Log1;
 
 class ew extends AsyncTask {
     final /* synthetic */ Switch f1838a;
@@ -31,7 +31,7 @@ class ew extends AsyncTask {
             } else {
                 this.f1838a.setChecked(false);
             }
-            C0315l.m2018a("StatusChangeReceiver", "onReceieve: done");
+            Log1.LogF1("StatusChangeReceiver", "onReceieve: done");
         }
     }
 

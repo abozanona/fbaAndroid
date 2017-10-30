@@ -7,7 +7,7 @@ import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.C0288a;
 import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.p007b.C0289a;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 
 class ak implements OnClickListener {
     final /* synthetic */ ai f1584a;
@@ -31,6 +31,6 @@ class ak implements OnClickListener {
             a.f1294c.f1366a.put(this.f1587d, this.f1585b);
             a.m1863a(new C0288a(5));
         }
-        C0318o.m2031a(MapBuilder.createEvent("listApps", "clickWiFi", this.f1588e, null).build());
+        Log1.LogAction(("listApps", "clickWiFi", this.f1588e, null));
     }
 }

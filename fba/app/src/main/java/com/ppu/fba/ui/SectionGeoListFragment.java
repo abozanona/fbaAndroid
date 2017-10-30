@@ -532,7 +532,7 @@ public class SectionGeoListFragment extends cd {
     L_0x0222:
         r0 = "SectionGeoListFragment";
         r1 = "NO MANAGER !!!!";
-        com.ppu.fba.p009d.C0315l.m2018a(r0, r1);
+        com.ppu.fba.p009d.Log1.LogF1(r0, r1);
         r0 = 0;
         goto L_0x0221;
     L_0x022b:
@@ -845,7 +845,7 @@ public class SectionGeoListFragment extends cd {
     L_0x01fa:
         r1 = "SectionGeoListFragment";
         r2 = "NO MANAGER !!!!";
-        com.ppu.fba.p009d.C0315l.m2018a(r1, r2);
+        com.ppu.fba.p009d.Log1.LogF1(r1, r2);
         goto L_0x01f9;
         */
         throw new UnsupportedOperationException("Method not decompiled: com.ppu.fba.ui.SectionGeoListFragment.e(android.content.Context):android.widget.ListAdapter");

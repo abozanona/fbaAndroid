@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.free.R;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -61,6 +61,6 @@ class dz implements OnClickListener {
         } catch (Exception e) {
         }
         createBitmap.recycle();
-        C0318o.m2031a(MapBuilder.createEvent("buttons", "shareMap", "attempt", null).build());
+        Log1.LogAction(("buttons", "shareMap", "attempt", null));
     }
 }

@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import com.google.analytics.tracking.android.MapBuilder;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 
 class aa implements OnClickListener {
     final /* synthetic */ C0361z f1556a;
@@ -24,6 +24,6 @@ class aa implements OnClickListener {
         Intent intent = new Intent(this.f1557b, DetailsAppActivity.class);
         intent.putExtra("id", this.f1558c);
         this.f1556a.f1909a.startActivity(intent);
-        C0318o.m2031a(MapBuilder.createEvent("listCntApps", "click", this.f1559d, null).build());
+        Log1.LogAction(("listCntApps", "click", this.f1559d, null));
     }
 }

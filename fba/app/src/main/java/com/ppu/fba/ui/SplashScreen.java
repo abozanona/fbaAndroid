@@ -18,9 +18,9 @@ import com.ppu.fba.p008c.C0296a;
 import com.ppu.fba.p009d.C0310g;
 import com.ppu.fba.p009d.C0311h;
 import com.ppu.fba.p009d.C0313j;
-import com.ppu.fba.p009d.C0315l;
+import com.ppu.fba.p009d.Log1;
 import com.ppu.fba.p009d.C0316m;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 
 public class SplashScreen extends ck {
     int f1530a = 1;
@@ -33,9 +33,9 @@ public class SplashScreen extends ck {
             String stringExtra = intent.getStringExtra("lf");
             if (stringExtra != null) {
                 if (stringExtra.equals("wgb")) {
-                    C0318o.m2031a(MapBuilder.createEvent("widget", "gb", "la", null).build());
+                    Log1.LogAction(("widget", "gb", "la", null));
                 } else if (stringExtra.equals("notif")) {
-                    C0318o.m2031a(MapBuilder.createEvent("notif", "click", null, null).build());
+                    Log1.LogAction(("notif", "click", null, null));
                     this.f1530a = 2;
                 }
             }
@@ -66,7 +66,6 @@ public class SplashScreen extends ck {
             intent.setFlags(536870912);
             startActivityForResult(intent, 17);
         } else if (C0313j.m2005a("com.ppu.fba.pro")) {
-            C0318o.m2029a();
             startActivityForResult(new Intent(this, UninstallActivity.class), 17);
         } else {
             onActivityResult(17, -1, null);
@@ -80,9 +79,9 @@ public class SplashScreen extends ck {
             finish();
         } else {
             new Handler().postDelayed(new cc(this), ContainerOpener.DEFAULT_TIMEOUT_IN_MILLIS);
-            C0315l.m2018a("SplashScreen", "before geoip_load\n");
+            Log1.LogF1("SplashScreen", "before geoip_load\n");
             NativeWrapper.jni_dickf(getFilesDir().getPath() + "/" + "GeoLite2-Country.mmdb");
-            C0315l.m2018a("SplashScreen", "after geoip_load\n");
+            Log1.LogF1("SplashScreen", "after geoip_load\n");
             SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(FirewallApplication.m1851a());
             Editor edit = defaultSharedPreferences.edit();
             boolean z = defaultSharedPreferences.getBoolean("ad_blocking_on", true);
@@ -123,12 +122,10 @@ public class SplashScreen extends ck {
 
     public void onStart() {
         super.onStart();
-        C0318o.m2030a((Activity) this);
         mo752a();
     }
 
     public void onStop() {
         super.onStop();
-        C0318o.m2032b(this);
     }
 }

@@ -23,7 +23,7 @@ import com.ppu.fba.p007b.C0291c;
 import com.ppu.fba.p007b.C0292d;
 import com.ppu.fba.p007b.C0294f;
 import com.ppu.fba.p009d.C0313j;
-import com.ppu.fba.p009d.C0315l;
+import com.ppu.fba.p009d.Log1;
 import java.util.ArrayList;
 
 public class ao extends cd {
@@ -75,7 +75,7 @@ public class ao extends cd {
 
     public ListAdapter mo750a(Context context) {
         ArrayList arrayList = null;
-        C0315l.m2018a("SectionDashboard", "updateSync");
+        Log1.LogF1("SectionDashboard", "updateSync");
         FirewallManagerService a = FirewallManagerService.m1852a(null);
         if (a != null) {
             arrayList = C0287e.m1914a(context, a.f1294c, a.f1295d);
@@ -89,7 +89,7 @@ public class ao extends cd {
     public synchronized void mo751a(ListAdapter listAdapter) {
         int i = 0;
         synchronized (this) {
-            C0315l.m2018a("SectionDashboard", "updateSyncUI");
+            Log1.LogF1("SectionDashboard", "updateSyncUI");
             if (!(this.R == null || listAdapter == null)) {
                 if (f1602P.isEnabled()) {
                     f1602P.setChecked(PreferenceManager.getDefaultSharedPreferences(FirewallApplication.m1851a()).getBoolean("status_on", true));

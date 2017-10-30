@@ -395,7 +395,7 @@ public class ad extends cd {
     L_0x023b:
         r0 = "SectionAppsListFragment";
         r1 = "NO MANAGER !!!!";
-        com.ppu.fba.p009d.C0315l.m2018a(r0, r1);
+        com.ppu.fba.p009d.Log1.LogF1(r0, r1);
         r0 = 0;
         goto L_0x023a;
         */

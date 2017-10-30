@@ -16,8 +16,8 @@ import com.ppu.fba.C0288a;
 import com.ppu.fba.FirewallApplication;
 import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.free.R;
-import com.ppu.fba.p009d.C0315l;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
+import com.ppu.fba.p009d.Log1;
 
 public class WidgetOnOffProvider extends AppWidgetProvider {
     public void onReceive(Context context, Intent intent) {
@@ -25,16 +25,16 @@ public class WidgetOnOffProvider extends AppWidgetProvider {
         int[] appWidgetIds;
         Intent intent2;
         if (intent.getAction().equals("com.ppu.fba.widget.WidgetOnOffProvider.REFRESH")) {
-            C0315l.m2018a("WidgetOnOffProvider", "REFRESH");
+            Log1.LogF1("WidgetOnOffProvider", "REFRESH");
             a = FirewallApplication.m1851a();
             appWidgetIds = AppWidgetManager.getInstance(a).getAppWidgetIds(new ComponentName(a, WidgetOnOffProvider.class));
             intent2 = new Intent(a, WidgetOnOffProvider.class);
             intent2.setAction("android.appwidget.action.APPWIDGET_UPDATE");
             intent2.putExtra("appWidgetIds", appWidgetIds);
-            C0315l.m2018a("WidgetOnOffProvider", "REFRESH: end");
+            Log1.LogF1("WidgetOnOffProvider", "REFRESH: end");
             super.onReceive(context, intent2);
         } else if (intent.getAction().equals("com.ppu.fba.widget.WidgetOnOffProvider.ACTION_ON")) {
-            C0315l.m2018a("WidgetOnOffProvider", "ACTION_ON");
+            Log1.LogF1("WidgetOnOffProvider", "ACTION_ON");
             a = FirewallApplication.m1851a();
             appWidgetIds = intent.getIntArrayExtra("appWidgetIds");
             //todo abozanona
@@ -42,7 +42,7 @@ public class WidgetOnOffProvider extends AppWidgetProvider {
             r2 = PreferenceManager.getDefaultSharedPreferences(a).edit();
             r2.putBoolean("status_on", true);
             r2.commit();
-            C0318o.m2031a(MapBuilder.createEvent("widget", "onoff", "on", null).build());
+            Log1.LogAction(("widget", "onoff", "on", null));
             FirewallManagerService r22;
             r22 = FirewallManagerService.m1852a(a);
             if (r22 != null) {
@@ -51,10 +51,10 @@ public class WidgetOnOffProvider extends AppWidgetProvider {
             intent2 = new Intent(a, WidgetOnOffProvider.class);
             intent2.setAction("android.appwidget.action.APPWIDGET_UPDATE");
             intent2.putExtra("appWidgetIds", appWidgetIds);
-            C0315l.m2018a("WidgetOnOffProvider", "ACTION_ON: end");
+            Log1.LogF1("WidgetOnOffProvider", "ACTION_ON: end");
             super.onReceive(context, intent2);
         } else if (intent.getAction().equals("com.ppu.fba.widget.WidgetOnOffProvider.ACTION_OFF")) {
-            C0315l.m2018a("WidgetOnOffProvider", "ACTION_OFF");
+            Log1.LogF1("WidgetOnOffProvider", "ACTION_OFF");
             a = FirewallApplication.m1851a();
             appWidgetIds = intent.getIntArrayExtra("appWidgetIds");
             //todo abozanona
@@ -62,7 +62,7 @@ public class WidgetOnOffProvider extends AppWidgetProvider {
             r2 = PreferenceManager.getDefaultSharedPreferences(a).edit();
             r2.putBoolean("status_on", false);
             r2.commit();
-            C0318o.m2031a(MapBuilder.createEvent("widget", "onoff", "off", null).build());
+            Log1.LogAction(("widget", "onoff", "off", null));
             FirewallManagerService r22;
             r22 = FirewallManagerService.m1852a(a);
             if (r22 != null) {
@@ -71,10 +71,10 @@ public class WidgetOnOffProvider extends AppWidgetProvider {
             intent2 = new Intent(a, WidgetOnOffProvider.class);
             intent2.setAction("android.appwidget.action.APPWIDGET_UPDATE");
             intent2.putExtra("appWidgetIds", appWidgetIds);
-            C0315l.m2018a("WidgetOnOffProvider", "ACTION_OFF: end");
+            Log1.LogF1("WidgetOnOffProvider", "ACTION_OFF: end");
             super.onReceive(context, intent2);
         } else {
-            C0315l.m2018a("WidgetOnOffProvider", "update");
+            Log1.LogF1("WidgetOnOffProvider", "update");
             super.onReceive(context, intent);
         }
     }

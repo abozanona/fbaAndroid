@@ -7,7 +7,7 @@ import android.os.Bundle;
 import com.ppu.fba.free.R;
 import com.ppu.fba.free.R;
 import com.ppu.fba.p009d.C0310g;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 
 public class UninstallActivity extends Activity {
     AlertDialog f1553a;
@@ -19,7 +19,6 @@ public class UninstallActivity extends Activity {
 
     public void onStart() {
         super.onStart();
-        C0318o.m2030a((Activity) this);
         C0310g.m1992d();
         Builder builder = new Builder(this);
         builder.setTitle(R.string.uninstall_title);
@@ -33,6 +32,5 @@ public class UninstallActivity extends Activity {
 
     public void onStop() {
         super.onStop();
-        C0318o.m2032b(this);
     }
 }

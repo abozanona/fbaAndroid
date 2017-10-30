@@ -9,7 +9,7 @@ import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.p007b.C0292d;
 import com.ppu.fba.p007b.C0294f;
 import com.ppu.fba.p009d.C0309f;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -67,7 +67,7 @@ class el implements OnCheckedChangeListener {
                 } else {
                     str = "Allow";
                 }
-                C0318o.m2031a(MapBuilder.createEvent("listCnts", "click" + str, (this.f1820d ? "R:" : "C:") + this.f1821e, null).build());
+                Log1.LogAction(("listCnts", "click" + str, (this.f1820d ? "R:" : "C:") + this.f1821e, null));
                 BaseAdapter baseAdapter = (BaseAdapter) this.f1817a.R.getAdapter();
                 if (baseAdapter != null) {
                     baseAdapter.notifyDataSetChanged();

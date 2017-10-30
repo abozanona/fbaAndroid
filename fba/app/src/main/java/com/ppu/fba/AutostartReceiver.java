@@ -8,15 +8,14 @@ import android.preference.PreferenceManager;
 import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.free.R;
 import com.ppu.fba.p009d.C0313j;
-import com.ppu.fba.p009d.C0315l;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 
 public class AutostartReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         Context a = FirewallApplication.m1851a();
         Resources resources = a.getResources();
-        C0315l.m2018a("Autostart", "started");
-        C0318o.m2031a(MapBuilder.createEvent("state", "autoStart", null, null).build());
+        Log1.LogF1("Autostart", "started");
+        Log1.LogAction(("state", "autoStart", null, null));
         if (!("com.ppu.fba.free".equals(resources.getString(R.string.package_name)) && C0313j.m2005a("com.ppu.fba.pro")) && PreferenceManager.getDefaultSharedPreferences(a).getBoolean("status_on", false)) {
             FirewallManagerService a2 = FirewallManagerService.m1852a(a);
             if (a2 != null) {

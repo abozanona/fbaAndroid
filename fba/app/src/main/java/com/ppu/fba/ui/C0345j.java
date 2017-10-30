@@ -6,7 +6,7 @@ import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.C0288a;
 import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.p007b.C0289a;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 
 class C0345j implements OnClickListener {
     final /* synthetic */ DetailsAppActivity f1875a;
@@ -28,6 +28,6 @@ class C0345j implements OnClickListener {
         this.f1875a.f1465m.setEnabled(false);
         this.f1875a.f1466n.setEnabled(false);
         this.f1875a.f1467o.setEnabled(false);
-        C0318o.m2031a(MapBuilder.createEvent("detApps", "buttonBlock", this.f1877c, null).build());
+        Log1.LogAction(("detApps", "buttonBlock", this.f1877c, null));
     }
 }

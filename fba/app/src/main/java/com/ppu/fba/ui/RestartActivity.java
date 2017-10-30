@@ -6,7 +6,7 @@ import android.app.AlertDialog.Builder;
 import android.os.Bundle;
 
 import com.ppu.fba.free.R;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 
 public class RestartActivity extends Activity {
     AlertDialog f1502a;
@@ -18,7 +18,6 @@ public class RestartActivity extends Activity {
 
     public void onStart() {
         super.onStart();
-        C0318o.m2030a((Activity) this);
         Builder builder = new Builder(this);
         builder.setTitle(R.string.app_name);
         builder.setMessage(R.string.restart_message);
@@ -32,6 +31,5 @@ public class RestartActivity extends Activity {
 
     public void onStop() {
         super.onStop();
-        C0318o.m2032b(this);
     }
 }

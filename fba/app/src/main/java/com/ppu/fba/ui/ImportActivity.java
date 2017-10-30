@@ -8,7 +8,7 @@ import com.ppu.fba.free.R;
 import com.ppu.fba.free.R;
 import com.ppu.fba.p009d.C0310g;
 import com.ppu.fba.p009d.C0313j;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 
 public class ImportActivity extends Activity {
     AlertDialog f1480a;
@@ -20,7 +20,6 @@ public class ImportActivity extends Activity {
 
     public void onStart() {
         super.onStart();
-        C0318o.m2030a((Activity) this);
         C0310g.m1992d();
         if (C0313j.m2005a("com.ppu.fba.free")) {
             Builder builder = new Builder(this);
@@ -39,6 +38,5 @@ public class ImportActivity extends Activity {
 
     public void onStop() {
         super.onStop();
-        C0318o.m2032b(this);
     }
 }

@@ -68,12 +68,12 @@ public class C0311h {
                     fileInputStream = fileInputStream2;
                     exception = exception2;
                     try {
-                        C0315l.m2018a("readObjectFromFile", exception.getClass().getCanonicalName());
+                        Log1.LogF1("readObjectFromFile", exception.getClass().getCanonicalName());
                         message = exception.getMessage();
                         if (message != null) {
-                            C0315l.m2018a("readObjectFromFile", message);
+                            Log1.LogF1("readObjectFromFile", message);
                         }
-                        C0318o.m2031a(MapBuilder.createEvent("error", "read", exception.getClass().getCanonicalName(), null).build());
+                        Log1.LogAction(("error", "read", exception.getClass().getCanonicalName(), null));
                         exception.printStackTrace();
                         if (objectInputStream2 != null) {
                             try {
@@ -130,12 +130,12 @@ public class C0311h {
                 FileInputStream fileInputStream3 = fileInputStream2;
                 exception = e12;
                 fileInputStream = fileInputStream3;
-                C0315l.m2018a("readObjectFromFile", exception.getClass().getCanonicalName());
+                Log1.LogF1("readObjectFromFile", exception.getClass().getCanonicalName());
                 message = exception.getMessage();
                 if (message != null) {
-                    C0315l.m2018a("readObjectFromFile", message);
+                    Log1.LogF1("readObjectFromFile", message);
                 }
-                C0318o.m2031a(MapBuilder.createEvent("error", "read", exception.getClass().getCanonicalName(), null).build());
+                Log1.LogAction(("error", "read", exception.getClass().getCanonicalName(), null));
                 exception.printStackTrace();
                 if (objectInputStream2 != null) {
                     objectInputStream2.close();
@@ -170,12 +170,12 @@ public class C0311h {
             exception = e14;
             fileInputStream = inputStream2;
             objectInputStream2 = inputStream2;
-            C0315l.m2018a("readObjectFromFile", exception.getClass().getCanonicalName());
+            Log1.LogF1("readObjectFromFile", exception.getClass().getCanonicalName());
             message = exception.getMessage();
             if (message != null) {
-                C0315l.m2018a("readObjectFromFile", message);
+                Log1.LogF1("readObjectFromFile", message);
             }
-            C0318o.m2031a(MapBuilder.createEvent("error", "read", exception.getClass().getCanonicalName(), null).build());
+            Log1.LogAction(("error", "read", exception.getClass().getCanonicalName(), null));
             exception.printStackTrace();
             if (objectInputStream2 != null) {
                 objectInputStream2.close();
@@ -243,7 +243,7 @@ public class C0311h {
                     outputStream = fileOutputStream2;
                     objectOutputStream = objectOutputStream2;
                     try {
-                        C0318o.m2031a(MapBuilder.createEvent("error", "write", e.getClass().getCanonicalName(), null).build());
+                        Log1.LogAction(("error", "write", e.getClass().getCanonicalName(), null));
                         if (objectOutputStream != null) {
                             try {
                                 objectOutputStream.flush();
@@ -298,7 +298,7 @@ public class C0311h {
                 outputStream2 = fileOutputStream2;
                 objectOutputStream = null;
                 outputStream = outputStream2;
-                C0318o.m2031a(MapBuilder.createEvent("error", "write", e.getClass().getCanonicalName(), null).build());
+                Log1.LogAction(("error", "write", e.getClass().getCanonicalName(), null));
                 if (objectOutputStream != null) {
                     objectOutputStream.flush();
                     objectOutputStream.close();
@@ -327,7 +327,7 @@ public class C0311h {
         } catch (Exception e10) {
             e = e10;
             objectOutputStream = null;
-            C0318o.m2031a(MapBuilder.createEvent("error", "write", e.getClass().getCanonicalName(), null).build());
+            Log1.LogAction(("error", "write", e.getClass().getCanonicalName(), null));
             if (objectOutputStream != null) {
                 objectOutputStream.flush();
                 objectOutputStream.close();
@@ -421,7 +421,7 @@ public class C0311h {
                         fileOutputStream.close();
                         open.close();
                     } catch (Exception e2) {
-                        C0318o.m2031a(MapBuilder.createEvent("error", "pers", e2.getClass().getCanonicalName(), null).build());
+                        Log1.LogAction(("error", "pers", e2.getClass().getCanonicalName(), null));
                     }
                 }
             }

@@ -18,8 +18,8 @@ import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.free.R;
 import com.ppu.fba.p009d.C0308e;
 import com.ppu.fba.p009d.C0309f;
-import com.ppu.fba.p009d.C0315l;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
+import com.ppu.fba.p009d.Log1;
 import com.ppu.fba.ui.LogsActivity;
 import java.util.List;
 
@@ -37,11 +37,11 @@ public class FirewallVpnService extends VpnService {
 
     public FirewallVpnService() {
         if (f1316b != null) {
-            C0315l.m2018a("DCVpnService", "DCVpnService: DOUBLE INITIALIZATION!!!");
+            Log1.LogF1("DCVpnService", "DCVpnService: DOUBLE INITIALIZATION!!!");
             return;
         }
         f1316b = this;
-        C0315l.m2018a("DCVpnService", "DCVpnService");
+        Log1.LogF1("DCVpnService", "DCVpnService");
     }
 
     public static FirewallVpnService m1864a() {
@@ -57,14 +57,14 @@ public class FirewallVpnService extends VpnService {
         r1 = 1;
         r0 = "DCVpnService";
         r3 = "startVPN";
-        com.ppu.fba.p009d.C0315l.m2018a(r0, r3);
+        com.ppu.fba.p009d.Log1.LogF1(r0, r3);
         monitor-enter(r10);
         r0 = r10.f1317a;	 Catch:{ all -> 0x0065 }
         if (r0 == 0) goto L_0x0017;
     L_0x000e:
         r0 = "DCVpnService";
         r1 = "startVPN: already started";
-        com.ppu.fba.p009d.C0315l.m2018a(r0, r1);	 Catch:{ all -> 0x0065 }
+        com.ppu.fba.p009d.Log1.LogF1(r0, r1);	 Catch:{ all -> 0x0065 }
         monitor-exit(r10);	 Catch:{ all -> 0x0065 }
     L_0x0016:
         return;
@@ -74,7 +74,7 @@ public class FirewallVpnService extends VpnService {
         monitor-exit(r10);	 Catch:{ all -> 0x0065 }
         r0 = "DCVpnService";
         r3 = "startVPN: about to build";
-        com.ppu.fba.p009d.C0315l.m2018a(r0, r3);
+        com.ppu.fba.p009d.Log1.LogF1(r0, r3);
         r0 = com.ppu.fba.FirewallApplication.m1851a();
         r0 = android.preference.PreferenceManager.getDefaultSharedPreferences(r0);
         r3 = "data_caching_on";
@@ -109,7 +109,7 @@ public class FirewallVpnService extends VpnService {
         r10.f1317a = r2;
         r0 = "DCVpnService";
         r1 = "builder failed: stopSelf() now";
-        com.ppu.fba.p009d.C0315l.m2018a(r0, r1);
+        com.ppu.fba.p009d.Log1.LogF1(r0, r1);
         r10.stopSelf();
         goto L_0x0016;
     L_0x0065:
@@ -150,7 +150,7 @@ public class FirewallVpnService extends VpnService {
         r8 = 0;
         r3 = com.google.analytics.tracking.android.MapBuilder.createEvent(r6, r7, r3, r8);
         r3 = r3.build();
-        com.ppu.fba.p009d.C0318o.m2031a(r3);
+        com.ppu.fba.p009d.Log1.LogAction(r3);
         r3 = com.ppu.fba.R.string.error_vpn_establish;
         r3 = android.widget.Toast.makeText(r10, r3, r1);
         r3.show();
@@ -163,7 +163,7 @@ public class FirewallVpnService extends VpnService {
         r10.startForeground(r1, r3);
         r3 = "DCVpnService";
         r6 = "init";
-        com.ppu.fba.p009d.C0315l.m2018a(r3, r6);
+        com.ppu.fba.p009d.Log1.LogF1(r3, r6);
         r3 = r10.f1322g;
         r3 = r3.getFd();
         r6 = r10.getFilesDir();
@@ -173,7 +173,7 @@ public class FirewallVpnService extends VpnService {
     L_0x00d8:
         r0 = "DCVpnService";
         r2 = "account_init failed!!!!!";
-        com.ppu.fba.p009d.C0315l.m2018a(r0, r2);
+        com.ppu.fba.p009d.Log1.LogF1(r0, r2);
         r10.stopForeground(r1);
         goto L_0x0016;
     L_0x00e4:
@@ -224,7 +224,7 @@ public class FirewallVpnService extends VpnService {
     }
 
     private void m1867d() {
-        C0315l.m2018a("DCVpnService", "waitVPN");
+        Log1.LogF1("DCVpnService", "waitVPN");
         try {
             if (this.f1323h != null) {
                 this.f1323h.join(3000);
@@ -309,14 +309,14 @@ public class FirewallVpnService extends VpnService {
         r2 = 1;
         r0 = "DCVpnService";
         r1 = "stopVPN";
-        com.ppu.fba.p009d.C0315l.m2018a(r0, r1);
+        com.ppu.fba.p009d.Log1.LogF1(r0, r1);
         monitor-enter(r3);
         r0 = r3.f1317a;	 Catch:{ all -> 0x0045 }
         if (r0 != 0) goto L_0x0016;
     L_0x000d:
         r0 = "DCVpnService";
         r1 = "stopVPN: already stopped";
-        com.ppu.fba.p009d.C0315l.m2018a(r0, r1);	 Catch:{ all -> 0x0045 }
+        com.ppu.fba.p009d.Log1.LogF1(r0, r1);	 Catch:{ all -> 0x0045 }
         monitor-exit(r3);	 Catch:{ all -> 0x0045 }
     L_0x0015:
         return;
@@ -336,7 +336,7 @@ public class FirewallVpnService extends VpnService {
         r3.f1321f = r2;
         r0 = "DCVpnService";
         r1 = "fini";
-        com.ppu.fba.p009d.C0315l.m2018a(r0, r1);
+        com.ppu.fba.p009d.Log1.LogF1(r0, r1);
         com.ppu.fba.NativeWrapper.jni_dickj();
         r3.m1867d();
     L_0x0035:
@@ -364,12 +364,12 @@ public class FirewallVpnService extends VpnService {
 
     public int dontbeabitch() {
         int f = m1869f();
-        C0315l.m2018a("DCVpnService", "getForegroundApp: " + f);
+        Log1.LogF1("DCVpnService", "getForegroundApp: " + f);
         return f;
     }
 
     public void gettheirdicksoffyourass(int i, int i2) {
-        C0315l.m2018a("DCVpnService", "policyNotifyCnt: " + i + " " + i2);
+        Log1.LogF1("DCVpnService", "policyNotifyCnt: " + i + " " + i2);
         if (i2 != 0) {
             String c = C0309f.m1980c(C0309f.m1974a(i));
             String a = C0308e.m1964a(i2);
@@ -388,7 +388,7 @@ public class FirewallVpnService extends VpnService {
     }
 
     public void howmuchdoesaminuteofyourtimecost(int i, int i2) {
-        C0315l.m2018a("DCVpnService", "policyNotifyAd: " + i + " " + i2);
+        Log1.LogF1("DCVpnService", "policyNotifyAd: " + i + " " + i2);
         String a = C0308e.m1964a(i);
         if (a == null) {
             a = "<Unknown App>";
@@ -401,7 +401,7 @@ public class FirewallVpnService extends VpnService {
     }
 
     public void ivespent5minobfuscatingmindyourtime(int i) {
-        C0315l.m2018a("DCVpnService", "policyNotifyApp: " + i);
+        Log1.LogF1("DCVpnService", "policyNotifyApp: " + i);
         String a = C0308e.m1964a(i);
         if (a == null) {
             a = "<Unknown App>";
@@ -414,14 +414,14 @@ public class FirewallVpnService extends VpnService {
     }
 
     public void onDestroy() {
-        C0315l.m2018a("DCVpnService", "onDestroy");
+        Log1.LogF1("DCVpnService", "onDestroy");
         m1870b();
-        C0315l.m2018a("DCVpnService", "onDestroy: end");
+        Log1.LogF1("DCVpnService", "onDestroy: end");
     }
 
     public void onRevoke() {
-        C0315l.m2018a("DCVpnService", "onRevoke");
-        C0318o.m2031a(MapBuilder.createEvent("state", "vpnRevoke", null, null).build());
+        Log1.LogF1("DCVpnService", "onRevoke");
+        Log1.LogAction(("state", "vpnRevoke", null, null));
         Editor edit = PreferenceManager.getDefaultSharedPreferences(FirewallApplication.m1851a()).edit();
         edit.putBoolean("status_on", false);
         edit.commit();
@@ -433,17 +433,17 @@ public class FirewallVpnService extends VpnService {
         Intent intent = new Intent(this, FirewallVPNStop.class);
         intent.setFlags(268435456);
         startActivity(intent);
-        C0315l.m2018a("DCVpnService", "onRevoke: end");
+        Log1.LogF1("DCVpnService", "onRevoke: end");
     }
 
     public int onStartCommand(Intent intent, int i, int i2) {
-        C0315l.m2018a("DCVpnService", "onStartCommand");
+        Log1.LogF1("DCVpnService", "onStartCommand");
         m1866c();
         return 2;
     }
 
     public void whatonearthmakesyoubeaslave(int i, int i2) {
-        C0315l.m2018a("DCVpnService", "policyNotifyMw: " + i + " " + i2);
+        Log1.LogF1("DCVpnService", "policyNotifyMw: " + i + " " + i2);
         String a = C0308e.m1964a(i);
         if (a == null) {
             a = "<Unknown App>";
@@ -457,7 +457,7 @@ public class FirewallVpnService extends VpnService {
 
     public void workonyourown(int i) {
         if (!protect(i)) {
-            C0315l.m2018a("DCVpnService", "protect() failed");
+            Log1.LogF1("DCVpnService", "protect() failed");
         }
     }
 }

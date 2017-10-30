@@ -13,7 +13,7 @@ import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 import com.ppu.fba.free.R;
 import com.ppu.fba.p009d.C0310g;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 import java.util.ArrayList;
 
 public class LogsActivity extends Activity {
@@ -152,11 +152,9 @@ public class LogsActivity extends Activity {
 
     public void onStart() {
         super.onStart();
-        C0318o.m2030a((Activity) this);
     }
 
     public void onStop() {
         super.onStop();
-        C0318o.m2032b(this);
     }
 }

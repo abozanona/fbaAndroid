@@ -10,7 +10,7 @@ import com.ppu.fba.p004a.C0284b;
 import com.ppu.fba.p004a.C0285c;
 import com.ppu.fba.p004a.C0286d;
 import com.ppu.fba.p007b.C0289a;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 
 class ba implements OnClickListener {
     final /* synthetic */ aw f1641a;
@@ -34,7 +34,7 @@ class ba implements OnClickListener {
             a.m1863a(new C0288a(5));
         }
         C0285c.m1913a(new C0285c(C0284b.APPLICATION, this.f1644d, C0286d.ALLOW));
-        C0318o.m2031a(MapBuilder.createEvent("suggApps", "buttonAllow", this.f1645e, null).build());
+        Log1.LogAction(("suggApps", "buttonAllow", this.f1645e, null));
         this.f1641a.f1623a.m2057c(this.f1643c);
     }
 }

@@ -1,6 +1,6 @@
 package com.ppu.fba;
 
-import com.ppu.fba.p009d.C0315l;
+import com.ppu.fba.p009d.Log1;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
@@ -11,7 +11,7 @@ class C0324g extends C0323r {
         InetAddress byAddress;
         this.f1441a = firewallVpnService;
         super(firewallVpnService);
-        C0315l.m2018a("DCVpnService", "DCVpnService.Builder");
+        Log1.LogF1("DCVpnService", "DCVpnService.Builder");
         try {
             byAddress = InetAddress.getByAddress(new byte[]{(byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 0, (byte) 1, (byte) 1, (byte) 0, (byte) 0, (byte) -84, (byte) 17, (byte) 39, (byte) 1});
         } catch (UnknownHostException e) {

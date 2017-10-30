@@ -15,7 +15,7 @@ import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.p008c.C0296a;
 import com.ppu.fba.p008c.C0298c;
 import com.ppu.fba.p008c.C0299d;
-import com.ppu.fba.p009d.C0315l;
+import com.ppu.fba.p009d.Log1;
 import com.ppu.fba.p010e.C0320a;
 import java.util.ArrayList;
 
@@ -54,22 +54,22 @@ public class C0362a extends AppWidgetProvider {
 
     public void onReceive(Context context, Intent intent) {
         if (intent.getAction().equals("com.ppu.fba.widget.WidgetGraphBlockedProvider.REFRESH")) {
-            C0315l.m2018a("WidgetGraphBlockedProvider", "REFRESH");
+            Log1.LogF1("WidgetGraphBlockedProvider", "REFRESH");
             Context a = FirewallApplication.m1851a();
             int[] appWidgetIds = AppWidgetManager.getInstance(a).getAppWidgetIds(new ComponentName(a, WidgetOnOffProvider.class));
             Intent intent2 = new Intent(a, WidgetOnOffProvider.class);
             intent2.setAction("android.appwidget.action.APPWIDGET_UPDATE");
             intent2.putExtra("appWidgetIds", appWidgetIds);
-            C0315l.m2018a("WidgetGraphBlockedProvider", "REFRESH: end");
+            Log1.LogF1("WidgetGraphBlockedProvider", "REFRESH: end");
             super.onReceive(context, intent2);
             return;
         }
-        C0315l.m2018a("WidgetGraphBlockedProvider", "update");
+        Log1.LogF1("WidgetGraphBlockedProvider", "update");
         super.onReceive(context, intent);
     }
 
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] iArr) {
-        C0315l.m2018a("WidgetGraphBlockedProvider", "onUpdate");
+        Log1.LogF1("WidgetGraphBlockedProvider", "onUpdate");
         Resources resources = FirewallApplication.m1851a().getResources();
         int[] appWidgetIds = appWidgetManager.getAppWidgetIds(new ComponentName(context, C0362a.class));
         RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.widget_graph_blocked_layout);

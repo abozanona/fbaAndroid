@@ -2,7 +2,7 @@ package com.ppu.fba.p008c;
 
 import android.content.Context;
 import com.ppu.fba.p009d.C0311h;
-import com.ppu.fba.p009d.C0315l;
+import com.ppu.fba.p009d.Log1;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,7 +23,7 @@ public abstract class C0299d {
     }
 
     private void m1950a(Context context, Long l, C0297b c0297b) {
-        C0315l.m2018a("Storage", "saveStats");
+        Log1.LogF1("Storage", "saveStats");
         C0311h.m1999a(context, c0297b, this.f1382a + "/" + String.valueOf(l), false);
     }
 
@@ -41,17 +41,17 @@ public abstract class C0299d {
     }
 
     public void m1953a(Context context) {
-        C0315l.m2018a("Storage", "save");
+        Log1.LogF1("Storage", "save");
         C0311h.m1999a(context, this.f1385d, this.f1382a + "/total", false);
         Set keySet = this.f1383b.keySet();
         Long[] lArr = (Long[]) keySet.toArray(new Long[keySet.size()]);
         long a = mo740a();
         for (Long l : lArr) {
             if (l.longValue() < a) {
-                C0315l.m2018a("Storage", "save: remove");
+                Log1.LogF1("Storage", "save: remove");
                 this.f1383b.remove(l);
             } else {
-                C0315l.m2018a("Storage", "save: entry");
+                Log1.LogF1("Storage", "save: entry");
                 C0297b c0297b = (C0297b) this.f1383b.get(l);
                 if (c0297b.m1947c()) {
                     m1950a(context, l, c0297b);
@@ -76,7 +76,7 @@ public abstract class C0299d {
         if (this.f1384c > c) {
             this.f1384c = 0;
         }
-        C0315l.m2018a("Storage", "saveMaybe " + this.f1382a + " " + this.f1384c + " " + c);
+        Log1.LogF1("Storage", "saveMaybe " + this.f1382a + " " + this.f1384c + " " + c);
         if (this.f1384c + 60000 < c) {
             m1953a(context);
             this.f1384c = c;
@@ -86,13 +86,13 @@ public abstract class C0299d {
     public synchronized void m1956c(Context context) {
         Iterator it;
         C0298c c0298c;
-        C0315l.m2018a("Storage", "restore");
+        Log1.LogF1("Storage", "restore");
         Object a = C0311h.m1997a(context, this.f1382a + "/total");
         if (a != null) {
-            C0315l.m2018a("Storage", "restore: read " + a.getClass().getCanonicalName());
+            Log1.LogF1("Storage", "restore: read " + a.getClass().getCanonicalName());
         }
         if (a != null && (a instanceof HashMap)) {
-            C0315l.m2018a("Storage", "restore: put");
+            Log1.LogF1("Storage", "restore: put");
             HashMap hashMap = (HashMap) a;
             it = new ArrayList(hashMap.keySet()).iterator();
             while (it.hasNext()) {
@@ -109,15 +109,15 @@ public abstract class C0299d {
         for (String str2 : new File(str).list()) {
             if (!"total".equals(str2)) {
                 Long valueOf2 = Long.valueOf(str2);
-                C0315l.m2018a("Storage", "restore: " + str2);
+                Log1.LogF1("Storage", "restore: " + str2);
                 if (valueOf2 != null && valueOf2.longValue() > 0) {
                     if (valueOf2.longValue() < valueOf.longValue()) {
-                        C0315l.m2018a("Storage", "restore: delete");
+                        Log1.LogF1("Storage", "restore: delete");
                         new File(str + "/" + str2).delete();
                     } else {
                         a = C0311h.m1997a(context, this.f1382a + "/" + str2);
                         if (a != null) {
-                            C0315l.m2018a("Storage", "restore: read " + a.getClass().getCanonicalName());
+                            Log1.LogF1("Storage", "restore: read " + a.getClass().getCanonicalName());
                         }
                         if (a != null && (a instanceof C0297b)) {
                             Integer num;
@@ -125,7 +125,7 @@ public abstract class C0299d {
                             Iterator it2;
                             Integer num2;
                             C0298c c0298c2;
-                            C0315l.m2018a("Storage", "restore: put");
+                            Log1.LogF1("Storage", "restore: put");
                             C0297b c0297b = (C0297b) a;
                             it = new ArrayList(c0297b.f1375c.keySet()).iterator();
                             while (it.hasNext()) {

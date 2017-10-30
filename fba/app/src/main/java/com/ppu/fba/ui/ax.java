@@ -9,7 +9,7 @@ import com.ppu.fba.p004a.C0285c;
 import com.ppu.fba.p004a.C0286d;
 import com.ppu.fba.p009d.C0308e;
 import com.ppu.fba.p009d.C0309f;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 
 class ax implements OnClickListener {
     final /* synthetic */ aw f1625a;
@@ -27,9 +27,9 @@ class ax implements OnClickListener {
     public void onClick(View view) {
         C0285c.m1913a(new C0285c(this.f1626b, this.f1627c, C0286d.CANCEL));
         if (this.f1626b == C0284b.APPLICATION) {
-            C0318o.m2031a(MapBuilder.createEvent("suggApps", "buttonCancel", C0308e.m1970c(this.f1627c), null).build());
+            Log1.LogAction(("suggApps", "buttonCancel", C0308e.m1970c(this.f1627c), null));
         } else {
-            C0318o.m2031a(MapBuilder.createEvent("suggCnts", "buttonCancel", C0309f.m1974a(this.f1627c), null).build());
+            Log1.LogAction(("suggCnts", "buttonCancel", C0309f.m1974a(this.f1627c), null));
         }
         this.f1625a.f1623a.m2057c(this.f1628d);
     }

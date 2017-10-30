@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import com.google.analytics.tracking.android.MapBuilder;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 import java.util.ArrayList;
 
 class ej implements OnClickListener {
@@ -26,6 +26,6 @@ class ej implements OnClickListener {
         intent.putExtra("name", this.f1812b);
         intent.putStringArrayListExtra("codes", this.f1813c);
         this.f1814d.f1801b.m20a(intent);
-        C0318o.m2031a(MapBuilder.createEvent("listGeo", "click", this.f1812b, null).build());
+        Log1.LogAction(("listGeo", "click", this.f1812b, null));
     }
 }

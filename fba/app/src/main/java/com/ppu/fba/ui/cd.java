@@ -6,7 +6,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.p008c.C0296a;
-import com.ppu.fba.p009d.C0315l;
+import com.ppu.fba.p009d.Log1;
 
 public abstract class cd extends Fragment implements ac {
     private long f1505P = 0;
@@ -23,7 +23,7 @@ public abstract class cd extends Fragment implements ac {
         if (this.f1505P == 0 || c >= this.f1505P + 10000) {
             m2057c(context);
         } else {
-            C0315l.m2018a("FragmentUpdatable", "skipping update");
+            Log1.LogF1("FragmentUpdatable", "skipping update");
         }
     }
 

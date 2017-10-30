@@ -7,8 +7,8 @@ import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.C0288a;
 import com.ppu.fba.FirewallApplication;
 import com.ppu.fba.FirewallManagerService;
-import com.ppu.fba.p009d.C0315l;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
+import com.ppu.fba.p009d.Log1;
 
 class ap implements OnCheckedChangeListener {
     final /* synthetic */ ao f1612a;
@@ -24,10 +24,10 @@ class ap implements OnCheckedChangeListener {
         compoundButton.setEnabled(false);
         if (z) {
             i = 1;
-            C0318o.m2031a(MapBuilder.createEvent("settings", "on_off", "on", null).build());
+            Log1.LogAction(("settings", "on_off", "on", null));
         } else {
             i = 2;
-            C0318o.m2031a(MapBuilder.createEvent("settings", "on_off", "off", null).build());
+            Log1.LogAction(("settings", "on_off", "off", null));
         }
         C0288a c0288a = new C0288a(i, new aq(this, z, compoundButton));
         FirewallManagerService a = FirewallManagerService.m1852a(FirewallApplication.m1851a());
@@ -36,6 +36,6 @@ class ap implements OnCheckedChangeListener {
             a.m1863a(new C0288a(5));
             return;
         }
-        C0315l.m2018a("SectionDashboardFragment", "no manager found");
+        Log1.LogF1("SectionDashboardFragment", "no manager found");
     }
 }

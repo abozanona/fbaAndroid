@@ -38,8 +38,8 @@ import com.ppu.fba.p008c.C0302g;
 import com.ppu.fba.p009d.C0308e;
 import com.ppu.fba.p009d.C0312i;
 import com.ppu.fba.p009d.C0313j;
-import com.ppu.fba.p009d.C0315l;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
+import com.ppu.fba.p009d.Log1;
 import java.math.BigInteger;
 import java.text.Format;
 import java.util.ArrayList;
@@ -141,7 +141,7 @@ public class DetailsAppActivity extends Activity {
                 m2038a(hashMap3, arrayList3, 2, arrayList6);
             }
         } else {
-            C0315l.m2018a("DetailsAppActivity", "NO MANAGER !!!!");
+            Log1.LogF1("DetailsAppActivity", "NO MANAGER !!!!");
         }
         this.f1454b.setAdapter(new C0349n(this, this, hashMap, arrayList));
         this.f1455c.setAdapter(new C0349n(this, this, hashMap2, arrayList2));
@@ -443,11 +443,9 @@ public class DetailsAppActivity extends Activity {
 
     public void onStart() {
         super.onStart();
-        C0318o.m2030a((Activity) this);
     }
 
     public void onStop() {
         super.onStop();
-        C0318o.m2032b(this);
     }
 }

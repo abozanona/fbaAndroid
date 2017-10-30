@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.ppu.fba.free.R;
 import com.ppu.fba.NativeWrapper;
 import com.ppu.fba.p009d.C0308e;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -87,7 +87,6 @@ public class ToolSnifferActivity extends Activity {
 
     protected void onStart() {
         super.onStart();
-        C0318o.m2030a((Activity) this);
         this.f1546o = false;
         this.f1547p.post(this.f1550s);
     }
@@ -96,6 +95,5 @@ public class ToolSnifferActivity extends Activity {
         super.onStop();
         this.f1542k = false;
         this.f1546o = true;
-        C0318o.m2032b(this);
     }
 }

@@ -25,7 +25,7 @@ import com.ppu.fba.p009d.C0304a;
 import com.ppu.fba.p009d.C0308e;
 import com.ppu.fba.p009d.C0309f;
 import com.ppu.fba.p009d.C0310g;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 import java.util.ArrayList;
 
 public class DashboardActivity extends AppCompatActivity implements TabListener {
@@ -38,10 +38,10 @@ public class DashboardActivity extends AppCompatActivity implements TabListener 
     public void onActivityResult(int i, int i2, Intent intent) {
         if (i == 1) {
             if (i2 == -1) {
-                C0318o.m2031a(MapBuilder.createEvent("buttons", "share", "success", null).build());
+                Log1.LogAction(("buttons", "share", "success", null));
             }
         } else if (i == 2 && i2 == -1) {
-            C0318o.m2031a(MapBuilder.createEvent("buttons", "shareMap", "success", null).build());
+            Log1.LogAction(("buttons", "shareMap", "success", null));
         }
     }
 
@@ -99,7 +99,6 @@ public class DashboardActivity extends AppCompatActivity implements TabListener 
 
     public void onStart() {
         super.onStart();
-        C0318o.m2030a((Activity) this);
         C0308e.m1972d();
         C0309f.m1983d();
         if (C0310g.m1987a(this)) {
@@ -119,7 +118,6 @@ public class DashboardActivity extends AppCompatActivity implements TabListener 
 
     public void onStop() {
         super.onStop();
-        C0318o.m2032b(this);
     }
 
     public void onTabReselected(Tab tab, FragmentTransaction fragmentTransaction) {

@@ -14,7 +14,7 @@ public class C0317n {
     private static final String[] f1422a = new String[]{"appsCollection", "cntsCollection"};
 
     public static void m2022a(String str) {
-        C0315l.m2018a("ProfileUtils", "profileCreateEmpty: " + str);
+        Log1.LogF1("ProfileUtils", "profileCreateEmpty: " + str);
         Context a = FirewallApplication.m1851a();
         try {
             new File(a.getFilesDir().getPath() + "/profiles/" + str + "/").mkdir();
@@ -25,7 +25,7 @@ public class C0317n {
     }
 
     public static void m2023a(String str, String str2) {
-        C0315l.m2018a("ProfileUtils", "fileCopy: " + str + "->" + str2);
+        Log1.LogF1("ProfileUtils", "fileCopy: " + str + "->" + str2);
         try {
             File file = new File(str);
             if (file.exists() && file.canRead()) {
@@ -51,7 +51,7 @@ public class C0317n {
     }
 
     public static String[] m2024a() {
-        C0315l.m2018a("ProfileUtils", "profileGetList");
+        Log1.LogF1("ProfileUtils", "profileGetList");
         try {
             return new File(FirewallApplication.m1851a().getFilesDir().getPath() + "/profiles").list();
         } catch (Exception e) {
@@ -60,7 +60,7 @@ public class C0317n {
     }
 
     public static void m2025b(String str) {
-        C0315l.m2018a("ProfileUtils", "profileSave: " + str);
+        Log1.LogF1("ProfileUtils", "profileSave: " + str);
         Context a = FirewallApplication.m1851a();
         try {
             File file = new File(a.getFilesDir().getPath() + "/");
@@ -74,7 +74,7 @@ public class C0317n {
     }
 
     public static void m2026b(String str, String str2) {
-        C0315l.m2018a("ProfileUtils", "profileCreate: " + str2 + "->" + str);
+        Log1.LogF1("ProfileUtils", "profileCreate: " + str2 + "->" + str);
         Context a = FirewallApplication.m1851a();
         try {
             String str3 = a.getFilesDir().getPath() + "/";
@@ -92,7 +92,7 @@ public class C0317n {
     }
 
     public static void m2027c(String str) {
-        C0315l.m2018a("ProfileUtils", "profileRestore: " + str);
+        Log1.LogF1("ProfileUtils", "profileRestore: " + str);
         Context a = FirewallApplication.m1851a();
         try {
             File file = new File(a.getFilesDir().getPath() + "/");
@@ -105,7 +105,7 @@ public class C0317n {
     }
 
     public static void m2028d(String str) {
-        C0315l.m2018a("ProfileUtils", "profileDelete: " + str);
+        Log1.LogF1("ProfileUtils", "profileDelete: " + str);
         try {
             File file = new File(FirewallApplication.m1851a().getFilesDir().getPath() + "/profiles/" + str + "/");
             file.mkdir();

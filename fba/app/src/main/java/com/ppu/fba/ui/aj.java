@@ -7,7 +7,7 @@ import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.C0288a;
 import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.p007b.C0289a;
-import com.ppu.fba.p009d.C0318o;
+import com.ppu.fba.p009d.Log1;
 
 class aj implements OnClickListener {
     final /* synthetic */ ai f1579a;
@@ -33,6 +33,6 @@ class aj implements OnClickListener {
             }
             a.m1863a(new C0288a(5));
         }
-        C0318o.m2031a(MapBuilder.createEvent("listApps", "clickAllow", this.f1583e, null).build());
+        Log1.LogAction(("listApps", "clickAllow", this.f1583e, null));
     }
 }

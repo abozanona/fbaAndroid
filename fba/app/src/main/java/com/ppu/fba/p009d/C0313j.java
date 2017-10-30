@@ -44,28 +44,28 @@ public class C0313j {
             long c = C0296a.m1930c();
             if (j == 0 || j - c > 43200000) {
                 String str = "http://s3.amazonaws.com/lostnet/" + packageName + ".txt";
-                C0315l.m2018a("isUpToDate", str);
+                Log1.LogF1("isUpToDate", str);
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new URL(str).openStream()));
                 String readLine = bufferedReader.readLine();
                 bufferedReader.close();
                 Integer valueOf = Integer.valueOf(readLine);
                 i = valueOf != null ? valueOf.intValue() : 0;
-                C0315l.m2018a("isUpToDate", "Last version: " + i);
+                Log1.LogF1("isUpToDate", "Last version: " + i);
                 Editor edit = sharedPreferences.edit();
                 edit.putLong("lastChecked", c);
                 edit.putInt("lastVersion", i);
                 edit.apply();
             }
             int i2 = a.getPackageManager().getPackageInfo(packageName, 0).versionCode;
-            C0315l.m2018a("isUpToDate", "Current version: " + i2);
+            Log1.LogF1("isUpToDate", "Current version: " + i2);
             return i != 0 && i <= i2;
         } catch (Exception e) {
-            C0315l.m2018a("isUpToDate", e.getClass().getCanonicalName());
+            Log1.LogF1("isUpToDate", e.getClass().getCanonicalName());
             String message = e.getMessage();
             if (message == null) {
                 return true;
             }
-            C0315l.m2018a("isUpToDate", message);
+            Log1.LogF1("isUpToDate", message);
             return true;
         }
     }
