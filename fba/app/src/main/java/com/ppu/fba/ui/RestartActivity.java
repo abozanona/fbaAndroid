@@ -13,7 +13,7 @@ public class RestartActivity extends Activity {
 
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        setContentView(R.splash_screen);
+        setContentView(R.layout.splash_screen);
     }
 
     public void onStart() {

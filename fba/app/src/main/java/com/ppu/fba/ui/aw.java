@@ -20,7 +20,7 @@ import com.ppu.fba.p009d.C0308e;
 import com.ppu.fba.p009d.C0309f;
 import java.util.ArrayList;
 
-class aw extends BaseAdapter {
+public class aw extends BaseAdapter {
     final /* synthetic */ ao f1623a;
     private ArrayList f1624b;
 
@@ -52,7 +52,7 @@ class aw extends BaseAdapter {
         view = (RelativeLayout) view;
         if (view == null) {
             LayoutInflater from = LayoutInflater.from(context);
-            view = c0276a.m1886a() == C0284b.COUNTRY ? (RelativeLayout) from.inflate(R.list_view_item_suggestion_geo, viewGroup, false) : (RelativeLayout) from.inflate(R.list_view_item_suggestion_app, viewGroup, false);
+            view = c0276a.m1886a() == C0284b.COUNTRY ? (RelativeLayout) from.inflate(R.layout.list_view_item_suggestion_geo, viewGroup, false) : (RelativeLayout) from.inflate(R.layout.list_view_item_suggestion_app, viewGroup, false);
         }
         ImageView imageView = (ImageView) view.findViewById(R.id.suggestionIcon);
         TextView textView = (TextView) view.findViewById(R.id.suggestionName);

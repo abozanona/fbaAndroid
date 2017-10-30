@@ -3,7 +3,7 @@ package com.ppu.fba.ui;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 
-class bq implements OnClickListener {
+public class bq implements OnClickListener {
     final /* synthetic */ bp f1694a;
 
     bq(bp bpVar) {

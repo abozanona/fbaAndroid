@@ -3,7 +3,7 @@ package com.ppu.fba.ui;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
-class dn implements OnCheckedChangeListener {
+public class dn implements OnCheckedChangeListener {
     final /* synthetic */ ProfileSelectActivity f1775a;
 
     dn(ProfileSelectActivity profileSelectActivity) {

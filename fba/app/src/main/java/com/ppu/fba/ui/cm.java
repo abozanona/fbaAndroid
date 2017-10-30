@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import com.ppu.fba.free.R;
 
-class cm implements OnClickListener {
+public class cm implements OnClickListener {
     final /* synthetic */ ck f1735a;
 
     cm(ck ckVar) {

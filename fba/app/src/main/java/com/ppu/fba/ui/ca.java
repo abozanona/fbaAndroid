@@ -2,7 +2,7 @@ package com.ppu.fba.ui;
 
 import com.ppu.fba.p009d.C0308e;
 
-class ca implements Runnable {
+public class ca implements Runnable {
     final /* synthetic */ SplashScreen f1718a;
 
     ca(SplashScreen splashScreen) {

@@ -9,7 +9,7 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-class ci implements OnClickListener {
+public class ci implements OnClickListener {
     final /* synthetic */ Context f1731a;
     final /* synthetic */ ImportActivity f1732b;
 

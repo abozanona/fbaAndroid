@@ -2,13 +2,12 @@ package com.ppu.fba.ui;
 
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
-import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.C0288a;
 import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.p007b.C0289a;
 import com.ppu.fba.p009d.Log1;
 
-class C0342g implements OnCheckedChangeListener {
+public class C0342g implements OnCheckedChangeListener {
     final /* synthetic */ DetailsAppActivity f1864a;
     final /* synthetic */ C0289a f1865b;
     final /* synthetic */ String f1866c;
@@ -29,6 +28,6 @@ class C0342g implements OnCheckedChangeListener {
         if (a != null) {
             a.m1863a(new C0288a(5));
         }
-        Log1.LogAction(("detApps", z ? "officeSet" : "officeClear", this.f1866c, null));
+        Log1.LogAction("detApps", z ? "officeSet" : "officeClear", this.f1866c, null);
     }
 }

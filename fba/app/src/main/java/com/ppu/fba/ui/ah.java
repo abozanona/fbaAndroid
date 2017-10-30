@@ -1,6 +1,6 @@
 package com.ppu.fba.ui;
 
-enum ah {
+public enum ah {
     ALL,
     SEEN,
     DOWNLOADED,

@@ -3,7 +3,7 @@ package com.ppu.fba.ui;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 
-class fo implements OnClickListener {
+public class fo implements OnClickListener {
     final /* synthetic */ UninstallActivity f1862a;
 
     fo(UninstallActivity uninstallActivity) {

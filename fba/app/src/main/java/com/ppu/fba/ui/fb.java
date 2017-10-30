@@ -4,7 +4,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 
-class fb implements OnItemSelectedListener {
+public class fb implements OnItemSelectedListener {
     final /* synthetic */ ToolSnifferActivity f1847a;
 
     fb(ToolSnifferActivity toolSnifferActivity) {

@@ -5,7 +5,7 @@ import java.text.FieldPosition;
 import java.text.NumberFormat;
 import java.text.ParsePosition;
 
-class ch extends NumberFormat {
+public class ch extends NumberFormat {
     private static final long serialVersionUID = 5171555486113804745L;
     final /* synthetic */ cg f1729a;
     private DecimalFormat f1730b = new DecimalFormat("#");

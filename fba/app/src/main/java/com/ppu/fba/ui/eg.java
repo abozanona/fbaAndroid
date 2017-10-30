@@ -21,7 +21,7 @@ import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-abstract class eg extends BaseAdapter {
+public abstract class eg extends BaseAdapter {
     private final boolean f1800a;
     final /* synthetic */ SectionGeoListFragment f1801b;
 
@@ -47,11 +47,11 @@ abstract class eg extends BaseAdapter {
         if (view2 == null) {
             LayoutInflater from = LayoutInflater.from(context);
             if (c0298c == null) {
-                view2 = (RelativeLayout) from.inflate(R.list_view_item_geo_nocounters, viewGroup, false);
+                //view2 = (RelativeLayout) from.inflate(R.list_view_item_geo_nocounters, viewGroup, false);
             } else {
-                RelativeLayout relativeLayout = (RelativeLayout) from.inflate(R.list_view_item_geo, viewGroup, false);
+                //RelativeLayout relativeLayout = (RelativeLayout) from.inflate(R.list_view_item_geo, viewGroup, false);
             }
-            view2.setDrawingCacheBackgroundColor(-16777216);
+            //view2.setDrawingCacheBackgroundColor(-16777216);
             view2.setTag(arrayList);
         }
         View view3 = view2;
@@ -64,7 +64,7 @@ abstract class eg extends BaseAdapter {
             textView2 = (TextView) view3.findViewById(R.id.itemDownload);
         }
         if (str == null) {
-            textView3.setText("<" + this.f1801b.m37c().getString(R.string.unknown_country) + ">");
+            //textView3.setText("<" + this.f1801b.m37c().getString(R.string.unknown_country) + ">");
         } else {
             textView3.setText(str);
         }
@@ -73,9 +73,9 @@ abstract class eg extends BaseAdapter {
             imageView.setOnClickListener(new ei(this, i));
         }
         if (drawable == null) {
-            imageView.setVisibility(8);
+            imageView.setVisibility(View.GONE);
         } else {
-            imageView.setDrawingCacheBackgroundColor(-16777216);
+            //imageView.setDrawingCacheBackgroundColor(-16777216);
             imageView.setDrawingCacheEnabled(true);
             imageView.setImageDrawable(drawable);
         }

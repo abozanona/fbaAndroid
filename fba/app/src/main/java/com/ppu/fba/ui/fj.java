@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.widget.Toast;
 
-class fj implements Runnable {
+public class fj implements Runnable {
     final /* synthetic */ String f1856a;
     final /* synthetic */ fi f1857b;
 

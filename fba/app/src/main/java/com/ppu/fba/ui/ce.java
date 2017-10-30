@@ -15,9 +15,9 @@ public abstract class ce extends cg {
         super(context, view, i3, i4);
         this.f1726e = (RelativeLayout) view.findViewById(i);
         this.f1727f = (ImageView) view.findViewById(i2);
-        this.c.setOnClickListener(this.f1725a);
+        //this.c.setOnClickListener(this.f1725a);
         this.f1727f.setOnClickListener(this.f1725a);
-        this.d.add(this.f1727f);
-        this.d.add(this.f1726e);
+        //this.d.add(this.f1727f);
+        //this.d.add(this.f1726e);
     }
 }

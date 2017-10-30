@@ -3,7 +3,6 @@ package com.ppu.fba.p009d;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import com.google.android.vending.licensing.Policy;
 import com.ppu.fba.free.R;
 import com.ppu.fba.FirewallApplication;
 import java.util.ArrayList;
@@ -29,7 +28,7 @@ public class C0309f {
             return str;
         }
         char c = (char) (i >> 8);
-        str = new String(new char[]{(char) (i % Policy.LICENSED), c});
+        str = new String(new char[]{(char) (i % 1), c});
         f1410e.put(Integer.valueOf(i), str);
         return str;
     }

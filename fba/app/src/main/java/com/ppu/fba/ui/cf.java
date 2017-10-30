@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-class cf implements OnClickListener {
+public class cf implements OnClickListener {
     final /* synthetic */ ce f1728a;
 
     cf(ce ceVar) {
@@ -12,6 +12,6 @@ class cf implements OnClickListener {
     }
 
     public void onClick(View view) {
-        this.f1728a.b.startActivity(new Intent(this.f1728a.b, LogsActivity.class));
+        //this.f1728a.b.startActivity(new Intent(this.f1728a.b, LogsActivity.class));
     }
 }

@@ -1,9 +1,9 @@
 package com.ppu.fba.ui;
 
-import android.support.v4.view.ae;
+import android.support.v4.view.PagerAdapter;
 import android.view.View;
 
-class dh extends ae {
+public class dh extends PagerAdapter {
     final /* synthetic */ LogsActivity f1769a;
 
     dh(LogsActivity logsActivity) {
@@ -21,11 +21,11 @@ class dh extends ae {
     public void mo755a(View view, int i, Object obj) {
     }
 
-    public boolean mo17a(View view, Object obj) {
+    public boolean isViewFromObject(View view, Object obj) {
         return view == ((View) obj);
     }
 
-    public int mo756b() {
+    public int getCount() {
         return this.f1769a.f1481a.size();
     }
 }

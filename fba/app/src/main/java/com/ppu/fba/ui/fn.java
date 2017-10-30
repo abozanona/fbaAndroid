@@ -3,9 +3,8 @@ package com.ppu.fba.ui;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import com.google.android.vending.licensing.APKExpansionPolicy;
 
-class fn extends BaseAdapter {
+public class fn extends BaseAdapter {
     final /* synthetic */ ToolsActivity f1861a;
 
     public fn(ToolsActivity toolsActivity) {
@@ -18,7 +17,7 @@ class fn extends BaseAdapter {
 
     public Object getItem(int i) {
         switch (i) {
-            case APKExpansionPolicy.MAIN_FILE_URL_INDEX /*0*/:
+            case 0 /*0*/:
                 return this.f1861a.f1551a;
             default:
                 return null;
@@ -34,7 +33,7 @@ class fn extends BaseAdapter {
             return view;
         }
         switch (i) {
-            case APKExpansionPolicy.MAIN_FILE_URL_INDEX /*0*/:
+            case 0 /*0*/:
                 return this.f1861a.f1551a;
             default:
                 return null;

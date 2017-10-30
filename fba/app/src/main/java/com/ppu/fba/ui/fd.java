@@ -3,7 +3,7 @@ package com.ppu.fba.ui;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 
-class fd implements OnCheckedChangeListener {
+public class fd implements OnCheckedChangeListener {
     final /* synthetic */ ToolSnifferActivity f1849a;
 
     fd(ToolSnifferActivity toolSnifferActivity) {

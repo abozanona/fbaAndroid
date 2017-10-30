@@ -18,7 +18,7 @@ import com.ppu.fba.p009d.C0312i;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-class C0361z extends BaseAdapter {
+public class C0361z extends BaseAdapter {
     final /* synthetic */ DetailsGeoActivity f1909a;
     private final HashMap f1910b;
     private final ArrayList f1911c;
@@ -63,7 +63,7 @@ class C0361z extends BaseAdapter {
         view = (RelativeLayout) view;
         View view2 = (view == null || ((Integer) view.getTag()).equals(num)) ? view : null;
         if (view2 == null) {
-            view2 = (RelativeLayout) LayoutInflater.from(context).inflate(R.list_view_item_short, viewGroup, false);
+            view2 = (RelativeLayout) LayoutInflater.from(context).inflate(R.layout.list_view_item_short, viewGroup, false);
             view2.setTag(num);
         }
         View view3 = view2;

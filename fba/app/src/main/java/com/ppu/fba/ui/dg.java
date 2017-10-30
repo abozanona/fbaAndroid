@@ -4,12 +4,12 @@ import android.content.Context;
 import com.ppu.fba.p008c.C0298c;
 import com.ppu.fba.p008c.C0302g;
 
-class dg extends db {
+public class dg extends db {
     final /* synthetic */ LogsActivity f1768b;
 
     public dg(LogsActivity logsActivity, Context context) {
-        this.f1768b = logsActivity;
         super(logsActivity, context);
+        this.f1768b = logsActivity;
     }
 
     protected long mo763a(C0298c c0298c) {

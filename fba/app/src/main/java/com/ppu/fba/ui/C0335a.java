@@ -1,10 +1,9 @@
 package com.ppu.fba.ui;
 
 import android.app.ActionBar;
-import android.support.v4.view.br;
-import com.google.android.vending.licensing.APKExpansionPolicy;
+import android.support.v4.view.ViewPager.SimpleOnPageChangeListener;
 
-class C0335a extends br {
+public class C0335a extends SimpleOnPageChangeListener {
     final /* synthetic */ DashboardActivity f1554a;
     final /* synthetic */ ActionBar f1555b;
 
@@ -16,7 +15,7 @@ class C0335a extends br {
     public void mo100a(int i) {
         this.f1555b.setSelectedNavigationItem(i);
         switch (i) {
-            case APKExpansionPolicy.MAIN_FILE_URL_INDEX /*0*/:
+            case 0 /*0*/:
                 this.f1554a.f1448o.m2056b(this.f1554a);
                 return;
             case 1:

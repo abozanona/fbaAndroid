@@ -8,7 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-class C0340e extends NumberFormat {
+public class C0340e extends NumberFormat {
     private static final long serialVersionUID = -667979541060720601L;
     final /* synthetic */ DetailsAppActivity f1792a;
     private SimpleDateFormat f1793b = new SimpleDateFormat("dd", Locale.US);

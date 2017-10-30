@@ -1,6 +1,6 @@
 package com.ppu.fba.ui;
 
-enum bn {
+public enum bn {
     TODAY,
     TEN_DAYS,
     THIRTY_DAYS

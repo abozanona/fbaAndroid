@@ -4,7 +4,7 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import com.ppu.fba.FirewallManagerService;
 
-class bd implements OnClickListener {
+public class bd implements OnClickListener {
     final /* synthetic */ DashboardActivity f1656a;
 
     bd(DashboardActivity dashboardActivity) {

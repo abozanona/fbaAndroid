@@ -10,7 +10,6 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.google.android.vending.licensing.APKExpansionPolicy;
 import com.ppu.fba.free.R;
 import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.p007b.C0289a;
@@ -20,7 +19,7 @@ import com.ppu.fba.p009d.C0312i;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-class ai extends BaseAdapter {
+public class ai extends BaseAdapter {
     final /* synthetic */ ad f1576a;
     private final HashMap f1577b;
     private final ArrayList f1578c;
@@ -88,7 +87,7 @@ class ai extends BaseAdapter {
             radioButton = (RadioButton) view2.findViewById(R.id.buttonAllow);
         }
         switch (c0289a.m1919a()) {
-            case APKExpansionPolicy.MAIN_FILE_URL_INDEX /*0*/:
+            case 0 /*0*/:
                 radioButton.setChecked(true);
                 radioButton2.setChecked(false);
                 radioButton3.setChecked(false);

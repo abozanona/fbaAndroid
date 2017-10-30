@@ -6,7 +6,7 @@ import com.ppu.fba.C0288a;
 import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.p009d.C0317n;
 
-class dj implements OnClickListener {
+public class dj implements OnClickListener {
     final /* synthetic */ ProfileSelectActivity f1771a;
 
     dj(ProfileSelectActivity profileSelectActivity) {

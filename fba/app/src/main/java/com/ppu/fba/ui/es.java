@@ -2,7 +2,7 @@ package com.ppu.fba.ui;
 
 import android.os.AsyncTask;
 
-class es extends AsyncTask {
+public class es extends AsyncTask {
     final /* synthetic */ er f1834a;
 
     es(er erVar) {

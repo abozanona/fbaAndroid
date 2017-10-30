@@ -24,8 +24,8 @@ public class ProfileSelectActivity extends Activity {
     Button f1497f;
     Button f1498g;
     RadioGroup f1499h;
-    private volatile String f1500i = null;
-    private volatile String f1501j = null;
+    public volatile String f1500i = null;
+    public volatile String f1501j = null;
 
     private void m2052b() {
         this.f1494c = C0317n.m2024a();
@@ -43,10 +43,10 @@ public class ProfileSelectActivity extends Activity {
         for (int length = this.f1494c.length - 1; length >= 0; length--) {
             Object obj = this.f1494c[length];
             View radioButton = new RadioButton(this.f1499h.getContext());
-            radioButton.setText(obj);
+            ((RadioButton)(radioButton)).setText((String)obj);
             radioButton.setId(length);
             if (this.f1500i != null && obj.equals(this.f1500i)) {
-                radioButton.setChecked(true);
+                ((RadioButton)(radioButton)).setChecked(true);
             }
             radioButton.setLayoutParams(new LayoutParams(-2, -2));
             this.f1499h.addView(radioButton);
@@ -60,7 +60,7 @@ public class ProfileSelectActivity extends Activity {
 
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        setContentView(R.dialog_profile_select);
+        setContentView(R.layout.dialog_profile_select);
         getActionBar().setDisplayHomeAsUpEnabled(true);
         getActionBar().setHomeButtonEnabled(true);
         this.f1492a = C0316m.m2021b();

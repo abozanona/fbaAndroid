@@ -6,7 +6,7 @@ import com.ppu.fba.C0288a;
 import com.ppu.fba.free.R;
 import com.ppu.fba.FirewallManagerService;
 
-class bv implements OnClickListener {
+public class bv implements OnClickListener {
     final /* synthetic */ bt f1708a;
 
     bv(bt btVar) {

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RadioButton;
@@ -70,13 +71,13 @@ public class DetailsGeoActivity extends Activity {
             Iterator it2 = this.f1468a.iterator();
             while (it2.hasNext()) {
                 Integer valueOf = Integer.valueOf(C0309f.m1982d((String) it2.next()));
-                for (Integer num : c0297b.m1948d(valueOf.intValue()).keySet()) {
-                    if (num.intValue() != i2) {
+                for (Object num : c0297b.m1948d(valueOf.intValue()).keySet()) {
+                    if (((Integer)num).intValue() != i2) {
                         C0298c c0298c = (C0298c) hashMap.get(num);
                         if (c0298c == null) {
-                            c0298c = new C0302g();
+                            //c0298c = new C0302g();
                         }
-                        C0298c b = c0297b.m1941b(valueOf.intValue(), num.intValue());
+                        C0298c b = c0297b.m1941b(valueOf.intValue(), ((Integer)num).intValue());
                         c0298c.f1378a = c0298c.f1378a.add(b.f1378a);
                         c0298c.f1379b = c0298c.f1379b.add(b.f1379b);
                         c0298c.f1380c += b.f1380c;
@@ -171,7 +172,7 @@ public class DetailsGeoActivity extends Activity {
         C0298c[] c0298cArr3 = new C0298c[30];
         C0299d c0299d3 = a.f1297f;
         for (i = 0; i < c0298cArr.length; i++) {
-            c0298cArr[i] = new C0302g();
+            //c0298cArr[i] = new C0302g();
         }
         synchronized (c0299d3) {
             Iterator it = this.f1468a.iterator();
@@ -190,7 +191,7 @@ public class DetailsGeoActivity extends Activity {
         }
         C0299d c0299d4 = a.f1296e;
         for (i = 0; i < c0298cArr2.length; i++) {
-            c0298cArr2[i] = new C0302g();
+            //c0298cArr2[i] = new C0302g();
         }
         synchronized (c0299d4) {
             Iterator it2 = this.f1468a.iterator();
@@ -208,16 +209,16 @@ public class DetailsGeoActivity extends Activity {
             arrayList10.add(c0298cArr2[i].f1379b);
         }
         for (i = 0; i < c0298cArr3.length; i++) {
-            c0298cArr3[i] = new C0302g();
+            //c0298cArr3[i] = new C0302g();
         }
         synchronized (c0299d4) {
-            it2 = this.f1468a.iterator();
-            while (it2.hasNext()) {
-                Integer valueOf3 = Integer.valueOf(C0309f.m1982d((String) it2.next()));
-                for (i = 0; i < c0298cArr3.length; i++) {
-                    c0298cArr3[i].m1949a(c0299d4.m1952a(a3 - ((long) i)).m1946c(valueOf3.intValue()));
-                }
-            }
+            //it2 = this.f1468a.iterator();
+            //while (it2.hasNext()) {
+            //    Integer valueOf3 = Integer.valueOf(C0309f.m1982d((String) it2.next()));
+            //    for (i = 0; i < c0298cArr3.length; i++) {
+            //        c0298cArr3[i].m1949a(c0299d4.m1952a(a3 - ((long) i)).m1946c(valueOf3.intValue()));
+            //    }
+            //}
         }
         for (i = c0298cArr3.length - 1; i >= 0; i--) {
             arrayList11.add(Double.valueOf(Double.valueOf((double) (a3 - ((long) i))).doubleValue() + 0.1d));
@@ -229,11 +230,11 @@ public class DetailsGeoActivity extends Activity {
         Series simpleXYSeries2 = new SimpleXYSeries(arrayList8, ArrayFormat.XY_VALS_INTERLEAVED, "Download");
         Formatter barFormatter = new BarFormatter(Color.argb(250, 255, 119, 31), -3355444);
         Formatter barFormatter2 = new BarFormatter(Color.argb(250, 132, 191, 16), -3355444);
-        barFormatter.setPointLabeler(null);
+        //barFormatter.setPointLabeler(null);
         xYPlot.clear();
         xYPlot.setDomainBoundaries(Long.valueOf(b2 - 23), Long.valueOf(b2 + 1), BoundaryMode.FIXED);
-        xYPlot.addSeries(simpleXYSeries, barFormatter);
-        xYPlot.addSeries(simpleXYSeries2, barFormatter2);
+        //xYPlot.addSeries(simpleXYSeries, barFormatter);
+        //xYPlot.addSeries(simpleXYSeries2, barFormatter2);
         BarRenderer barRenderer = (BarRenderer) xYPlot.getRenderer(BarRenderer.class);
         barRenderer.setBarWidthStyle(BarWidthStyle.VARIABLE_WIDTH);
         barRenderer.setBarGap(4.0f);
@@ -243,8 +244,8 @@ public class DetailsGeoActivity extends Activity {
         barFormatter = new BarFormatter(Color.argb(250, 132, 191, 16), -3355444);
         xYPlot2.clear();
         xYPlot2.setDomainBoundaries(Double.valueOf((((double) a3) - 5.95d) - 1.0d), Double.valueOf((((double) a3) + 0.05d) + 1.0d), BoundaryMode.FIXED);
-        xYPlot2.addSeries(simpleXYSeries3, barFormatter3);
-        xYPlot2.addSeries(simpleXYSeries, barFormatter);
+        //xYPlot2.addSeries(simpleXYSeries3, barFormatter3);
+        //xYPlot2.addSeries(simpleXYSeries, barFormatter);
         barRenderer = (BarRenderer) xYPlot2.getRenderer(BarRenderer.class);
         barRenderer.setBarWidthStyle(BarWidthStyle.VARIABLE_WIDTH);
         barRenderer.setBarGap(8.0f);
@@ -254,8 +255,8 @@ public class DetailsGeoActivity extends Activity {
         barFormatter3 = new BarFormatter(Color.argb(250, 132, 191, 16), -3355444);
         xYPlot3.clear();
         xYPlot3.setDomainBoundaries(Double.valueOf((((double) a3) - 29.95d) - 1.0d), Double.valueOf((((double) a3) + 0.05d) + 1.0d), BoundaryMode.FIXED);
-        xYPlot3.addSeries(simpleXYSeries3, barFormatter4);
-        xYPlot3.addSeries(simpleXYSeries4, barFormatter3);
+        //xYPlot3.addSeries(simpleXYSeries3, barFormatter4);
+        //xYPlot3.addSeries(simpleXYSeries4, barFormatter3);
         barRenderer = (BarRenderer) xYPlot3.getRenderer(BarRenderer.class);
         barRenderer.setBarWidthStyle(BarWidthStyle.VARIABLE_WIDTH);
         barRenderer.setBarGap(4.0f);
@@ -263,7 +264,7 @@ public class DetailsGeoActivity extends Activity {
 
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        setContentView(R.activity_details_geo);
+        setContentView(R.layout.activity_details_geo);
         getActionBar().setDisplayHomeAsUpEnabled(true);
         getActionBar().setHomeButtonEnabled(true);
         String stringExtra = getIntent().getStringExtra("name");
@@ -276,7 +277,7 @@ public class DetailsGeoActivity extends Activity {
         ((TextView) findViewById(R.id.detailsName)).setText(stringExtra);
         this.f1472e = (TextView) findViewById(R.id.detailsUpload);
         this.f1473f = (TextView) findViewById(R.id.detailsDownload);
-        ((RadioButton) findViewById(R.id.buttonWiFiOnly)).setVisibility(8);
+        ((RadioButton) findViewById(R.id.buttonWiFiOnly)).setVisibility(View.GONE);
         RadioButton radioButton = (RadioButton) findViewById(R.id.buttonAllow);
         RadioButton radioButton2 = (RadioButton) findViewById(R.id.buttonBlock);
         FirewallManagerService a = FirewallManagerService.m1852a(null);
@@ -318,10 +319,10 @@ public class DetailsGeoActivity extends Activity {
         if (this.f1468a.size() == 1) {
             imageView.setImageDrawable(C0309f.m1984e((String) this.f1468a.get(0)));
         } else {
-            imageView.setVisibility(8);
+            imageView.setVisibility(View.GONE);
         }
         ViewPager viewPager = (ViewPager) findViewById(R.id.detailsGraphPager);
-        viewPager.setAdapter(new ab());
+        viewPager.setAdapter(new ab(this));
         TabHost tabHost = (TabHost) findViewById(R.id.detailsTabHost);
         tabHost.setup();
         TabSpec newTabSpec = tabHost.newTabSpec("one");
@@ -342,7 +343,7 @@ public class DetailsGeoActivity extends Activity {
         tabHost.addTab(newTabSpec);
         tabHost.setOnTabChangedListener(new C0354s(this, viewPager));
         viewPager.setOnPageChangeListener(new C0355t(this, tabHost));
-        Format boVar = new bo();
+        Format boVar = new bo(this);
         XYPlot xYPlot = (XYPlot) findViewById(R.id.detailsGraphHours);
         XYPlot xYPlot2 = (XYPlot) findViewById(R.id.detailsGraphDays);
         XYPlot xYPlot3 = (XYPlot) findViewById(R.id.detailsGraphMonth);
@@ -359,7 +360,7 @@ public class DetailsGeoActivity extends Activity {
         xYPlot.setPlotMargins(0.0f, 0.0f, 0.0f, 0.0f);
         xYPlot.setPlotPadding(0.0f, 0.0f, 0.0f, 0.0f);
         xYPlot.setGridPadding(0.0f, 0.0f, 0.0f, 0.0f);
-        xYPlot.setPaddingRelative(0, 0, 0, 0);
+        //xYPlot.setPaddingRelative(0, 0, 0, 0);
         xYPlot.getLayoutManager().remove(xYPlot.getLegendWidget());
         xYPlot.getLayoutManager().remove(xYPlot.getRangeLabelWidget());
         xYPlot.getLayoutManager().remove(xYPlot.getDomainLabelWidget());
@@ -382,7 +383,7 @@ public class DetailsGeoActivity extends Activity {
         xYPlot2.setPlotMargins(0.0f, 0.0f, 0.0f, 0.0f);
         xYPlot2.setPlotPadding(0.0f, 0.0f, 0.0f, 0.0f);
         xYPlot2.setGridPadding(0.0f, 0.0f, 0.0f, 0.0f);
-        xYPlot2.setPaddingRelative(0, 0, 0, 0);
+        //xYPlot2.setPaddingRelative(0, 0, 0, 0);
         xYPlot2.getLayoutManager().remove(xYPlot2.getLegendWidget());
         xYPlot2.getLayoutManager().remove(xYPlot2.getRangeLabelWidget());
         xYPlot2.getLayoutManager().remove(xYPlot2.getDomainLabelWidget());
@@ -405,7 +406,7 @@ public class DetailsGeoActivity extends Activity {
         xYPlot3.setPlotMargins(0.0f, 0.0f, 0.0f, 0.0f);
         xYPlot3.setPlotPadding(0.0f, 0.0f, 0.0f, 0.0f);
         xYPlot3.setGridPadding(0.0f, 0.0f, 0.0f, 0.0f);
-        xYPlot3.setPaddingRelative(0, 0, 0, 0);
+        //xYPlot3.setPaddingRelative(0, 0, 0, 0);
         xYPlot3.getLayoutManager().remove(xYPlot3.getLegendWidget());
         xYPlot3.getLayoutManager().remove(xYPlot3.getRangeLabelWidget());
         xYPlot3.getLayoutManager().remove(xYPlot3.getDomainLabelWidget());

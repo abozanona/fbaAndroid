@@ -14,7 +14,7 @@ import java.io.StringWriter;
 import java.io.Writer;
 import org.json.JSONObject;
 
-class fi extends AsyncTask {
+public class fi extends AsyncTask {
     final /* synthetic */ ToolSnifferActivity f1855a;
 
     fi(ToolSnifferActivity toolSnifferActivity) {

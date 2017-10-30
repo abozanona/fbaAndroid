@@ -2,7 +2,7 @@ package com.ppu.fba.ui;
 
 import android.widget.Toast;
 
-class fk implements Runnable {
+public class fk implements Runnable {
     final /* synthetic */ fi f1858a;
 
     fk(fi fiVar) {

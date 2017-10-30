@@ -5,7 +5,7 @@ import android.content.DialogInterface.OnClickListener;
 import com.ppu.fba.p009d.C0310g;
 import java.util.ArrayList;
 
-class dv implements OnClickListener {
+public class dv implements OnClickListener {
     final /* synthetic */ ArrayList f1784a;
     final /* synthetic */ be f1785b;
 

@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences.Editor;
 import android.preference.PreferenceManager;
-import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.p009d.Log1;
 import com.ppu.fba.p009d.Log1;
 import com.ppu.fba.ui.RestartActivity;
@@ -24,7 +23,7 @@ public class FirewallVPNStop extends Activity {
         if (i2 != 0) {
             Log1.LogF1("FWVPNStop", "onActivityResult: OK");
             if (i2 == 1) {
-                Log1.LogAction(("state", "vpnLater", null, null));
+                Log1.LogAction("state", "vpnLater", null, null);
                 new Thread(new C0331n(this, a)).start();
             } else {
                 edit = PreferenceManager.getDefaultSharedPreferences(FirewallApplication.m1851a()).edit();
@@ -40,7 +39,7 @@ public class FirewallVPNStop extends Activity {
             }
         } else {
             Log1.LogF1("FWVPNStop", "onActivityResult: NOT OK: " + i2);
-            Log1.LogAction(("state", "vpnCanc", null, null));
+            Log1.LogAction("state", "vpnCanc", null, null);
             edit = PreferenceManager.getDefaultSharedPreferences(FirewallApplication.m1851a()).edit();
             edit.putBoolean("status_on", false);
             edit.commit();

@@ -9,7 +9,7 @@ import com.ppu.fba.free.R;
 import com.ppu.fba.FirewallApplication;
 import com.ppu.fba.FirewallManagerService;
 
-class ep implements OnTimeSetListener {
+public class ep implements OnTimeSetListener {
     final /* synthetic */ int f1827a;
     final /* synthetic */ int f1828b;
     final /* synthetic */ eo f1829c;

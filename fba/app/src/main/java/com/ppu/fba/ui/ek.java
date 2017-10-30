@@ -4,7 +4,7 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import java.util.ArrayList;
 
-class ek implements OnCheckedChangeListener {
+public class ek implements OnCheckedChangeListener {
     ArrayList f1815a;
     final /* synthetic */ SectionGeoListFragment f1816b;
 

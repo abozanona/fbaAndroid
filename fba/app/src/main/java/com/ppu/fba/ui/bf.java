@@ -1,9 +1,9 @@
 package com.ppu.fba.ui;
 
-import android.support.v4.view.br;
+import android.support.v4.view.ViewPager.SimpleOnPageChangeListener;
 import android.widget.TabHost;
 
-class bf extends br {
+public class bf extends SimpleOnPageChangeListener {
     final /* synthetic */ SectionGeoListFragment f1660a;
     final /* synthetic */ TabHost f1661b;
 
@@ -12,7 +12,7 @@ class bf extends br {
         this.f1661b = tabHost;
     }
 
-    public void mo100a(int i) {
+    public void onPageSelected(int i) {
         this.f1661b.setCurrentTab(i);
     }
 }

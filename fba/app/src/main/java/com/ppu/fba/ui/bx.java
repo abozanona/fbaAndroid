@@ -37,25 +37,25 @@ public class bx extends DialogFragment {
             dismiss();
             return builder.create();
         }
-        View inflate = LayoutInflater.from(getActivity()).inflate(R.dialog_profile_add, null);
+        View inflate = LayoutInflater.from(getActivity()).inflate(R.layout.dialog_profile_add, null);
         EditText editText = (EditText) inflate.findViewById(R.id.profileAddInput);
         TextView textView = (TextView) inflate.findViewById(R.id.profileAddComment);
         Spinner spinner = (Spinner) inflate.findViewById(R.id.profileAddSpinner);
         if (a.length > 0) {
-            textView.setVisibility(0);
-            spinner.setVisibility(0);
+            textView.setVisibility(View.VISIBLE);
+            spinner.setVisibility(View.VISIBLE);
             List arrayList = new ArrayList();
             arrayList.add(string);
             for (Object add : a) {
                 arrayList.add(add);
             }
-            spinner.setAdapter(new ArrayAdapter(getActivity(), 17367049, arrayList));
+            spinner.setAdapter(new ArrayAdapter(getActivity(), android.R.layout.simple_spinner_dropdown_item, arrayList));
         } else {
-            textView.setVisibility(8);
-            spinner.setVisibility(8);
+            textView.setVisibility(View.GONE);
+            spinner.setVisibility(View.GONE);
         }
         builder.setPositiveButton(R.string.button_ok, new by(this, editText, a, spinner, string));
-        builder.setNegativeButton(17039360, new bz(this));
+        builder.setNegativeButton("NEGATIVE PAL PLA PLA", new bz(this));
         builder.setView(inflate);
         return builder.create();
     }

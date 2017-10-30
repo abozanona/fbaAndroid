@@ -5,7 +5,7 @@ import com.ppu.fba.p009d.C0309f;
 import java.util.Comparator;
 import java.util.HashMap;
 
-class bl implements Comparator {
+public class bl implements Comparator {
     final /* synthetic */ HashMap f1678a;
     final /* synthetic */ DetailsAppActivity f1679b;
 

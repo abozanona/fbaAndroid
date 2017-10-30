@@ -17,12 +17,12 @@ import com.ppu.fba.p009d.C0316m;
 public class bp extends DialogFragment {
     SharedPreferences f1686a;
     Editor f1687b;
-    private String f1688c = null;
-    private String f1689d = null;
-    private boolean f1690e = true;
-    private EditText f1691f;
-    private EditText f1692g;
-    private CheckBox f1693h;
+    public String f1688c = null;
+    public String f1689d = null;
+    public boolean f1690e = true;
+    public EditText f1691f;
+    public EditText f1692g;
+    public CheckBox f1693h;
 
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
@@ -41,7 +41,7 @@ public class bp extends DialogFragment {
         builder.setPositiveButton(17039370, new bq(this));
         builder.setNeutralButton(R.string.cloudshark_reset, new br(this));
         builder.setNegativeButton(17039360, new bs(this));
-        View inflate = LayoutInflater.from(getActivity()).inflate(R.dialog_cloudshark, null);
+        View inflate = LayoutInflater.from(getActivity()).inflate(R.layout.dialog_cloudshark, null);
         this.f1691f = (EditText) inflate.findViewById(R.id.cloudsharkInput);
         this.f1692g = (EditText) inflate.findViewById(R.id.cloudsharkKeyInput);
         this.f1693h = (CheckBox) inflate.findViewById(R.id.cloudsharkHttpsInput);

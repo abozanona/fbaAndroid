@@ -9,7 +9,7 @@ import com.ppu.fba.FirewallApplication;
 import com.ppu.fba.widget.C0362a;
 import com.ppu.fba.widget.WidgetOnOffProvider;
 
-class aq extends AsyncTask {
+public class aq extends AsyncTask {
     final /* synthetic */ ap f1614a;
     final /* synthetic */ CompoundButton f1615b;
     final /* synthetic */ boolean f1616c;

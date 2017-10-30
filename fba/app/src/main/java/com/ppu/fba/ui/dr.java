@@ -1,6 +1,6 @@
 package com.ppu.fba.ui;
 
-/* synthetic */ class dr {
+/* synthetic */ public class dr {
     static final /* synthetic */ int[] f1779a = new int[ah.values().length];
     static final /* synthetic */ int[] f1780b = new int[an.values().length];
 

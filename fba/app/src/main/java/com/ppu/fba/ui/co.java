@@ -3,7 +3,7 @@ package com.ppu.fba.ui;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-class co implements OnClickListener {
+public class co implements OnClickListener {
     final /* synthetic */ LogsActivity f1737a;
 
     co(LogsActivity logsActivity) {

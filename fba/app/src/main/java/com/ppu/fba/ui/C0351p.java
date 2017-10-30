@@ -1,12 +1,11 @@
 package com.ppu.fba.ui;
 
-import android.support.v4.view.ae;
+import android.support.v4.view.PagerAdapter;
 import android.view.View;
-import com.google.android.vending.licensing.APKExpansionPolicy;
 import com.ppu.fba.free.R;
 import com.ppu.fba.p009d.C0313j;
 
-class C0351p extends ae {
+public class C0351p extends PagerAdapter {
     final /* synthetic */ DetailsAppActivity f1890a;
 
     C0351p(DetailsAppActivity detailsAppActivity) {
@@ -16,7 +15,7 @@ class C0351p extends ae {
     public Object mo754a(View view, int i) {
         int i2 = 0;
         switch (i) {
-            case APKExpansionPolicy.MAIN_FILE_URL_INDEX /*0*/:
+            case 0 /*0*/:
                 i2 = R.id.detailsSlideHourly;
                 break;
             case 1:
@@ -29,7 +28,6 @@ class C0351p extends ae {
                 }
                 i2 = R.id.detailsSlideEmpty;
                 break;
-                break;
         }
         return this.f1890a.findViewById(i2);
     }
@@ -37,11 +35,11 @@ class C0351p extends ae {
     public void mo755a(View view, int i, Object obj) {
     }
 
-    public boolean mo17a(View view, Object obj) {
+    public boolean isViewFromObject(View view, Object obj) {
         return view == ((View) obj);
     }
 
-    public int mo756b() {
+    public int getCount() {
         return 3;
     }
 }

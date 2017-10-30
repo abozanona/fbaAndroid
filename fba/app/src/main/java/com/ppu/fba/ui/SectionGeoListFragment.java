@@ -27,6 +27,7 @@ import com.ppu.fba.p007b.C0294f;
 import com.ppu.fba.p009d.C0309f;
 import com.ppu.fba.p009d.C0313j;
 import java.util.HashMap;
+import java.util.Objects;
 
 @SuppressLint({"UseSparseArrays"})
 public class SectionGeoListFragment extends cd {
@@ -36,6 +37,7 @@ public class SectionGeoListFragment extends cd {
     private TextView f1510T;
     WebView f1511U;
     ef f1512V;
+    ListView Rr;
     private boolean f1513W = false;
 
     public class WebAppInterface {
@@ -57,7 +59,7 @@ public class SectionGeoListFragment extends cd {
                 synchronized (c0294f) {
                     str2 = str;
                     Object obj = 1;
-                    for (String str3 : C0309f.m1979b()) {
+                    for (Object str3 : C0309f.m1979b()) {
                         Object obj2;
                         String str4;
                         String str5;
@@ -70,7 +72,7 @@ public class SectionGeoListFragment extends cd {
                             obj2 = obj;
                             str4 = str5;
                         }
-                        C0292d c0292d = (C0292d) c0294f.f1370a.get(Integer.valueOf(C0309f.m1982d(str3)));
+                        C0292d c0292d = (C0292d) c0294f.f1370a.get(Integer.valueOf(C0309f.m1982d((String)str3)));
                         str = (c0292d == null || c0292d.f1369c != 2) ? str4 + "\"" + str3 + "\": 0" : str4 + "\"" + str3 + "\": 100";
                         obj = obj2;
                         str2 = str;
@@ -85,56 +87,56 @@ public class SectionGeoListFragment extends cd {
     @SuppressLint({"SetJavaScriptEnabled"})
     public View mo749a(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         Context context = layoutInflater.getContext();
-        RelativeLayout relativeLayout = (RelativeLayout) layoutInflater.inflate(R.activity_list_geo, viewGroup, false);
+        RelativeLayout relativeLayout = (RelativeLayout) layoutInflater.inflate(R.layout.activity_list_geo, viewGroup, false);
         ViewPager viewPager = (ViewPager) relativeLayout.findViewById(R.id.geoPager);
-        viewPager.setAdapter(new en());
-        ((DashboardViewPager) m30b().findViewById(R.id.pager)).setChildId(R.id.geoPager);
+        viewPager.setAdapter(new en(this));
+        //((DashboardViewPager) m30b().findViewById(R.id.pager)).setChildId(R.id.geoPager);
         TabHost tabHost = (TabHost) relativeLayout.findViewById(R.id.geoTabHost);
         tabHost.setup();
         TabSpec newTabSpec = tabHost.newTabSpec("map");
         newTabSpec.setContent(R.id.geoPager);
-        newTabSpec.setIndicator(m37c().getString(R.string.title_section3_map));
+        newTabSpec.setIndicator(getContext().getString(R.string.title_section3_map));
         tabHost.addTab(newTabSpec);
         newTabSpec = tabHost.newTabSpec("list");
         newTabSpec.setContent(R.id.geoPager);
-        newTabSpec.setIndicator(m37c().getString(R.string.title_section3_list));
+        newTabSpec.setIndicator(getContext().getString(R.string.title_section3_list));
         tabHost.addTab(newTabSpec);
         tabHost.setOnTabChangedListener(new be(this, viewPager, layoutInflater));
         viewPager.setOnPageChangeListener(new bf(this, tabHost));
         this.f1511U = (WebView) relativeLayout.findViewById(R.id.webViewCountries);
         RelativeLayout relativeLayout2 = (RelativeLayout) relativeLayout.findViewById(R.id.mapEntriesHolder);
         Spinner spinner = (Spinner) relativeLayout.findViewById(R.id.mapType);
-        this.f1512V = new ef(this, m30b());
+        //this.f1512V = new ef(this, m30b());
         this.f1512V.setPadding(0, 0, 0, 0);
-        this.f1512V.setAdapter(new em(this, m30b(), C0309f.m1976a(), new HashMap(), false));
+        //this.f1512V.setAdapter(new em(this, m30b(), C0309f.m1976a(), new HashMap(), false));
         relativeLayout2.addView(this.f1512V);
         spinner.setOnItemSelectedListener(new bg(this));
         this.f1511U.setBackgroundColor(0);
         this.f1511U.getSettings().setJavaScriptEnabled(true);
         this.f1511U.getSettings().setBuiltInZoomControls(false);
         this.f1511U.setWebChromeClient(new bh(this));
-        this.f1511U.addJavascriptInterface(new WebAppInterface(this, m30b()), "Android");
+        //this.f1511U.addJavascriptInterface(new WebAppInterface(this, m30b()), "Android");
         this.f1511U.loadUrl("file:///android_asset/worldmap/index.html");
         this.f1511U.setDrawingCacheEnabled(true);
         this.f1509S = (Button) relativeLayout.findViewById(R.id.buttonShare);
         this.f1509S.setOnClickListener(new dz(this));
         this.f1510T = (TextView) relativeLayout.findViewById(R.id.listPro);
-        this.R = (ListView) relativeLayout.findViewById(R.id.listItems);
-        this.R.setDrawingCacheBackgroundColor(-16777216);
-        this.R.setScrollbarFadingEnabled(true);
-        this.R.setHorizontalFadingEdgeEnabled(true);
-        this.R.setVerticalFadingEdgeEnabled(true);
-        this.R.setFadingEdgeLength(32);
+        Rr = (ListView) relativeLayout.findViewById(R.id.listItems);
+        Rr.setDrawingCacheBackgroundColor(0xFF000000);
+        Rr.setScrollbarFadingEnabled(true);
+        Rr.setHorizontalFadingEdgeEnabled(true);
+        Rr.setVerticalFadingEdgeEnabled(true);
+        Rr.setFadingEdgeLength(32);
         this.f1507P = bi.REGION_ALL;
         this.f1508Q = bn.TODAY;
         Spinner spinner2 = (Spinner) relativeLayout.findViewById(R.id.listSpinnerCnts);
         SpinnerAdapter createFromResource = ArrayAdapter.createFromResource(context, R.array.spinner_cnts, R.layout.multiline_spinner_dropdown_item);
-        createFromResource.setDropDownViewResource(17367049);
+        //createFromResource.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner2.setAdapter(createFromResource);
         spinner2.setOnItemSelectedListener(new ea(this));
         spinner2 = (Spinner) relativeLayout.findViewById(R.id.listSpinnerPeriod);
-        createFromResource = ("com.ppu.fba.free".equals(m37c().getString(R.string.package_name)) || !C0313j.m2004a(context)) ? ArrayAdapter.createFromResource(context, R.array.spinner_period, R.multiline_spinner_dropdown_item) : ArrayAdapter.createFromResource(context, R.array.spinner_period_pro, R.multiline_spinner_dropdown_item);
-        createFromResource.setDropDownViewResource(17367049);
+        //createFromResource = ("com.ppu.fba.free".equals(m37c().getString(R.string.package_name)) || !C0313j.m2004a(context)) ? ArrayAdapter.createFromResource(context, R.array.spinner_period, R.multiline_spinner_dropdown_item) : ArrayAdapter.createFromResource(context, R.array.spinner_period_pro, R.multiline_spinner_dropdown_item);
+        //createFromResource.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner2.setAdapter(createFromResource);
         spinner2.setOnItemSelectedListener(new eb(this));
         mo750a(context);
@@ -164,30 +166,30 @@ public class SectionGeoListFragment extends cd {
     }
 
     public synchronized void mo751a(ListAdapter listAdapter) {
-        if (this.f1508Q == bn.THIRTY_DAYS && (this.R == null || "com.ppu.fba.free".equals(m37c().getString(R.string.package_name)) || !C0313j.m2004a(this.R.getContext()))) {
-            if (this.R != null) {
-                this.R.setVisibility(8);
+        if (this.f1508Q == bn.THIRTY_DAYS && (Rr == null || "com.ppu.fba.free".equals(getContext().getString(R.string.package_name)) || !C0313j.m2004a(Rr.getContext()))) {
+            if (Rr != null) {
+                Rr.setVisibility(View.GONE);
             }
             if (this.f1510T != null) {
-                this.f1510T.setVisibility(0);
+                this.f1510T.setVisibility(View.VISIBLE);
             }
         } else {
-            if (this.R != null) {
-                this.R.setVisibility(0);
+            if (Rr != null) {
+                Rr.setVisibility(View.VISIBLE);
             }
             if (this.f1510T != null) {
-                this.f1510T.setVisibility(8);
+                this.f1510T.setVisibility(View.GONE);
             }
-            if (!(this.R == null || listAdapter == null)) {
-                this.R.setAdapter(listAdapter);
+            if (!(Rr == null || listAdapter == null)) {
+                Rr.setAdapter(listAdapter);
             }
             FirewallManagerService a = FirewallManagerService.m1852a(null);
             if (a != null) {
                 Object obj;
                 C0294f c0294f = a.f1295d;
                 synchronized (c0294f) {
-                    for (C0292d c0292d : c0294f.f1370a.values()) {
-                        if (c0292d.f1369c == 2) {
+                    for (Object c0292d : c0294f.f1370a.values()) {
+                        if (((C0292d)c0292d).f1369c == 2) {
                             obj = 1;
                             break;
                         }
@@ -195,9 +197,9 @@ public class SectionGeoListFragment extends cd {
                     obj = null;
                 }
                 if (obj != null) {
-                    this.f1509S.setVisibility(0);
+                    this.f1509S.setVisibility(View.VISIBLE);
                 } else {
-                    this.f1509S.setVisibility(8);
+                    this.f1509S.setVisibility(View.GONE);
                 }
             }
         }

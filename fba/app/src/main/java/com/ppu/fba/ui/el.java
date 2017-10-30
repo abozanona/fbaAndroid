@@ -1,9 +1,9 @@
 package com.ppu.fba.ui;
 
+import android.view.View;
 import android.widget.BaseAdapter;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
-import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.C0288a;
 import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.p007b.C0292d;
@@ -13,7 +13,7 @@ import com.ppu.fba.p009d.Log1;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-class el implements OnCheckedChangeListener {
+public class el implements OnCheckedChangeListener {
     final /* synthetic */ SectionGeoListFragment f1817a;
     private final ArrayList f1818b;
     private final int f1819c;
@@ -62,12 +62,13 @@ class el implements OnCheckedChangeListener {
             }
             if (i != 0) {
                 if (this.f1819c == 2) {
-                    this.f1817a.f1509S.setVisibility(0);
+                    this.f1817a.f1509S.setVisibility(View.VISIBLE);
                     str = "Block";
                 } else {
                     str = "Allow";
                 }
-                Log1.LogAction(("listCnts", "click" + str, (this.f1820d ? "R:" : "C:") + this.f1821e, null));
+                Log1.LogAction("listCnts", "click" + str, (this.f1820d ? "R:" : "C:") + this.f1821e, null);
+                /*
                 BaseAdapter baseAdapter = (BaseAdapter) this.f1817a.R.getAdapter();
                 if (baseAdapter != null) {
                     baseAdapter.notifyDataSetChanged();
@@ -77,6 +78,7 @@ class el implements OnCheckedChangeListener {
                     baseAdapter.notifyDataSetChanged();
                 }
                 this.f1817a.f1511U.loadUrl("file:///android_asset/worldmap/index.html");
+                */
             }
         }
     }

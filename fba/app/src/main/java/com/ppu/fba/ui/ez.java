@@ -5,7 +5,7 @@ import android.view.View.OnClickListener;
 import com.ppu.fba.free.R;
 import com.ppu.fba.NativeWrapper;
 
-class ez implements OnClickListener {
+public class ez implements OnClickListener {
     final /* synthetic */ ToolSnifferActivity f1842a;
 
     ez(ToolSnifferActivity toolSnifferActivity) {

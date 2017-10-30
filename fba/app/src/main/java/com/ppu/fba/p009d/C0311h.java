@@ -3,7 +3,6 @@ package com.ppu.fba.p009d;
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
-import com.google.analytics.tracking.android.MapBuilder;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -73,7 +72,7 @@ public class C0311h {
                         if (message != null) {
                             Log1.LogF1("readObjectFromFile", message);
                         }
-                        Log1.LogAction(("error", "read", exception.getClass().getCanonicalName(), null));
+                        Log1.LogAction("error", "read", exception.getClass().getCanonicalName(), null);
                         exception.printStackTrace();
                         if (objectInputStream2 != null) {
                             try {
@@ -135,7 +134,7 @@ public class C0311h {
                 if (message != null) {
                     Log1.LogF1("readObjectFromFile", message);
                 }
-                Log1.LogAction(("error", "read", exception.getClass().getCanonicalName(), null));
+                Log1.LogAction("error", "read", exception.getClass().getCanonicalName(), null);
                 exception.printStackTrace();
                 if (objectInputStream2 != null) {
                     objectInputStream2.close();
@@ -175,7 +174,7 @@ public class C0311h {
             if (message != null) {
                 Log1.LogF1("readObjectFromFile", message);
             }
-            Log1.LogAction(("error", "read", exception.getClass().getCanonicalName(), null));
+            Log1.LogAction("error", "read", exception.getClass().getCanonicalName(), null);
             exception.printStackTrace();
             if (objectInputStream2 != null) {
                 objectInputStream2.close();
@@ -243,7 +242,7 @@ public class C0311h {
                     outputStream = fileOutputStream2;
                     objectOutputStream = objectOutputStream2;
                     try {
-                        Log1.LogAction(("error", "write", e.getClass().getCanonicalName(), null));
+                        Log1.LogAction("error", "write", e.getClass().getCanonicalName(), null);
                         if (objectOutputStream != null) {
                             try {
                                 objectOutputStream.flush();
@@ -298,7 +297,7 @@ public class C0311h {
                 outputStream2 = fileOutputStream2;
                 objectOutputStream = null;
                 outputStream = outputStream2;
-                Log1.LogAction(("error", "write", e.getClass().getCanonicalName(), null));
+                Log1.LogAction("error", "write", e.getClass().getCanonicalName(), null);
                 if (objectOutputStream != null) {
                     objectOutputStream.flush();
                     objectOutputStream.close();
@@ -327,7 +326,7 @@ public class C0311h {
         } catch (Exception e10) {
             e = e10;
             objectOutputStream = null;
-            Log1.LogAction(("error", "write", e.getClass().getCanonicalName(), null));
+            Log1.LogAction("error", "write", e.getClass().getCanonicalName(), null);
             if (objectOutputStream != null) {
                 objectOutputStream.flush();
                 objectOutputStream.close();
@@ -421,7 +420,7 @@ public class C0311h {
                         fileOutputStream.close();
                         open.close();
                     } catch (Exception e2) {
-                        Log1.LogAction(("error", "pers", e2.getClass().getCanonicalName(), null));
+                        Log1.LogAction("error", "pers", e2.getClass().getCanonicalName(), null);
                     }
                 }
             }

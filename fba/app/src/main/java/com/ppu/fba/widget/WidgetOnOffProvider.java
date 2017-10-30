@@ -7,16 +7,13 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.Parcelable;
 import android.preference.PreferenceManager;
 import android.widget.RemoteViews;
 
-import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.C0288a;
 import com.ppu.fba.FirewallApplication;
 import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.free.R;
-import com.ppu.fba.p009d.Log1;
 import com.ppu.fba.p009d.Log1;
 
 public class WidgetOnOffProvider extends AppWidgetProvider {
@@ -42,7 +39,7 @@ public class WidgetOnOffProvider extends AppWidgetProvider {
             r2 = PreferenceManager.getDefaultSharedPreferences(a).edit();
             r2.putBoolean("status_on", true);
             r2.commit();
-            Log1.LogAction(("widget", "onoff", "on", null));
+            Log1.LogAction("widget", "onoff", "on", null);
             FirewallManagerService r22;
             r22 = FirewallManagerService.m1852a(a);
             if (r22 != null) {
@@ -62,7 +59,7 @@ public class WidgetOnOffProvider extends AppWidgetProvider {
             r2 = PreferenceManager.getDefaultSharedPreferences(a).edit();
             r2.putBoolean("status_on", false);
             r2.commit();
-            Log1.LogAction(("widget", "onoff", "off", null));
+            Log1.LogAction("widget", "onoff", "off", null);
             FirewallManagerService r22;
             r22 = FirewallManagerService.m1852a(a);
             if (r22 != null) {

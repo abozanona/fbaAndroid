@@ -70,12 +70,12 @@ public class DetailsAppActivity extends Activity {
         Iterator it = arrayList2.iterator();
         while (it.hasNext()) {
             C0297b c0297b = (C0297b) it.next();
-            for (Integer num : c0297b.m1942b(this.f1453a.intValue()).keySet()) {
+            for (Object num : c0297b.m1942b(this.f1453a.intValue()).keySet()) {
                 C0298c c0298c = (C0298c) hashMap.get(num);
                 if (c0298c == null) {
-                    c0298c = new C0302g();
+                    //c0298c = new C0302g();
                 }
-                C0298c a = c0297b.m1936a(this.f1453a.intValue(), num.intValue());
+                C0298c a = c0297b.m1936a(this.f1453a.intValue(), ((Integer)num).intValue());
                 c0298c.f1378a = c0298c.f1378a.add(a.f1378a);
                 c0298c.f1379b = c0298c.f1379b.add(a.f1379b);
                 c0298c.f1380c += a.f1380c;
@@ -172,7 +172,7 @@ public class DetailsAppActivity extends Activity {
                 c0298cArr[i] = c0299d3.m1952a(b2 - ((long) i)).m1935a(this.f1453a.intValue());
             }
         }
-        for (i = c0298cArr.length - 1; i >= 0; i--) {
+        for (int i = c0298cArr.length - 1; i >= 0; i--) {
             arrayList7.add(Double.valueOf(Double.valueOf((double) (b2 - ((long) i))).doubleValue() + 0.05d));
             arrayList7.add(c0298cArr[i].f1378a);
             arrayList8.add(Double.valueOf(Double.valueOf((double) (b2 - ((long) i))).doubleValue() + 0.05d));
@@ -180,22 +180,22 @@ public class DetailsAppActivity extends Activity {
         }
         C0299d c0299d4 = a.f1296e;
         synchronized (c0299d4) {
-            for (i = 0; i < c0298cArr2.length; i++) {
+            for (int i = 0; i < c0298cArr2.length; i++) {
                 c0298cArr2[i] = c0299d4.m1952a(a2 - ((long) i)).m1935a(this.f1453a.intValue());
             }
         }
-        for (i = c0298cArr2.length - 1; i >= 0; i--) {
+        for (int i = c0298cArr2.length - 1; i >= 0; i--) {
             arrayList9.add(Double.valueOf(Double.valueOf((double) (a2 - ((long) i))).doubleValue() + 0.1d));
             arrayList9.add(c0298cArr2[i].f1378a);
             arrayList10.add(Double.valueOf(Double.valueOf((double) (a2 - ((long) i))).doubleValue() + 0.1d));
             arrayList10.add(c0298cArr2[i].f1379b);
         }
         synchronized (c0299d4) {
-            for (i = 0; i < c0298cArr3.length; i++) {
+            for (int i = 0; i < c0298cArr3.length; i++) {
                 c0298cArr3[i] = c0299d4.m1952a(a2 - ((long) i)).m1935a(this.f1453a.intValue());
             }
         }
-        for (i = c0298cArr3.length - 1; i >= 0; i--) {
+        for (int i = c0298cArr3.length - 1; i >= 0; i--) {
             arrayList11.add(Double.valueOf(Double.valueOf((double) (a2 - ((long) i))).doubleValue() + 0.1d));
             arrayList11.add(c0298cArr3[i].f1378a);
             arrayList12.add(Double.valueOf(Double.valueOf((double) (a2 - ((long) i))).doubleValue() + 0.1d));
@@ -205,11 +205,11 @@ public class DetailsAppActivity extends Activity {
         Series simpleXYSeries2 = new SimpleXYSeries(arrayList8, ArrayFormat.XY_VALS_INTERLEAVED, "Download");
         Formatter barFormatter = new BarFormatter(Color.argb(250, 255, 119, 31), -3355444);
         Formatter barFormatter2 = new BarFormatter(Color.argb(250, 132, 191, 16), -3355444);
-        barFormatter.setPointLabeler(null);
+        //barFormatter.setPointLabeler(null);
         xYPlot.clear();
         xYPlot.setDomainBoundaries(Long.valueOf(b2 - 23), Long.valueOf(b2 + 1), BoundaryMode.FIXED);
-        xYPlot.addSeries(simpleXYSeries, barFormatter);
-        xYPlot.addSeries(simpleXYSeries2, barFormatter2);
+        //xYPlot.addSeries(simpleXYSeries, barFormatter);
+        //xYPlot.addSeries(simpleXYSeries2, barFormatter2);
         BarRenderer barRenderer = (BarRenderer) xYPlot.getRenderer(BarRenderer.class);
         barRenderer.setBarWidthStyle(BarWidthStyle.VARIABLE_WIDTH);
         barRenderer.setBarGap(4.0f);
@@ -219,8 +219,8 @@ public class DetailsAppActivity extends Activity {
         barFormatter = new BarFormatter(Color.argb(250, 132, 191, 16), -3355444);
         xYPlot2.clear();
         xYPlot2.setDomainBoundaries(Double.valueOf((((double) a2) - 5.95d) - 1.0d), Double.valueOf((((double) a2) + 0.05d) + 1.0d), BoundaryMode.FIXED);
-        xYPlot2.addSeries(simpleXYSeries3, barFormatter3);
-        xYPlot2.addSeries(simpleXYSeries, barFormatter);
+        //xYPlot2.addSeries(simpleXYSeries3, barFormatter3);
+        //xYPlot2.addSeries(simpleXYSeries, barFormatter);
         barRenderer = (BarRenderer) xYPlot2.getRenderer(BarRenderer.class);
         barRenderer.setBarWidthStyle(BarWidthStyle.VARIABLE_WIDTH);
         barRenderer.setBarGap(14.0f);
@@ -230,8 +230,8 @@ public class DetailsAppActivity extends Activity {
         barFormatter3 = new BarFormatter(Color.argb(250, 132, 191, 16), -3355444);
         xYPlot3.clear();
         xYPlot3.setDomainBoundaries(Double.valueOf((((double) a2) - 29.95d) - 1.0d), Double.valueOf((((double) a2) + 0.05d) + 1.0d), BoundaryMode.FIXED);
-        xYPlot3.addSeries(simpleXYSeries3, barFormatter4);
-        xYPlot3.addSeries(simpleXYSeries4, barFormatter3);
+        //xYPlot3.addSeries(simpleXYSeries3, barFormatter4);
+        //xYPlot3.addSeries(simpleXYSeries4, barFormatter3);
         barRenderer = (BarRenderer) xYPlot3.getRenderer(BarRenderer.class);
         barRenderer.setBarWidthStyle(BarWidthStyle.VARIABLE_WIDTH);
         barRenderer.setBarGap(4.0f);
@@ -239,7 +239,7 @@ public class DetailsAppActivity extends Activity {
 
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        setContentView(R.activity_details_app);
+        setContentView(R.layout.activity_details_app);
         getActionBar().setDisplayHomeAsUpEnabled(true);
         getActionBar().setHomeButtonEnabled(true);
         Integer valueOf = Integer.valueOf(getIntent().getIntExtra("id", 0));
@@ -342,7 +342,7 @@ public class DetailsAppActivity extends Activity {
         tabHost.addTab(newTabSpec);
         tabHost.setOnTabChangedListener(new C0346k(this, viewPager));
         viewPager.setOnPageChangeListener(new C0347l(this, tabHost));
-        Format bmVar = new bm();
+        Format bmVar = new bm(this);
         XYPlot xYPlot = (XYPlot) findViewById(R.id.detailsGraphHours);
         XYPlot xYPlot2 = (XYPlot) findViewById(R.id.detailsGraphDays);
         XYPlot xYPlot3 = (XYPlot) findViewById(R.id.detailsGraphMonth);
@@ -359,7 +359,7 @@ public class DetailsAppActivity extends Activity {
         xYPlot.setPlotMargins(0.0f, 0.0f, 0.0f, 0.0f);
         xYPlot.setPlotPadding(0.0f, 0.0f, 0.0f, 0.0f);
         xYPlot.setGridPadding(0.0f, 0.0f, 0.0f, 0.0f);
-        xYPlot.setPaddingRelative(0, 0, 0, 0);
+        //xYPlot.setPaddingRelative(0, 0, 0, 0);
         xYPlot.getLayoutManager().remove(xYPlot.getLegendWidget());
         xYPlot.getLayoutManager().remove(xYPlot.getRangeLabelWidget());
         xYPlot.getLayoutManager().remove(xYPlot.getDomainLabelWidget());
@@ -382,7 +382,7 @@ public class DetailsAppActivity extends Activity {
         xYPlot2.setPlotMargins(0.0f, 0.0f, 0.0f, 0.0f);
         xYPlot2.setPlotPadding(0.0f, 0.0f, 0.0f, 0.0f);
         xYPlot2.setGridPadding(0.0f, 0.0f, 0.0f, 0.0f);
-        xYPlot2.setPaddingRelative(0, 0, 0, 0);
+        //xYPlot2.setPaddingRelative(0, 0, 0, 0);
         xYPlot2.getLayoutManager().remove(xYPlot2.getLegendWidget());
         xYPlot2.getLayoutManager().remove(xYPlot2.getRangeLabelWidget());
         xYPlot2.getLayoutManager().remove(xYPlot2.getDomainLabelWidget());
@@ -405,7 +405,7 @@ public class DetailsAppActivity extends Activity {
         xYPlot3.setPlotMargins(0.0f, 0.0f, 0.0f, 0.0f);
         xYPlot3.setPlotPadding(0.0f, 0.0f, 0.0f, 0.0f);
         xYPlot3.setGridPadding(0.0f, 0.0f, 0.0f, 0.0f);
-        xYPlot3.setPaddingRelative(0, 0, 0, 0);
+        //xYPlot3.setPaddingRelative(0, 0, 0, 0);
         xYPlot3.getLayoutManager().remove(xYPlot3.getLegendWidget());
         xYPlot3.getLayoutManager().remove(xYPlot3.getRangeLabelWidget());
         xYPlot3.getLayoutManager().remove(xYPlot3.getDomainLabelWidget());

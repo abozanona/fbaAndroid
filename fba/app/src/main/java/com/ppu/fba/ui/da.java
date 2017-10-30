@@ -2,10 +2,10 @@ package com.ppu.fba.ui;
 
 import java.util.Comparator;
 
-class da implements Comparator {
+public class da implements Comparator {
     final /* synthetic */ LogsActivity f1760a;
 
-    private da(LogsActivity logsActivity) {
+    public da(LogsActivity logsActivity) {
         this.f1760a = logsActivity;
     }
 

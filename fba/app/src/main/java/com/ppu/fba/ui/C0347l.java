@@ -1,10 +1,10 @@
 package com.ppu.fba.ui;
 
-import android.support.v4.view.br;
+import android.support.v4.view.ViewPager.SimpleOnPageChangeListener;
 import android.widget.TabHost;
 import com.ppu.fba.p009d.C0312i;
 
-class C0347l extends br {
+public class C0347l extends SimpleOnPageChangeListener {
     final /* synthetic */ DetailsAppActivity f1880a;
     final /* synthetic */ TabHost f1881b;
 
@@ -13,7 +13,7 @@ class C0347l extends br {
         this.f1881b = tabHost;
     }
 
-    public void mo100a(int i) {
+    public void onPageSelected(int i) {
         this.f1881b.setCurrentTab(i);
         if (i == 0) {
             this.f1880a.f1457e.setText(C0312i.m2001a(this.f1880a.getApplicationContext(), this.f1880a.f1459g));

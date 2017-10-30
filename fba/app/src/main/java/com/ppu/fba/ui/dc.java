@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-class dc implements OnClickListener {
+public class dc implements OnClickListener {
     final /* synthetic */ cx f1763a;
     final /* synthetic */ db f1764b;
 

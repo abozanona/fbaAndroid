@@ -3,9 +3,8 @@ package com.ppu.fba.ui;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
-import com.google.android.vending.licensing.APKExpansionPolicy;
 
-class ae implements OnItemSelectedListener {
+public class ae implements OnItemSelectedListener {
     final /* synthetic */ ad f1564a;
 
     ae(ad adVar) {
@@ -14,7 +13,7 @@ class ae implements OnItemSelectedListener {
 
     public void onItemSelected(AdapterView adapterView, View view, int i, long j) {
         switch (i) {
-            case APKExpansionPolicy.MAIN_FILE_URL_INDEX /*0*/:
+            case 0 /*0*/:
                 this.f1564a.f1561P = ah.ALL;
                 break;
             case 1:

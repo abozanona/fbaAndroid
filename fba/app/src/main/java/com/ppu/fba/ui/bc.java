@@ -3,7 +3,6 @@ package com.ppu.fba.ui;
 import android.content.Context;
 import android.view.View;
 import android.view.View.OnClickListener;
-import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.C0288a;
 import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.p004a.C0284b;
@@ -12,7 +11,7 @@ import com.ppu.fba.p004a.C0286d;
 import com.ppu.fba.p007b.C0289a;
 import com.ppu.fba.p009d.Log1;
 
-class bc implements OnClickListener {
+public class bc implements OnClickListener {
     final /* synthetic */ aw f1651a;
     final /* synthetic */ C0289a f1652b;
     final /* synthetic */ Context f1653c;
@@ -34,7 +33,7 @@ class bc implements OnClickListener {
             a.m1863a(new C0288a(5));
         }
         C0285c.m1913a(new C0285c(C0284b.APPLICATION, this.f1654d, C0286d.BLOCK));
-        Log1.LogAction(("suggApps", "buttonBlock", this.f1655e, null));
+        Log1.LogAction("suggApps", "buttonBlock", this.f1655e, null);
         this.f1651a.f1623a.m2057c(this.f1653c);
     }
 }

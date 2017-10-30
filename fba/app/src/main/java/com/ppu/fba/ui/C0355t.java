@@ -1,10 +1,10 @@
 package com.ppu.fba.ui;
 
-import android.support.v4.view.br;
+import android.support.v4.view.ViewPager.SimpleOnPageChangeListener;
 import android.widget.TabHost;
 import com.ppu.fba.p009d.C0312i;
 
-class C0355t extends br {
+public class C0355t extends SimpleOnPageChangeListener {
     final /* synthetic */ DetailsGeoActivity f1897a;
     final /* synthetic */ TabHost f1898b;
 
@@ -13,7 +13,7 @@ class C0355t extends br {
         this.f1898b = tabHost;
     }
 
-    public void mo100a(int i) {
+    public void onPageSelected(int i) {
         this.f1898b.setCurrentTab(i);
         if (i == 0) {
             this.f1897a.f1472e.setText(C0312i.m2001a(this.f1897a.getApplicationContext(), this.f1897a.f1476i));

@@ -3,7 +3,7 @@ package com.ppu.fba.ui;
 import com.ppu.fba.p009d.C0309f;
 import java.util.Comparator;
 
-class dy implements Comparator {
+public class dy implements Comparator {
     final /* synthetic */ bg f1790a;
 
     dy(bg bgVar) {

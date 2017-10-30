@@ -6,7 +6,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import com.ppu.fba.p009d.C0317n;
 
-class by implements OnClickListener {
+public class by implements OnClickListener {
     final /* synthetic */ EditText f1711a;
     final /* synthetic */ String[] f1712b;
     final /* synthetic */ Spinner f1713c;

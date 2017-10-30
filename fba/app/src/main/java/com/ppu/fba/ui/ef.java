@@ -8,8 +8,8 @@ public class ef extends Spinner {
     final /* synthetic */ SectionGeoListFragment f1806b;
 
     public ef(SectionGeoListFragment sectionGeoListFragment, Context context) {
-        this.f1806b = sectionGeoListFragment;
         super(context);
+        this.f1806b = sectionGeoListFragment;
         this.f1805a = context;
     }
 

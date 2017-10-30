@@ -8,7 +8,7 @@ import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.p008c.C0296a;
 import com.ppu.fba.p009d.Log1;
 
-public abstract class cd extends Fragment implements ac {
+public class cd extends Fragment implements ac {
     private long f1505P = 0;
     volatile ListView f1506R;
 
@@ -38,9 +38,13 @@ public abstract class cd extends Fragment implements ac {
     }
 
     public void mo748j() {
-        super.mo748j();
-        if (FirewallManagerService.m1852a(null) != null && m49f()) {
+        if (FirewallManagerService.m1852a(null) != null) {
             m2056b(this.f1506R.getContext());
         }
+    }
+
+    @Override
+    public ListAdapter mo750a(Context context) {
+        return null;
     }
 }

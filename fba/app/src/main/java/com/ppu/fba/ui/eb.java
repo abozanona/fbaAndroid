@@ -3,9 +3,8 @@ package com.ppu.fba.ui;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
-import com.google.android.vending.licensing.APKExpansionPolicy;
 
-class eb implements OnItemSelectedListener {
+public class eb implements OnItemSelectedListener {
     final /* synthetic */ SectionGeoListFragment f1796a;
 
     eb(SectionGeoListFragment sectionGeoListFragment) {
@@ -14,7 +13,7 @@ class eb implements OnItemSelectedListener {
 
     public void onItemSelected(AdapterView adapterView, View view, int i, long j) {
         switch (i) {
-            case APKExpansionPolicy.MAIN_FILE_URL_INDEX /*0*/:
+            case 0 /*0*/:
                 this.f1796a.f1508Q = bn.TODAY;
                 break;
             case 1:

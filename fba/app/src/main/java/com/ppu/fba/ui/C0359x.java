@@ -5,7 +5,7 @@ import com.ppu.fba.p009d.C0308e;
 import java.util.Comparator;
 import java.util.HashMap;
 
-class C0359x implements Comparator {
+public class C0359x implements Comparator {
     final /* synthetic */ DetailsGeoActivity f1907a;
     final /* synthetic */ HashMap f1908b;
 

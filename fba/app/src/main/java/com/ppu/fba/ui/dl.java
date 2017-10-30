@@ -3,7 +3,7 @@ package com.ppu.fba.ui;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-class dl implements OnClickListener {
+public class dl implements OnClickListener {
     final /* synthetic */ ProfileSelectActivity f1773a;
 
     dl(ProfileSelectActivity profileSelectActivity) {

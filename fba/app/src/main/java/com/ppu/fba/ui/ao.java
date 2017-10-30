@@ -39,9 +39,10 @@ public class ao extends cd {
     TextView f1611Z;
     TextView aa;
     du ab;
+    ListView Rr;
 
     public View mo749a(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
-        View inflate = layoutInflater.inflate(R.fragment_dashboard, viewGroup, false);
+        View inflate = layoutInflater.inflate(R.layout.fragment_dashboard, viewGroup, false);
         Context a = FirewallApplication.m1851a();
         SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(a);
         f1602P = (Switch) inflate.findViewById(R.id.dashboardSwitch);
@@ -66,7 +67,7 @@ public class ao extends cd {
         this.aa = (TextView) inflate.findViewById(R.id.dashboardCounterAppsOffice);
         synchronized (this) {
             this.f1604S = (RelativeLayout) inflate.findViewById(R.id.dashboardEmptyView);
-            this.R = (ListView) inflate.findViewById(R.id.dashboardSuggestionsList);
+            Rr = (ListView) inflate.findViewById(R.id.dashboardSuggestionsList);
         }
         m2057c(viewGroup.getContext());
         new ds(this).execute(new Object[0]);
@@ -90,19 +91,19 @@ public class ao extends cd {
         int i = 0;
         synchronized (this) {
             Log1.LogF1("SectionDashboard", "updateSyncUI");
-            if (!(this.R == null || listAdapter == null)) {
+            if (!(Rr == null || listAdapter == null)) {
                 if (f1602P.isEnabled()) {
                     f1602P.setChecked(PreferenceManager.getDefaultSharedPreferences(FirewallApplication.m1851a()).getBoolean("status_on", true));
                 }
                 if (listAdapter.getCount() > 0) {
-                    this.f1604S.setVisibility(0);
-                    this.R.setEmptyView(this.f1604S);
+                    this.f1604S.setVisibility(View.VISIBLE);
+                    Rr.setEmptyView(this.f1604S);
                 } else {
-                    this.f1604S.setVisibility(4);
+                    this.f1604S.setVisibility(View.INVISIBLE);
                 }
-                this.R.setAdapter(listAdapter);
-                C0313j.m2002a(this.R);
-                this.f1603Q.recomputeViewAttributes(this.R);
+                Rr.setAdapter(listAdapter);
+                C0313j.m2002a(Rr);
+                this.f1603Q.recomputeViewAttributes(Rr);
                 this.f1603Q.requestLayout();
                 new dt(this).execute(new Object[0]);
             }
@@ -115,8 +116,8 @@ public class ao extends cd {
                 if (c0294f != null) {
                     synchronized (c0294f) {
                         i3 = 0;
-                        for (Integer num : c0294f.f1370a.keySet()) {
-                            i3 = ((C0292d) c0294f.f1370a.get(num)).f1369c != 0 ? i3 + 1 : i3;
+                        for (Object num : c0294f.f1370a.keySet()) {
+                            i3 = ((C0292d) c0294f.f1370a.get((Integer)num)).f1369c != 0 ? i3 + 1 : i3;
                         }
                     }
                     this.f1607V.setText(String.valueOf(i3));
@@ -134,8 +135,8 @@ public class ao extends cd {
                         i5 = 0;
                         i6 = 0;
                         i7 = 0;
-                        for (Integer num2 : c0291c.f1366a.keySet()) {
-                            C0289a c0289a = (C0289a) c0291c.f1366a.get(num2);
+                        for (Object num2 : c0291c.f1366a.keySet()) {
+                            C0289a c0289a = (C0289a) c0291c.f1366a.get((Integer)num2);
                             if (c0289a != null) {
                                 int a2 = c0289a.m1919a();
                                 int b = c0289a.m1921b();
@@ -167,12 +168,12 @@ public class ao extends cd {
             } else {
                 i2 = 0;
             }
-            if (i == 0 && r0 == 0) {
-                this.f1605T.setVisibility(0);
-                this.f1606U.setVisibility(8);
+            if (i == 0 && i2 == 0) {
+                this.f1605T.setVisibility(View.VISIBLE);
+                this.f1606U.setVisibility(View.GONE);
             } else {
-                this.f1606U.setVisibility(0);
-                this.f1605T.setVisibility(8);
+                this.f1606U.setVisibility(View.VISIBLE);
+                this.f1605T.setVisibility(View.GONE);
             }
             this.ab.m2104a();
         }

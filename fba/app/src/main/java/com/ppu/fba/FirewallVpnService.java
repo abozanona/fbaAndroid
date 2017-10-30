@@ -13,8 +13,7 @@ import android.content.SharedPreferences.Editor;
 import android.net.VpnService;
 import android.os.ParcelFileDescriptor;
 import android.preference.PreferenceManager;
-import android.support.v4.app.ai;
-import com.google.analytics.tracking.android.MapBuilder;
+import android.support.v4.app.NotificationCompat;
 import com.ppu.fba.free.R;
 import com.ppu.fba.p009d.C0308e;
 import com.ppu.fba.p009d.C0309f;
@@ -30,7 +29,7 @@ public class FirewallVpnService extends VpnService {
     private Thread f1318c;
     private Thread f1319d;
     private Thread f1320e;
-    private boolean f1321f = false;
+    public boolean f1321f = false;
     private ParcelFileDescriptor f1322g;
     private Thread f1323h;
     private Thread f1324i;
@@ -264,21 +263,21 @@ public class FirewallVpnService extends VpnService {
 
     private Notification m1868e() {
         Context applicationContext = getApplicationContext();
-        ai b = new ai(applicationContext).m102a(R.drawable.lnf2).m104a(getResources().getText(R.string.app_name)).m107c("Protection is turned ON").m105a(true).m106b("LostNet Firewall controls data using VPN");
+        NotificationCompat.Builder b = new NotificationCompat.Builder(applicationContext).setSmallIcon(R.drawable.lnf2).setContentTitle(getResources().getText(R.string.app_name)).setContentText("Protection is turned ON").setContentText("LostNet Firewall controls data using VPN");
         Intent intent = new Intent(this, LogsActivity.class);
         intent.setAction("android.intent.action.MAIN");
         intent.addCategory("android.intent.category.LAUNCHER");
-        intent.addFlags(131072);
-        intent.addFlags(536870912);
-        b.m103a(PendingIntent.getActivity(applicationContext, 0, intent, 134217728));
-        NotificationManager notificationManager = (NotificationManager) getSystemService("notification");
-        return b.m101a();
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        b.setContentIntent(PendingIntent.getActivity(applicationContext, 0, intent,PendingIntent.FLAG_UPDATE_CURRENT));
+        NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        return b.build();
     }
 
     private int m1869f() {
         ActivityManager activityManager = null;
         if (null == null) {
-            activityManager = (ActivityManager) getSystemService("activity");
+            activityManager = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
         }
         if (activityManager == null) {
             return 0;
@@ -421,7 +420,7 @@ public class FirewallVpnService extends VpnService {
 
     public void onRevoke() {
         Log1.LogF1("DCVpnService", "onRevoke");
-        Log1.LogAction(("state", "vpnRevoke", null, null));
+        Log1.LogAction("state", "vpnRevoke", null, null);
         Editor edit = PreferenceManager.getDefaultSharedPreferences(FirewallApplication.m1851a()).edit();
         edit.putBoolean("status_on", false);
         edit.commit();
@@ -439,7 +438,7 @@ public class FirewallVpnService extends VpnService {
     public int onStartCommand(Intent intent, int i, int i2) {
         Log1.LogF1("DCVpnService", "onStartCommand");
         m1866c();
-        return 2;
+        return START_NOT_STICKY;
     }
 
     public void whatonearthmakesyoubeaslave(int i, int i2) {

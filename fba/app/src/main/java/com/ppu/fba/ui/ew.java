@@ -6,7 +6,7 @@ import android.widget.Switch;
 import com.ppu.fba.FirewallApplication;
 import com.ppu.fba.p009d.Log1;
 
-class ew extends AsyncTask {
+public class ew extends AsyncTask {
     final /* synthetic */ Switch f1838a;
     final /* synthetic */ StatusChangeReceiver f1839b;
 

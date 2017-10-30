@@ -4,11 +4,10 @@ import android.content.SharedPreferences.Editor;
 import android.preference.PreferenceManager;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
-import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.FirewallApplication;
 import com.ppu.fba.p009d.Log1;
 
-class et implements OnCheckedChangeListener {
+public class et implements OnCheckedChangeListener {
     final /* synthetic */ SettingsActivity f1835a;
 
     et(SettingsActivity settingsActivity) {
@@ -19,6 +18,6 @@ class et implements OnCheckedChangeListener {
         Editor edit = PreferenceManager.getDefaultSharedPreferences(FirewallApplication.m1851a()).edit();
         edit.putBoolean("notifications_on", z);
         edit.apply();
-        Log1.LogAction(("settings", "switch", "notifications", null));
+        Log1.LogAction("settings", "switch", "notifications", null);
     }
 }

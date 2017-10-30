@@ -3,7 +3,7 @@ package com.ppu.fba.ui;
 import android.os.AsyncTask;
 import com.ppu.fba.NativeWrapper;
 
-class fh extends AsyncTask {
+public class fh extends AsyncTask {
     final /* synthetic */ ToolSnifferActivity f1854a;
 
     fh(ToolSnifferActivity toolSnifferActivity) {

@@ -8,7 +8,7 @@ import com.ppu.fba.p009d.C0309f;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-class ee extends eg {
+public class ee extends eg {
     final /* synthetic */ SectionGeoListFragment f1802a;
     private final ArrayList f1803c;
     private final HashMap f1804d;

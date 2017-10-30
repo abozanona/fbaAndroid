@@ -3,7 +3,7 @@ package com.ppu.fba.ui;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-class ff implements OnClickListener {
+public class ff implements OnClickListener {
     final /* synthetic */ ToolSnifferActivity f1851a;
 
     ff(ToolSnifferActivity toolSnifferActivity) {

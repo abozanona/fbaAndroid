@@ -11,9 +11,7 @@ import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
-import android.support.v4.app.ai;
-import com.google.analytics.tracking.android.GAServiceManager;
-import com.google.android.vending.licensing.APKExpansionPolicy;
+import android.support.v4.app.NotificationCompat;
 import com.ppu.fba.free.R;
 import com.ppu.fba.p007b.C0289a;
 import com.ppu.fba.p007b.C0290b;
@@ -113,14 +111,14 @@ public class FirewallManagerService extends Service implements Runnable {
         if ("com.ppu.fba.free".equals(getResources().getString(R.string.package_name)) || !C0313j.m2004a((Context) this) || PreferenceManager.getDefaultSharedPreferences(FirewallApplication.m1851a()).getBoolean("notifications_on", true)) {
             C0310g.m1989b(this);
             Context applicationContext = getApplicationContext();
-            ai b = new ai(applicationContext).m102a(R.drawable.country_blocked).m104a(getResources().getText(R.string.app_name)).m107c(str).m105a(true).m106b(str);
+            NotificationCompat.Builder b = new NotificationCompat.Builder(applicationContext).setSmallIcon(R.drawable.country_blocked).setContentTitle(getResources().getText(R.string.app_name)).setContentText(str);
             Intent intent = new Intent(this, LogsActivity.class);
             intent.setAction("android.intent.action.MAIN");
             intent.addCategory("android.intent.category.LAUNCHER");
-            intent.addFlags(131072);
-            intent.addFlags(536870912);
-            b.m103a(PendingIntent.getActivity(applicationContext, 0, intent,PendingIntent.FLAG_UPDATE_CURRENT));
-            ((NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE)).notify(12345, b.m101a());
+            intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+            intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            b.setContentIntent(PendingIntent.getActivity(applicationContext, 0, intent,PendingIntent.FLAG_UPDATE_CURRENT));
+            ((NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE)).notify(12345, b.build());
         }
     }
 
@@ -151,7 +149,7 @@ public class FirewallManagerService extends Service implements Runnable {
         if (networkInfo == null || !networkInfo.isAvailable()) {
             this.f1303n = false;
         } else {
-            GAServiceManager.getInstance().dispatchLocalHits();
+            //GAServiceManager.getInstance().dispatchLocalHits();
             this.f1303n = true;
             this.f1305p = null;
             WifiManager wifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
@@ -196,7 +194,7 @@ public class FirewallManagerService extends Service implements Runnable {
                     NativeWrapper.jni_dicke(((C0289a)c0289a).f1363a, 1);
                 } else if (!this.f1302m || !this.f1303n || (b & 32) == 0 || this.f1306q == null || this.f1305p == null || !this.f1306q.equals(this.f1305p)) {
                     switch (a) {
-                        case APKExpansionPolicy.MAIN_FILE_URL_INDEX /*0*/:
+                        case 0 /*0*/:
                             if ((b & 8) == 0) {
                                 NativeWrapper.jni_dicke(((C0289a)c0289a).f1363a, 0);
                                 break;

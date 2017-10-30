@@ -2,13 +2,12 @@ package com.ppu.fba.ui;
 
 import android.view.View;
 import android.view.View.OnClickListener;
-import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.C0288a;
 import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.p007b.C0289a;
 import com.ppu.fba.p009d.Log1;
 
-class C0344i implements OnClickListener {
+public class C0344i implements OnClickListener {
     final /* synthetic */ DetailsAppActivity f1871a;
     final /* synthetic */ C0289a f1872b;
     final /* synthetic */ Boolean f1873c;
@@ -32,6 +31,6 @@ class C0344i implements OnClickListener {
             this.f1871a.f1466n.setEnabled(true);
             this.f1871a.f1467o.setEnabled(true);
         }
-        Log1.LogAction(("detApps", "buttonWiFi", this.f1874d, null));
+        Log1.LogAction("detApps", "buttonWiFi", this.f1874d, null);
     }
 }

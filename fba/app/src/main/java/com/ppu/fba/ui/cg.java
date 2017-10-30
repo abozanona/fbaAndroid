@@ -47,7 +47,7 @@ public abstract class cg {
         this.f1723c.setPlotMargins(0.0f, 0.0f, 0.0f, 0.0f);
         this.f1723c.setPlotPadding(0.0f, 0.0f, 0.0f, 0.0f);
         this.f1723c.setGridPadding(0.0f, 0.0f, 0.0f, 0.0f);
-        this.f1723c.setPaddingRelative(0, 0, 0, 0);
+        //this.f1723c.setPaddingRelative(0, 0, 0, 0);
         this.f1723c.getLayoutManager().remove(this.f1723c.getLegendWidget());
         this.f1723c.getLayoutManager().remove(this.f1723c.getRangeLabelWidget());
         this.f1723c.getLayoutManager().remove(this.f1723c.getDomainLabelWidget());
@@ -86,18 +86,18 @@ public abstract class cg {
                 Iterator it = this.f1724d.iterator();
                 while (it.hasNext()) {
                     View view = (View) it.next();
-                    view.setVisibility(0);
+                    view.setVisibility(View.VISIBLE);
                     view.requestLayout();
                 }
             }
         }
         Series simpleXYSeries = new SimpleXYSeries(arrayList, ArrayFormat.XY_VALS_INTERLEAVED, "Blocked");
         Formatter barFormatter = new BarFormatter(Color.argb(250, 255, 32, 0), -3355444);
-        barFormatter.setPointLabeler(null);
+        //barFormatter.setPointLabeler(null);
         this.f1723c.clear();
         if (this.f1721a == 2) {
             this.f1723c.setDomainBoundaries(Long.valueOf(b - 23), Long.valueOf(1 + b), BoundaryMode.FIXED);
-            this.f1723c.addSeries(simpleXYSeries, barFormatter);
+            //this.f1723c.addSeries(simpleXYSeries, barFormatter);
         }
         BarRenderer barRenderer = (BarRenderer) this.f1723c.getRenderer(BarRenderer.class);
         barRenderer.setBarWidthStyle(BarWidthStyle.VARIABLE_WIDTH);

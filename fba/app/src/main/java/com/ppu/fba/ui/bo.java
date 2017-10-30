@@ -5,11 +5,11 @@ import java.text.FieldPosition;
 import java.text.NumberFormat;
 import java.text.ParsePosition;
 
-class bo extends NumberFormat {
+public class bo extends NumberFormat {
     private static final long serialVersionUID = 6372228667738078111L;
     final /* synthetic */ DetailsGeoActivity f1685a;
 
-    private bo(DetailsGeoActivity detailsGeoActivity) {
+    public bo(DetailsGeoActivity detailsGeoActivity) {
         this.f1685a = detailsGeoActivity;
     }
 

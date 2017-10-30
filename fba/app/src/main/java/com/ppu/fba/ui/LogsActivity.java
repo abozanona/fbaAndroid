@@ -5,6 +5,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -17,23 +18,23 @@ import com.ppu.fba.p009d.Log1;
 import java.util.ArrayList;
 
 public class LogsActivity extends Activity {
-    private ArrayList f1481a = new ArrayList();
-    private int f1482b = -1;
-    private int f1483c = -1;
-    private int f1484d = -1;
-    private int f1485e = -1;
-    private int f1486f = -1;
-    private cw f1487g;
-    private ct f1488h;
-    private cv f1489i;
-    private cs f1490j;
-    private cu f1491k;
+    public ArrayList f1481a = new ArrayList();
+    public int f1482b = -1;
+    public int f1483c = -1;
+    public int f1484d = -1;
+    public int f1485e = -1;
+    public int f1486f = -1;
+    public cw f1487g;
+    public ct f1488h;
+    public cv f1489i;
+    public cs f1490j;
+    public cu f1491k;
 
     protected void onCreate(Bundle bundle) {
         int i;
         int i2;
         super.onCreate(bundle);
-        setContentView(R.logs);
+        setContentView(R.layout.logs);
         getActionBar().setDisplayHomeAsUpEnabled(true);
         getActionBar().setHomeButtonEnabled(true);
         ListView listView = (ListView) findViewById(R.id.logsListMalware);
@@ -74,8 +75,8 @@ public class LogsActivity extends Activity {
         }
         TabHost tabHost = (TabHost) findViewById(R.id.logsTabHost);
         if (i2 == 0) {
-            ((RelativeLayout) findViewById(R.id.logsListEmpty)).setVisibility(0);
-            tabHost.setVisibility(8);
+            ((RelativeLayout) findViewById(R.id.logsListEmpty)).setVisibility(View.VISIBLE);
+            tabHost.setVisibility(View.GONE);
             return;
         }
         ((Button) findViewById(R.id.listEmptyButton)).setOnClickListener(new co(this));
@@ -92,7 +93,7 @@ public class LogsActivity extends Activity {
             this.f1487g.m2104a();
         }
         if (this.f1483c != -1) {
-            newTabSpec = tabHost.newTabSpec("apps");
+            TabSpec newTabSpec = tabHost.newTabSpec("apps");
             newTabSpec.setContent(R.id.logsSlidePager);
             newTabSpec.setIndicator(resources.getString(R.string.logs_apps));
             tabHost.addTab(newTabSpec);
@@ -100,7 +101,7 @@ public class LogsActivity extends Activity {
             this.f1488h.m2104a();
         }
         if (this.f1484d != -1) {
-            newTabSpec = tabHost.newTabSpec("geo");
+            TabSpec newTabSpec = tabHost.newTabSpec("geo");
             newTabSpec.setContent(R.id.logsSlidePager);
             newTabSpec.setIndicator(resources.getString(R.string.logs_geo));
             tabHost.addTab(newTabSpec);
@@ -108,7 +109,7 @@ public class LogsActivity extends Activity {
             this.f1489i.m2104a();
         }
         if (this.f1485e != -1) {
-            newTabSpec = tabHost.newTabSpec("ads");
+            TabSpec newTabSpec = tabHost.newTabSpec("ads");
             newTabSpec.setContent(R.id.logsSlidePager);
             newTabSpec.setIndicator(resources.getString(R.string.logs_ads));
             tabHost.addTab(newTabSpec);
@@ -116,7 +117,7 @@ public class LogsActivity extends Activity {
             this.f1490j.m2104a();
         }
         if (this.f1486f != -1) {
-            newTabSpec = tabHost.newTabSpec("cached");
+            TabSpec newTabSpec = tabHost.newTabSpec("cached");
             newTabSpec.setContent(R.id.logsSlidePager);
             newTabSpec.setIndicator(resources.getString(R.string.logs_cached));
             tabHost.addTab(newTabSpec);
@@ -136,7 +137,7 @@ public class LogsActivity extends Activity {
             Button button = (Button) findViewById(R.id.buttonUpgrade);
             button.setText(R.string.button_pro_rate);
             button.setOnClickListener(new cr(this));
-            button.setVisibility(0);
+            button.setVisibility(View.GONE);
         }
     }
 

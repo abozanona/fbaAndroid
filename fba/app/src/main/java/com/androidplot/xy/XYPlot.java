@@ -24,11 +24,11 @@ import android.graphics.Paint;
 import android.graphics.PointF;
 import android.util.AttributeSet;
 import com.androidplot.Plot;
-import com.androidplot.R;
 import com.androidplot.ui.*;
 import com.androidplot.ui.TextOrientationType;
 import com.androidplot.ui.widget.TextLabelWidget;
 import com.androidplot.util.PixelUtils;
+import com.ppu.fba.free.R;
 
 import java.text.Format;
 import java.util.ArrayList;

@@ -3,7 +3,7 @@ package com.ppu.fba.ui;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 
-class dq implements OnClickListener {
+public class dq implements OnClickListener {
     final /* synthetic */ RestartActivity f1778a;
 
     dq(RestartActivity restartActivity) {

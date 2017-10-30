@@ -5,9 +5,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.TextView;
-import com.google.android.vending.licensing.APKExpansionPolicy;
 
-class eq implements OnItemClickListener {
+public class eq implements OnItemClickListener {
     final /* synthetic */ boolean f1830a;
     final /* synthetic */ TextView f1831b;
     final /* synthetic */ SettingsActivity f1832c;
@@ -20,7 +19,7 @@ class eq implements OnItemClickListener {
 
     public void onItemClick(AdapterView adapterView, View view, int i, long j) {
         switch (i) {
-            case APKExpansionPolicy.MAIN_FILE_URL_INDEX /*0*/:
+            case 0 /*0*/:
                 this.f1832c.startActivityForResult(new Intent(this.f1832c, ProfileSelectActivity.class), 17);
                 return;
             case 4:
@@ -31,7 +30,7 @@ class eq implements OnItemClickListener {
                 return;
             case 5:
                 if (this.f1830a) {
-                    this.f1832c.m2066a();
+                    //this.f1832c.m2066a();
                     return;
                 }
                 return;

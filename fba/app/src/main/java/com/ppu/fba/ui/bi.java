@@ -1,6 +1,6 @@
 package com.ppu.fba.ui;
 
-enum bi {
+public enum bi {
     REGION_ALL,
     COUNTRY_ALL,
     REGION_SEEN,

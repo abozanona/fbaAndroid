@@ -4,7 +4,7 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import java.util.ArrayList;
 
-class bj implements OnCheckedChangeListener {
+public class bj implements OnCheckedChangeListener {
     ArrayList f1673a;
     final /* synthetic */ DashboardActivity f1674b;
 

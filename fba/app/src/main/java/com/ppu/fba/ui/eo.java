@@ -6,7 +6,7 @@ import android.text.format.DateFormat;
 import android.widget.TimePicker;
 import com.ppu.fba.free.R;
 
-class eo implements OnTimeSetListener {
+public class eo implements OnTimeSetListener {
     final /* synthetic */ SettingsActivity f1826a;
 
     eo(SettingsActivity settingsActivity) {

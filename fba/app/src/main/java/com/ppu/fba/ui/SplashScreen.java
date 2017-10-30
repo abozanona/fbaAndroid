@@ -8,8 +8,6 @@ import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
-import com.google.analytics.tracking.android.MapBuilder;
-import com.google.tagmanager.ContainerOpener;
 import com.ppu.fba.free.R;
 import com.ppu.fba.free.R;
 import com.ppu.fba.FirewallApplication;
@@ -33,9 +31,9 @@ public class SplashScreen extends ck {
             String stringExtra = intent.getStringExtra("lf");
             if (stringExtra != null) {
                 if (stringExtra.equals("wgb")) {
-                    Log1.LogAction(("widget", "gb", "la", null));
+                    Log1.LogAction("widget", "gb", "la", null);
                 } else if (stringExtra.equals("notif")) {
-                    Log1.LogAction(("notif", "click", null, null));
+                    Log1.LogAction("notif", "click", null, null);
                     this.f1530a = 2;
                 }
             }
@@ -78,7 +76,7 @@ public class SplashScreen extends ck {
         } else if (i2 != -1) {
             finish();
         } else {
-            new Handler().postDelayed(new cc(this), ContainerOpener.DEFAULT_TIMEOUT_IN_MILLIS);
+            //new Handler().postDelayed(new cc(this), ContainerOpener.DEFAULT_TIMEOUT_IN_MILLIS);
             Log1.LogF1("SplashScreen", "before geoip_load\n");
             NativeWrapper.jni_dickf(getFilesDir().getPath() + "/" + "GeoLite2-Country.mmdb");
             Log1.LogF1("SplashScreen", "after geoip_load\n");
@@ -112,7 +110,7 @@ public class SplashScreen extends ck {
 
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        setContentView(R.splash_screen);
+        setContentView(R.layout.splash_screen);
         if ("com.ppu.fba.free".equals(getResources().getString(R.string.package_name)) || !C0313j.m2004a((Context) this)) {
             this.f1531b = Boolean.FALSE;
         } else {

@@ -5,13 +5,12 @@ import android.content.SharedPreferences.Editor;
 import android.preference.PreferenceManager;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
-import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.C0288a;
 import com.ppu.fba.FirewallApplication;
 import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.p009d.Log1;
 
-class er implements OnCheckedChangeListener {
+public class er implements OnCheckedChangeListener {
     final /* synthetic */ SettingsActivity f1833a;
 
     er(SettingsActivity settingsActivity) {
@@ -33,6 +32,6 @@ class er implements OnCheckedChangeListener {
                 a.m1863a(new C0288a(1, new es(this)));
             }
         }
-        Log1.LogAction(("settings", "switch", "data_caching", null));
+        Log1.LogAction("settings", "switch", "data_caching", null);
     }
 }

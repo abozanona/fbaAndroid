@@ -13,7 +13,7 @@ import com.ppu.fba.free.R;
 import com.ppu.fba.p009d.C0308e;
 import java.util.ArrayList;
 
-class fg extends BaseAdapter {
+public class fg extends BaseAdapter {
     final /* synthetic */ ToolSnifferActivity f1852a;
     private final ArrayList f1853b;
 

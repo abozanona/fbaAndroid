@@ -10,15 +10,12 @@ import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-//import android.support.v4.app.C0012h;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
-import com.google.analytics.tracking.android.MapBuilder;
-import com.google.android.vending.licensing.APKExpansionPolicy;
 import com.ppu.fba.free.R;
 import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.p009d.C0304a;
@@ -38,10 +35,10 @@ public class DashboardActivity extends AppCompatActivity implements TabListener 
     public void onActivityResult(int i, int i2, Intent intent) {
         if (i == 1) {
             if (i2 == -1) {
-                Log1.LogAction(("buttons", "share", "success", null));
+                Log1.LogAction("buttons", "share", "success", null);
             }
         } else if (i == 2 && i2 == -1) {
-            Log1.LogAction(("buttons", "shareMap", "success", null));
+            Log1.LogAction("buttons", "shareMap", "success", null);
         }
     }
 
@@ -55,14 +52,14 @@ public class DashboardActivity extends AppCompatActivity implements TabListener 
             this.f1449p = new ad();
             this.f1450q = new SectionGeoListFragment();
         }
-        this.f1447n = new C0337c(this, m156e());
+        //this.f1447n = new C0337c(this, m156e());
         this.f1451r = (DashboardViewPager) findViewById(R.id.pager);
         this.f1451r.setAdapter(this.f1447n);
         this.f1451r.setOnPageChangeListener(new C0335a(this, actionBar));
-        for (int i = 0; i < this.f1447n.mo756b(); i++) {
+        for (int i = 0; i < this.f1447n.getCount(); i++) {
             Tab newTab = actionBar.newTab();
             switch (i) {
-                case APKExpansionPolicy.MAIN_FILE_URL_INDEX /*0*/:
+                case 0 /*0*/:
                     newTab.setTag(this.f1448o);
                     break;
                 case 1:
@@ -125,7 +122,7 @@ public class DashboardActivity extends AppCompatActivity implements TabListener 
 
     public void onTabSelected(Tab tab, FragmentTransaction fragmentTransaction) {
         this.f1451r.setCurrentItem(tab.getPosition());
-        ad tag = tab.getTag();
+        ad tag = (ad)tab.getTag();
         if (tag != null) {
             tag.m2056b(this);
         }

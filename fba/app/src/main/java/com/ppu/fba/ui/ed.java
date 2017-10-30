@@ -4,7 +4,7 @@ import com.ppu.fba.p008c.C0298c;
 import java.util.Comparator;
 import java.util.HashMap;
 
-class ed implements Comparator {
+public class ed implements Comparator {
     final /* synthetic */ HashMap f1798a;
     final /* synthetic */ SectionGeoListFragment f1799b;
 

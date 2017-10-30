@@ -5,7 +5,7 @@ import android.view.View.OnClickListener;
 import com.ppu.fba.C0288a;
 import com.ppu.fba.FirewallManagerService;
 
-class di implements OnClickListener {
+public class di implements OnClickListener {
     final /* synthetic */ ProfileSelectActivity f1770a;
 
     di(ProfileSelectActivity profileSelectActivity) {
@@ -13,7 +13,7 @@ class di implements OnClickListener {
     }
 
     public void onClick(View view) {
-        this.f1770a.f1493b.putString("currentProfile", this.f1770a.f1501j);
+        //this.f1770a.f1493b.putString("currentProfile", this.f1770a.f1501j);
         this.f1770a.f1493b.commit();
         FirewallManagerService a = FirewallManagerService.m1852a(null);
         if (a != null) {

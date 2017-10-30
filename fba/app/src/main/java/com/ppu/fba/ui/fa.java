@@ -3,7 +3,7 @@ package com.ppu.fba.ui;
 import com.ppu.fba.p009d.C0308e;
 import java.util.Comparator;
 
-class fa implements Comparator {
+public class fa implements Comparator {
     final /* synthetic */ ToolSnifferActivity f1846a;
 
     fa(ToolSnifferActivity toolSnifferActivity) {

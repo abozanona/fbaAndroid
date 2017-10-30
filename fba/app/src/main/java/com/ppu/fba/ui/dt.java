@@ -2,7 +2,7 @@ package com.ppu.fba.ui;
 
 import android.os.AsyncTask;
 
-class dt extends AsyncTask {
+public class dt extends AsyncTask {
     final /* synthetic */ ao f1782a;
 
     dt(ao aoVar) {

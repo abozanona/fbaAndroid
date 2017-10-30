@@ -3,14 +3,13 @@ package com.ppu.fba.ui;
 import android.content.Context;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
-import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.C0288a;
 import com.ppu.fba.FirewallApplication;
 import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.p009d.Log1;
 import com.ppu.fba.p009d.Log1;
 
-class ap implements OnCheckedChangeListener {
+public class ap implements OnCheckedChangeListener {
     final /* synthetic */ ao f1612a;
     final /* synthetic */ Context f1613b;
 
@@ -24,10 +23,10 @@ class ap implements OnCheckedChangeListener {
         compoundButton.setEnabled(false);
         if (z) {
             i = 1;
-            Log1.LogAction(("settings", "on_off", "on", null));
+            Log1.LogAction("settings", "on_off", "on", null);
         } else {
             i = 2;
-            Log1.LogAction(("settings", "on_off", "off", null));
+            Log1.LogAction("settings", "on_off", "off", null);
         }
         C0288a c0288a = new C0288a(i, new aq(this, z, compoundButton));
         FirewallManagerService a = FirewallManagerService.m1852a(FirewallApplication.m1851a());

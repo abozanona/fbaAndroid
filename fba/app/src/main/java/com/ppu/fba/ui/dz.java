@@ -11,7 +11,6 @@ import android.graphics.Picture;
 import android.net.Uri;
 import android.view.View;
 import android.view.View.OnClickListener;
-import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.free.R;
 import com.ppu.fba.p009d.Log1;
 import java.io.ByteArrayOutputStream;
@@ -20,7 +19,7 @@ import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
 
-class dz implements OnClickListener {
+public class dz implements OnClickListener {
     final /* synthetic */ SectionGeoListFragment f1791a;
 
     dz(SectionGeoListFragment sectionGeoListFragment) {
@@ -44,6 +43,7 @@ class dz implements OnClickListener {
         canvas.drawText("LostNet Firewall", (float) (capturePicture.getWidth() / 2), (float) ((i * capturePicture.getHeight()) / 8), paint);
         OutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         createBitmap.compress(CompressFormat.PNG, 100, byteArrayOutputStream);
+        /*
         File file = new File(this.f1791a.m30b().getFilesDir() + File.separator + "map.png");
         try {
             file.createNewFile();
@@ -57,10 +57,11 @@ class dz implements OnClickListener {
             intent.setType("image/*");
             intent.setAction("android.intent.action.SEND_MULTIPLE");
             intent.putParcelableArrayListExtra("android.intent.extra.STREAM", arrayList);
-            this.f1791a.m30b().startActivityForResult(Intent.createChooser(intent, this.f1791a.m37c().getString(R.string.popup_share_title)), 2);
+            //this.f1791a.m30b().startActivityForResult(Intent.createChooser(intent, this.f1791a.m37c().getString(R.string.popup_share_title)), 2);
         } catch (Exception e) {
         }
+        */
         createBitmap.recycle();
-        Log1.LogAction(("buttons", "shareMap", "attempt", null));
+        Log1.LogAction("buttons", "shareMap", "attempt", null);
     }
 }

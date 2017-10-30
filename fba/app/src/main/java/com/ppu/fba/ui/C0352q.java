@@ -2,7 +2,6 @@ package com.ppu.fba.ui;
 
 import android.view.View;
 import android.view.View.OnClickListener;
-import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.C0288a;
 import com.ppu.fba.FirewallManagerService;
 import com.ppu.fba.p007b.C0292d;
@@ -11,7 +10,7 @@ import com.ppu.fba.p009d.C0309f;
 import com.ppu.fba.p009d.Log1;
 import java.util.Iterator;
 
-class C0352q implements OnClickListener {
+public class C0352q implements OnClickListener {
     final /* synthetic */ DetailsGeoActivity f1891a;
     final /* synthetic */ String f1892b;
 
@@ -40,6 +39,6 @@ class C0352q implements OnClickListener {
             }
             a.m1863a(new C0288a(5));
         }
-        Log1.LogAction(("detGeo", "buttonAllow", this.f1892b, null));
+        Log1.LogAction("detGeo", "buttonAllow", this.f1892b, null);
     }
 }

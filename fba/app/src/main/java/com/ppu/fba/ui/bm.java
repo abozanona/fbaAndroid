@@ -5,11 +5,11 @@ import java.text.FieldPosition;
 import java.text.NumberFormat;
 import java.text.ParsePosition;
 
-class bm extends NumberFormat {
+public class bm extends NumberFormat {
     private static final long serialVersionUID = 6372228667738078111L;
     final /* synthetic */ DetailsAppActivity f1680a;
 
-    private bm(DetailsAppActivity detailsAppActivity) {
+    public bm(DetailsAppActivity detailsAppActivity) {
         this.f1680a = detailsAppActivity;
     }
 

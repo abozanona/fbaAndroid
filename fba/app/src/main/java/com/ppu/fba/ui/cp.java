@@ -3,7 +3,7 @@ package com.ppu.fba.ui;
 import android.support.v4.view.ViewPager;
 import android.widget.TabHost.OnTabChangeListener;
 
-class cp implements OnTabChangeListener {
+public class cp implements OnTabChangeListener {
     final /* synthetic */ ViewPager f1738a;
     final /* synthetic */ LogsActivity f1739b;
 
@@ -14,15 +14,15 @@ class cp implements OnTabChangeListener {
 
     public void onTabChanged(String str) {
         if (str.equals("malware")) {
-            this.f1738a.m346a(this.f1739b.f1482b, true);
+            this.f1738a.setCurrentItem(this.f1739b.f1482b, true);
         } else if (str.equals("apps")) {
-            this.f1738a.m346a(this.f1739b.f1483c, true);
+            this.f1738a.setCurrentItem(this.f1739b.f1483c, true);
         } else if (str.equals("geo")) {
-            this.f1738a.m346a(this.f1739b.f1484d, true);
+            this.f1738a.setCurrentItem(this.f1739b.f1484d, true);
         } else if (str.equals("ads")) {
-            this.f1738a.m346a(this.f1739b.f1485e, true);
+            this.f1738a.setCurrentItem(this.f1739b.f1485e, true);
         } else {
-            this.f1738a.m346a(this.f1739b.f1486f, true);
+            this.f1738a.setCurrentItem(this.f1739b.f1486f, true);
         }
     }
 }

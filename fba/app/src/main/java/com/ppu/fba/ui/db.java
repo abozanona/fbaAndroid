@@ -20,8 +20,9 @@ import com.ppu.fba.p009d.C0308e;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.Objects;
 
-abstract class db extends BaseAdapter {
+public abstract class db extends BaseAdapter {
     final /* synthetic */ LogsActivity f1761a;
     private final ArrayList f1762b;
 
@@ -36,20 +37,20 @@ abstract class db extends BaseAdapter {
             synchronized (c0299d) {
                 for (long longValue = valueOf.longValue(); longValue > valueOf.longValue() - 24; longValue--) {
                     C0297b a2 = c0299d.m1952a(longValue);
-                    for (Integer num : a2.m1937a()) {
-                        long a3 = mo763a(a2.m1935a(num.intValue()));
+                    for (Object num : a2.m1937a()) {
+                        long a3 = mo763a(a2.m1935a(((Integer)num).intValue()));
                         if (a3 != 0) {
                             cy cyVar = new cy(logsActivity);
-                            cyVar.f1752b = num.intValue();
+                            cyVar.f1752b = ((Integer)num).intValue();
                             cyVar.f1751a = longValue;
                             cz czVar = (cz) hashMap.get(cyVar);
                             cz czVar2 = czVar == null ? new cz(logsActivity) : czVar;
                             czVar2.f1754a = a3 + czVar2.f1754a;
                             if (c) {
-                                HashMap b = a2.m1942b(num.intValue());
-                                for (Integer num2 : b.keySet()) {
-                                    if (mo763a((C0298c) b.get(num2)) != 0) {
-                                        czVar2.f1755b.add(num2);
+                                HashMap b = a2.m1942b(((Integer)num).intValue());
+                                for (Object num2 : b.keySet()) {
+                                    if (mo763a((C0298c) b.get(((Integer)num2))) != 0) {
+                                        czVar2.f1755b.add(((Integer)num2));
                                     }
                                 }
                             }
@@ -60,13 +61,13 @@ abstract class db extends BaseAdapter {
             }
         }
         this.f1762b = new ArrayList();
-        for (cy cyVar2 : hashMap.keySet()) {
+        for (Object cyVar2 : hashMap.keySet()) {
             cx cxVar = new cx(logsActivity);
-            cxVar.f1748a = cyVar2;
-            cxVar.f1749b = (cz) hashMap.get(cyVar2);
+            cxVar.f1748a = (cy)cyVar2;
+            cxVar.f1749b = (cz) hashMap.get((cy)cyVar2);
             this.f1762b.add(cxVar);
         }
-        Collections.sort(this.f1762b, new da(logsActivity, null));
+        Collections.sort(this.f1762b, new da(logsActivity));
     }
 
     protected int m2112a() {
@@ -99,7 +100,7 @@ abstract class db extends BaseAdapter {
         view = (RelativeLayout) view;
         View view2 = (view == null || ((cx) view.getTag()).equals(cxVar)) ? view : null;
         if (view2 == null) {
-            view2 = (RelativeLayout) LayoutInflater.from(context).inflate(R.list_view_item_log, viewGroup, false);
+            view2 = (RelativeLayout) LayoutInflater.from(context).inflate(R.layout.list_view_item_log, viewGroup, false);
             view2.setTag(cxVar);
         }
         View view3 = view2;

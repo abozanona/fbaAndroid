@@ -2,7 +2,7 @@ package com.ppu.fba.ui;
 
 import android.os.AsyncTask;
 
-class ex implements Runnable {
+public class ex implements Runnable {
     final /* synthetic */ ToolSnifferActivity f1840a;
 
     ex(ToolSnifferActivity toolSnifferActivity) {

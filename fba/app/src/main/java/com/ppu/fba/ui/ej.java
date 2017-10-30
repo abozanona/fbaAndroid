@@ -4,11 +4,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
-import com.google.analytics.tracking.android.MapBuilder;
 import com.ppu.fba.p009d.Log1;
 import java.util.ArrayList;
 
-class ej implements OnClickListener {
+public class ej implements OnClickListener {
     final /* synthetic */ Context f1811a;
     final /* synthetic */ String f1812b;
     final /* synthetic */ ArrayList f1813c;
@@ -25,7 +24,7 @@ class ej implements OnClickListener {
         Intent intent = new Intent(this.f1811a, DetailsGeoActivity.class);
         intent.putExtra("name", this.f1812b);
         intent.putStringArrayListExtra("codes", this.f1813c);
-        this.f1814d.f1801b.m20a(intent);
-        Log1.LogAction(("listGeo", "click", this.f1812b, null));
+        //this.f1814d.f1801b.m20a(intent);
+        Log1.LogAction("listGeo", "click", this.f1812b, null);
     }
 }

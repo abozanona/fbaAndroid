@@ -2,7 +2,7 @@ package com.ppu.fba.ui;
 
 import android.content.Intent;
 
-class cc implements Runnable {
+public class cc implements Runnable {
     final /* synthetic */ SplashScreen f1720a;
 
     cc(SplashScreen splashScreen) {

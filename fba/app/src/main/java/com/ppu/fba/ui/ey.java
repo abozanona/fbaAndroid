@@ -5,7 +5,7 @@ import android.view.View.OnClickListener;
 import com.ppu.fba.free.R;
 import com.ppu.fba.NativeWrapper;
 
-class ey implements OnClickListener {
+public class ey implements OnClickListener {
     final /* synthetic */ ToolSnifferActivity f1841a;
 
     ey(ToolSnifferActivity toolSnifferActivity) {

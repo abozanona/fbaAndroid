@@ -19,7 +19,7 @@ import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-class C0349n extends BaseAdapter {
+public class C0349n extends BaseAdapter {
     final /* synthetic */ DetailsAppActivity f1884a;
     private final HashMap f1885b;
     private final ArrayList f1886c;

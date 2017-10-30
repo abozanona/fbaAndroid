@@ -1,11 +1,11 @@
 package com.ppu.fba.ui;
 
-class cy {
+public class cy {
     public long f1751a;
     public int f1752b;
     final /* synthetic */ LogsActivity f1753c;
 
-    private cy(LogsActivity logsActivity) {
+    public cy(LogsActivity logsActivity) {
         this.f1753c = logsActivity;
     }
 

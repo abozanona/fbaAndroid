@@ -21,28 +21,29 @@ public class ad extends cd {
     ah f1561P = ah.DOWNLOADED;
     an f1562Q = an.TODAY;
     private TextView f1563T;
+    ListView Rr;
 
     public View mo749a(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
         Context context = layoutInflater.getContext();
         RelativeLayout relativeLayout = (RelativeLayout) layoutInflater.inflate(R.layout.activity_list_app, viewGroup, false);
         this.f1563T = (TextView) relativeLayout.findViewById(R.id.listPro);
-        this.R = (ListView) relativeLayout.findViewById(R.id.listItems);
-        this.R.setDrawingCacheBackgroundColor(-16777216);
-        this.R.setScrollbarFadingEnabled(true);
-        this.R.setHorizontalFadingEdgeEnabled(true);
-        this.R.setVerticalFadingEdgeEnabled(true);
-        this.R.setFadingEdgeLength(32);
+        Rr = (ListView) relativeLayout.findViewById(R.id.listItems);
+        Rr.setDrawingCacheBackgroundColor(0xFF000000);
+        Rr.setScrollbarFadingEnabled(true);
+        Rr.setHorizontalFadingEdgeEnabled(true);
+        Rr.setVerticalFadingEdgeEnabled(true);
+        Rr.setFadingEdgeLength(32);
         this.f1561P = ah.ALL;
         this.f1562Q = an.TODAY;
         Spinner spinner = (Spinner) relativeLayout.findViewById(R.id.listSpinnerApps);
         SpinnerAdapter createFromResource = ArrayAdapter.createFromResource(context, R.array.spinner_apps, R.layout.multiline_spinner_dropdown_item);
-        createFromResource.setDropDownViewResource(17367049);
+        //createFromResource.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(createFromResource);
         spinner.setSelection(ah.DOWNLOADED.ordinal());
         spinner.setOnItemSelectedListener(new ae(this));
         spinner = (Spinner) relativeLayout.findViewById(R.id.listSpinnerPeriod);
-        createFromResource = ("com.ppu.fba.free".equals(m37c().getString(R.string.package_name)) || !C0313j.m2004a(context)) ? ArrayAdapter.createFromResource(context, R.array.spinner_period, R.multiline_spinner_dropdown_item) : ArrayAdapter.createFromResource(context, R.array.spinner_period_pro, R.multiline_spinner_dropdown_item);
-        createFromResource.setDropDownViewResource(17367049);
+        createFromResource = ("com.ppu.fba.free".equals(context.getResources().getString(R.string.package_name)) || !C0313j.m2004a(context)) ? ArrayAdapter.createFromResource(context, R.array.spinner_period, R.layout.multiline_spinner_dropdown_item) : ArrayAdapter.createFromResource(context, R.array.spinner_period_pro, R.layout.multiline_spinner_dropdown_item);
+        //createFromResource.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(createFromResource);
         spinner.setOnItemSelectedListener(new af(this));
         mo750a(context);
@@ -403,22 +404,22 @@ public class ad extends cd {
     }
 
     public synchronized void mo751a(ListAdapter listAdapter) {
-        if (this.f1562Q == an.THIRTY_DAYS && (this.R == null || "com.ppu.fba.free".equals(m37c().getString(R.string.package_name)) || !C0313j.m2004a(this.R.getContext()))) {
-            if (this.R != null) {
-                this.R.setVisibility(8);
+        if (this.f1562Q == an.THIRTY_DAYS && (Rr == null || "com.ppu.fba.free".equals(Rr.getContext().getResources().getString(R.string.package_name)) || !C0313j.m2004a(Rr.getContext()))) {
+            if (Rr != null) {
+                Rr.setVisibility(View.GONE);
             }
             if (this.f1563T != null) {
-                this.f1563T.setVisibility(0);
+                this.f1563T.setVisibility(View.VISIBLE);
             }
         } else {
-            if (this.R != null) {
-                this.R.setVisibility(0);
+            if (Rr != null) {
+                Rr.setVisibility(View.VISIBLE);
             }
             if (this.f1563T != null) {
-                this.f1563T.setVisibility(8);
+                this.f1563T.setVisibility(View.GONE);
             }
-            if (!(this.R == null || listAdapter == null)) {
-                this.R.setAdapter(listAdapter);
+            if (!(Rr == null || listAdapter == null)) {
+                Rr.setAdapter(listAdapter);
             }
         }
     }

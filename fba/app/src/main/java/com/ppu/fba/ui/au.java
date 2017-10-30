@@ -4,7 +4,7 @@ import android.os.AsyncTask;
 import android.widget.Button;
 import com.ppu.fba.p009d.C0313j;
 
-class au extends AsyncTask {
+public class au extends AsyncTask {
     final /* synthetic */ ao f1620a;
     final /* synthetic */ Button f1621b;
 
